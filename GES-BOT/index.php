@@ -14,39 +14,47 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES['csvFile'])) {
         if (strtolower($ext) === 'csv') {
             // Abrir el archivo CSV para lectura
             if (($handle = fopen($nombreTmp, 'r')) !== FALSE) {
-                // Omitir la primera línea (cabecera)
-                fgetcsv($handle);
+                // Leer la primera línea (cabecera)
+                $cabecera = fgetcsv($handle);
 
                 // Abrir o crear el archivo process.csv para agregar datos
-                $outputFile = './process.csv';
-                $modo = file_exists($outputFile) ? 'a' : 'w';
+                $outputFile = 'View/ges/process.csv';
+                $archivoExiste = file_exists($outputFile);
+                $modo = $archivoExiste ? 'a' : 'w';
 
                 if (($outputHandle = fopen($outputFile, $modo)) !== FALSE) {
+                    // Si el archivo no existe o está vacío, escribir la cabecera
+                    if (!$archivoExiste || filesize($outputFile) === 0) {
+                        fwrite($outputHandle, implode(',', $cabecera) . PHP_EOL);
+                    }
+
                     // Leer cada línea del CSV y escribirla en process.csv
                     while (($data = fgetcsv($handle, 2000, ',')) !== FALSE) {
-                        // Convertir el array en una línea de texto separada por comas
-                        $linea = implode(',', $data) . PHP_EOL;
-                        fwrite($outputHandle, $linea);
+                        fwrite($outputHandle, implode(',', $data) . PHP_EOL);
                     }
                     fclose($outputHandle);
                     echo "<script type='text/javascript'>
                         alert('Base Exitosamente Anexada');
                     </script>";
                 } else {
-                    // $mensaje = "No se pudo abrir 'process.csv' para escritura.";
+                    echo "<script type='text/javascript'>
+                        alert('No se pudo abrir el archivo de salida para escritura.');
+                    </script>";
                 }
                 fclose($handle);
             } else {
                 echo "<script type='text/javascript'>
-                    alert('Error al Abrir la Base');
+                    alert('Error al abrir el archivo CSV.');
                 </script>";
             }
         } else {
-            // $mensaje = "Por favor, sube un archivo con formato CSV.";
+            echo "<script type='text/javascript'>
+                alert('Por favor, sube un archivo con formato CSV.');
+            </script>";
         }
     } else {
         echo "<script type='text/javascript'>
-            alert('Error al Subir la Base');
+            alert('Error al subir el archivo.');
         </script>";
     }
 }
