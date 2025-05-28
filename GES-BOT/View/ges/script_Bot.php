@@ -104,152 +104,159 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             }
 
             // Procesar cada línea del archivo
-// Procesar cada línea del archivo
-while (($datos = fgetcsv($gestor)) !== false) {
-    // Verificar si la línea está vacía o es el encabezado
-    if (empty($datos) || strcasecmp(trim($datos[0]), 'Canal') === 0) {
-        echo "⚠️ Línea vacía o encabezado detectado. Saltando...\n";
-        continue;
-    }
+            while (($datos = fgetcsv($gestor)) !== false) {
+                // Verificar si la línea está vacía o es el encabezado
+                if (empty($datos) || strcasecmp(trim($datos[0]), 'Canal') === 0) {
+                    echo "⚠️ Línea vacía o encabezado detectado. Saltando...\n";
+                    continue;
+                }
 
-    try {
-        // Clic en el botón "Siguiente"
-        $botonSiguiente = (new WebDriverWait($driver, 10))->until(
-            WebDriverExpectedCondition::elementToBeClickable(
-                WebDriverBy::xpath("//button[text()='Siguiente']")
-            )
-        );
-        $botonSiguiente->click();
-
-        // Definir dropdowns con data-id, índice CSV y aria-owns para diferenciarlos
-        $dropdowns = [
-            ['data_id' => 'var_canal_front', 'index' => 0, 'aria_owns' => 'bs-select-1'],
-            ['data_id' => 'inputState', 'index' => 1, 'aria_owns' => 'bs-select-2'],
-            ['data_id' => 'inputState', 'index' => 2, 'aria_owns' => 'bs-select-3'],
-            ['data_id' => 'inputState', 'index' => 3, 'aria_owns' => 'bs-select-4'],
-            ['data_id' => 'inputState', 'index' => 4, 'aria_owns' => 'bs-select-5'],
-            ['data_id' => 'TipoDocumento2', 'index' => 11, 'aria_owns' => 'bs-select-6'],
-        ];
-
-        foreach ($dropdowns as $dropdown) {
-            // Validar que el índice exista en la línea actual del CSV
-            if (!isset($datos[$dropdown['index']])) {
-                echo "⚠️ Índice '{$dropdown['index']}' no definido en CSV para data-id '{$dropdown['data_id']}'. Saltando...\n";
-                continue;
-            }
-
-            $valor = trim($datos[$dropdown['index']]);
-            if (empty($valor)) {
-                echo "⚠️ Valor vacío para data-id '{$dropdown['data_id']}'. Saltando...\n";
-                continue;
-            }
-
-            // Si es el segundo dropdown, usar solo aria-owns
-            if ($dropdown['aria_owns'] === 'bs-select-2') {
-                $dropdownBoton = (new WebDriverWait($driver, 10))->until(
-                    WebDriverExpectedCondition::presenceOfElementLocated(
-                        WebDriverBy::cssSelector("button[aria-owns='{$dropdown['aria_owns']}']")
-                    )
-                );
-            } else {
-                // Para los demás dropdowns, usar data-id y aria-owns
-                $dropdownBoton = (new WebDriverWait($driver, 10))->until(
-                    WebDriverExpectedCondition::presenceOfElementLocated(
-                        WebDriverBy::cssSelector("button[data-id='{$dropdown['data_id']}'][aria-owns='{$dropdown['aria_owns']}']")
-                    )
-                );
-            }
-
-            $driver->executeScript("arguments[0].scrollIntoView(true);", [$dropdownBoton]);
-            usleep(500000);
-
-            try {
-                $dropdownBoton->click();
-            } catch (Facebook\WebDriver\Exception\ElementClickInterceptedException $e) {
-                // Si está tapado, click con JS para evitar error
-                $driver->executeScript("arguments[0].click();", [$dropdownBoton]);
-            }
-
-            // Esperar las opciones desplegadas
-            $opciones = (new WebDriverWait($driver, 10))->until(
-                WebDriverExpectedCondition::presenceOfAllElementsLocatedBy(
-                    WebDriverBy::cssSelector("#{$dropdown['aria_owns']} ul li")
-                )
-            );
-
-            $opcionSeleccionada = false;
-            foreach ($opciones as $opcion) {
                 try {
-                    $span = $opcion->findElement(WebDriverBy::cssSelector('span.text'));
-                    $textoOpcion = trim($span->getText());
+                    // Clic en el botón "Siguiente"
+                    $botonSiguiente = (new WebDriverWait($driver, 10))->until(
+                        WebDriverExpectedCondition::elementToBeClickable(
+                            WebDriverBy::xpath("//button[text()='Siguiente']")
+                        )
+                    );
+                    $botonSiguiente->click();
 
-                    echo "Comparando: CSV='{$valor}' con opción='{$textoOpcion}'\n"; flush();
+                    // Definir dropdowns con data-id, índice CSV y aria-owns para diferenciarlos
+                    $dropdowns = [
+                        ['data_id' => 'var_canal_front', 'index' => 0, 'aria_owns' => 'bs-select-1'],
+                        ['data_id' => 'inputState', 'index' => 1, 'aria_owns' => 'bs-select-2'],
+                        ['data_id' => 'inputState', 'index' => 2, 'aria_owns' => 'bs-select-3'],
+                        ['data_id' => 'inputState', 'index' => 3, 'aria_owns' => 'bs-select-4'],
+                        ['data_id' => 'inputState', 'index' => 4, 'aria_owns' => 'bs-select-5'],
+                        ['data_id' => 'TipoDocumento2', 'index' => 11, 'aria_owns' => 'bs-select-6'],
+                    ];
 
-                    if (strcasecmp($textoOpcion, $valor) === 0) {
-                        $driver->executeScript("arguments[0].scrollIntoView(true);", [$opcion]);
-                        usleep(300000);
-                        $opcion->click();
+                    foreach ($dropdowns as $dropdown) {
+                        // Validar que el índice exista en la línea actual del CSV
+                        if (!isset($datos[$dropdown['index']])) {
+                            echo "⚠️ Índice '{$dropdown['index']}' no definido en CSV para data-id '{$dropdown['data_id']}'. Saltando...\n";
+                            continue;
+                        }
 
-                        echo "✅ Opción '{$textoOpcion}' seleccionada correctamente.\n"; flush();
+                        $valor = trim($datos[$dropdown['index']]);
+                        if (empty($valor)) {
+                            echo "⚠️ Valor vacío para data-id '{$dropdown['data_id']}'. Saltando...\n";
+                            continue;
+                        }
 
-                        $opcionSeleccionada = true;
-                        break;
+                        // Si es el segundo dropdown, usar solo aria-owns
+                        if ($dropdown['aria_owns'] === 'bs-select-2') {
+                            $dropdownBoton = (new WebDriverWait($driver, 10))->until(
+                                WebDriverExpectedCondition::presenceOfElementLocated(
+                                    WebDriverBy::cssSelector("button[aria-owns='{$dropdown['aria_owns']}']")
+                                )
+                            );
+                        } else {
+                            // Para los demás dropdowns, usar data-id y aria-owns
+                            $dropdownBoton = (new WebDriverWait($driver, 10))->until(
+                                WebDriverExpectedCondition::presenceOfElementLocated(
+                                    WebDriverBy::cssSelector("button[data-id='{$dropdown['data_id']}'][aria-owns='{$dropdown['aria_owns']}']")
+                                )
+                            );
+                        }
+
+                        $driver->executeScript("arguments[0].scrollIntoView(true);", [$dropdownBoton]);
+                        usleep(500000);
+
+                        try {
+                            $dropdownBoton->click();
+                        } catch (Facebook\WebDriver\Exception\ElementClickInterceptedException $e) {
+                            // Si está tapado, click con JS para evitar error
+                            $driver->executeScript("arguments[0].click();", [$dropdownBoton]);
+                        }
+
+                        // Esperar las opciones desplegadas
+                        $opciones = (new WebDriverWait($driver, 10))->until(
+                            WebDriverExpectedCondition::presenceOfAllElementsLocatedBy(
+                                WebDriverBy::cssSelector("#{$dropdown['aria_owns']} ul li")
+                            )
+                        );
+
+                        $opcionSeleccionada = false;
+                        foreach ($opciones as $opcion) {
+                            try {
+                                $span = $opcion->findElement(WebDriverBy::cssSelector('span.text'));
+                                $textoOpcion = trim($span->getText());
+
+                                echo "Comparando: CSV='{$valor}' con opción='{$textoOpcion}'\n"; flush();
+
+                                if (strcasecmp($textoOpcion, $valor) === 0) {
+                                    $driver->executeScript("arguments[0].scrollIntoView(true);", [$opcion]);
+                                    usleep(300000);
+                                    $opcion->click();
+
+                                    echo "✅ Opción '{$textoOpcion}' seleccionada correctamente.\n"; flush();
+
+                                    $opcionSeleccionada = true;
+                                    break;
+                                }
+                            } catch (Exception $e) {
+                                echo "⚠️ Error accediendo a opción: " . $e->getMessage() . "\n"; flush();
+                            }
+                        }
+
+                        if (!$opcionSeleccionada) {
+                            echo "Opción '{$valor}' no encontrada en menú con data-id '{$dropdown['data_id']}' y aria-owns '{$dropdown['aria_owns']}'.\n";
+                            continue 2; // pasa a siguiente línea CSV
+                        }
                     }
-                } catch (Exception $e) {
-                    echo "⚠️ Error accediendo a opción: " . $e->getMessage() . "\n"; flush();
+
+                    // Asignar valores a campos de texto por ID
+                    $camposTexto = [
+                        ['id' => 'NumeroDocumento', 'index' => 5],
+                        ['id' => 'Cliente', 'index' => 6],
+                        ['id' => 'Contacto', 'index' => 7],
+                        ['id' => 'LineaServicio', 'index' => 8],
+                        ['id' => 'PedidoOrden', 'index' => 9],
+                        ['id' => 'CuentaFacturacion', 'index' => 10],
+                    ];
+
+                    foreach ($camposTexto as $campo) {
+                        if (!isset($datos[$campo['index']])) {
+                            echo "⚠️ Valor faltante para campo '{$campo['id']}'. Saltando...\n";
+                            continue;
+                        }
+
+                        $valorCampo = trim($datos[$campo['index']]);
+                        $input = (new WebDriverWait($driver, 10))->until(
+                            WebDriverExpectedCondition::presenceOfElementLocated(
+                                WebDriverBy::id($campo['id'])
+                            )
+                        );
+                        $input->clear();
+                        $input->sendKeys($valorCampo);
+
+                        echo "✅ Campo '{$campo['id']}' completado con '{$valorCampo}'.\n"; flush();
+                    }
+
+                    $driver->wait(10)->until(
+                        WebDriverExpectedCondition::elementToBeClickable(
+                            WebDriverBy::xpath("//button[normalize-space()='Guardar']")
+                        )
+                    )->click();
+
+                    $spanDatosCliente = (new WebDriverWait($driver, 10))->until(
+                        WebDriverExpectedCondition::elementToBeClickable(
+                            WebDriverBy::xpath("//span[contains(@class, 'nav-text') and normalize-space(text())='DATOS CLIENTE']")
+                        )
+                    );
+                    $driver->executeScript("arguments[0].scrollIntoView(true);", [$spanDatosCliente]);
+                    usleep(300000); // Espera breve antes del clic
+                    $spanDatosCliente->click();
+
+                } catch (TimeoutException $e) {
+                    echo "<script>alert('Se ha superado el tiempo de espera');</script>";
+                        header("Location: script_Bot.php");
+                    exit;
                 }
             }
 
-            if (!$opcionSeleccionada) {
-                echo "Opción '{$valor}' no encontrada en menú con data-id '{$dropdown['data_id']}' y aria-owns '{$dropdown['aria_owns']}'.\n";
-                continue 2; // pasa a siguiente línea CSV
-            }
-        }
-
-        // Asignar valores a campos de texto por ID
-        $camposTexto = [
-            ['id' => 'NumeroDocumento', 'index' => 5],
-            ['id' => 'Cliente', 'index' => 6],
-            ['id' => 'Contacto', 'index' => 7],
-            ['id' => 'LineaServicio', 'index' => 8],
-            ['id' => 'PedidoOrden', 'index' => 9],
-            ['id' => 'CuentaFacturacion', 'index' => 10],
-        ];
-
-        foreach ($camposTexto as $campo) {
-            if (!isset($datos[$campo['index']])) {
-                echo "⚠️ Valor faltante para campo '{$campo['id']}'. Saltando...\n";
-                continue;
-            }
-
-            $valorCampo = trim($datos[$campo['index']]);
-            $input = (new WebDriverWait($driver, 10))->until(
-                WebDriverExpectedCondition::presenceOfElementLocated(
-                    WebDriverBy::id($campo['id'])
-                )
-            );
-            $input->clear();
-            $input->sendKeys($valorCampo);
-
-            echo "✅ Campo '{$campo['id']}' completado con '{$valorCampo}'.\n"; flush();
-        }
-
-        sleep(10);
-
-        // Clic en "Guardar"
-        //$driver->wait(10)->until(
-            //WebDriverExpectedCondition::elementToBeClickable(
-                //WebDriverBy::id('id_boton_guardar')
-            //)
-        //)->click();
-
-    } catch (TimeoutException $e) {
-        echo "<script>alert('Se ha superado el tiempo de espera');</script>";
-            header("Location: script_Bot.php");
-        exit;
-    }
-}
-
+            $driver->quit();
+            header("Location: again.php");
 
             // Cerrar los archivos abiertos
             fclose($gestor);
