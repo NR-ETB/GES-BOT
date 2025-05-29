@@ -18,194 +18,189 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (!empty($username) && !empty($password)) {
         $host = 'http://localhost:9515';
 
-        // Configurar las opciones de Chrome
         $options = new ChromeOptions();
         $options->addArguments([
-            //'--headless', // Descomenta esta línea para ejecutar en modo headless
             '--disable-gpu',
             '--no-sandbox',
             '--disable-dev-shm-usage',
             '--window-size=1200,720'
         ]);
 
-        // Establecer las capacidades deseadas para Chrome
         $capabilities = DesiredCapabilities::chrome();
         $capabilities->setCapability(ChromeOptions::CAPABILITY, $options);
 
-        // Crear una instancia del WebDriver
         $driver = RemoteWebDriver::create($host, $capabilities);
 
         try {
-            // Navegar a la página de inicio de sesión
             $driver->get('http://appintprd01.etb.com.co/2015/portal/Gestor/index.php#no-back-button');
-
-            // Limpiar el almacenamiento local y de sesión
             $driver->executeScript('window.localStorage.clear();');
             $driver->executeScript('window.sessionStorage.clear();');
 
-            // Esperar hasta que el enlace con el href específico sea clickeable
-            $enlace = $driver->wait(10)->until(
+            $driver->wait(10)->until(
                 WebDriverExpectedCondition::elementToBeClickable(
                     WebDriverBy::xpath("//a[@href='AseguramientoFijos_v2/index.php']")
                 )
-            );
-            $enlace->click();
+            )->click();
 
-            // Esperar a que la URL cambie correctamente
             $driver->wait(10)->until(
                 WebDriverExpectedCondition::urlContains('AseguramientoFijos_v2/index.php')
             );
 
-            // Ingresar el nombre de usuario y la contraseña
             $driver->findElement(WebDriverBy::name('login'))->sendKeys($username);
             $driver->findElement(WebDriverBy::name('clave'))->sendKeys($password);
-
-            // Hacer clic en el botón de envío
             $driver->findElement(WebDriverBy::cssSelector('button[type="submit"]'))->click();
 
-            echo "Página actual: " . $driver->getCurrentURL() . "\n";
-
-            // Establecer sesión de usuario logueado
             $_SESSION['loggedin'] = true;
-
             ini_set('memory_limit', '512M');
 
-            // Leer el archivo 'process.csv'
             $archivo = './process.csv';
             $gestor = fopen($archivo, 'r');
-            if (!$gestor) {
-                die("No se pudo abrir el archivo 'process.csv'.\n");
-            }
+            if (!$gestor) die("No se pudo abrir el archivo 'process.csv'.\n");
 
-            // Ruta del archivo CSV de salida
             $filePath = './Gestiones_Realizadas.csv';
             $fileExists2 = file_exists($filePath);
             $file = fopen($filePath, 'a');
-            if (!$file) {
-                die("No se pudo abrir o crear el archivo CSV.\n");
-            }
+            if (!$file) die("No se pudo abrir o crear el archivo CSV.\n");
 
-            // Si el archivo CSV no existía, escribir los encabezados
             if (!$fileExists2) {
                 fputcsv($file, [
-                    'Canal',
-                    'Sistema',
-                    'UEN',
-                    'Tecnologia',
-                    'Tipo_de_Documento',
-                    'Numero_de_Documento',
-                    'Cliente',
-                    'Contacto',
-                    'Linea_del_Servicio',
-                    'Pedido_Orden',
-                    'Cuenta_de_Facturacion',
-                    'Ciudad'
+                    'Canal','Sistema','UEN','Tecnologia','Tipo_de_Documento','Numero_de_Documento','Cliente','Contacto','Linea_del_Servicio','Pedido_Orden','Cuenta_de_Facturacion','Ciudad'
                 ]);
             }
 
-            // Procesar cada línea del archivo
+            $lineasProcesadas = [];
+            $esProximoRegistro = false; // Variable para controlar el primer registro
+
             while (($datos = fgetcsv($gestor)) !== false) {
-                // Verificar si la línea está vacía o es el encabezado
-                if (empty($datos) || strcasecmp(trim($datos[0]), 'Canal') === 0) {
-                    echo "⚠️ Línea vacía o encabezado detectado. Saltando...\n";
-                    continue;
-                }
+                if (empty($datos) || strcasecmp(trim($datos[0]), 'Canal') === 0) continue;
 
                 try {
-                    // Clic en el botón "Siguiente"
-                    $botonSiguiente = (new WebDriverWait($driver, 10))->until(
-                        WebDriverExpectedCondition::elementToBeClickable(
-                            WebDriverBy::xpath("//button[text()='Siguiente']")
-                        )
-                    );
-                    $botonSiguiente->click();
+                    // SOLUCIÓN PRINCIPAL: Esperar a que la página esté completamente cargada
+                    if (!$esProximoRegistro) {
+                        // Para el primer registro, esperar más tiempo
+                        sleep(2);
+                        $esProximoRegistro = true;
+                    }
 
-                    // Definir dropdowns con data-id, índice CSV y aria-owns para diferenciarlos
+                    // Verificar que estemos en la página correcta antes de continuar
+                    $driver->wait(10)->until(
+                        WebDriverExpectedCondition::elementToBeClickable(WebDriverBy::xpath("//button[text()='Siguiente']"))
+                    );
+
+                    // Hacer scroll hacia arriba para asegurar que todos los elementos sean visibles
+                    $driver->executeScript("window.scrollTo(0, 0);");
+                    sleep(1);
+
+                    // Hacer clic en "Siguiente"
+                    $botonSiguiente = $driver->wait(10)->until(
+                        WebDriverExpectedCondition::elementToBeClickable(WebDriverBy::xpath("//button[text()='Siguiente']"))
+                    );
+                    
+                    try {
+                        $botonSiguiente->click();
+                    } catch (Facebook\WebDriver\Exception\ElementClickInterceptedException $e) {
+                        $driver->executeScript("arguments[0].click();", [$botonSiguiente]);
+                    }
+
+                    // MEJORA: Esperar a que los dropdowns estén completamente cargados
+                    sleep(1.5);
+
+                    // Definir dropdowns con mejor mapeo
                     $dropdowns = [
-                        ['data_id' => 'var_canal_front', 'index' => 0, 'aria_owns' => 'bs-select-1'],
-                        ['data_id' => 'inputState', 'index' => 1, 'aria_owns' => 'bs-select-2'],
-                        ['data_id' => 'inputState', 'index' => 2, 'aria_owns' => 'bs-select-3'],
-                        ['data_id' => 'inputState', 'index' => 3, 'aria_owns' => 'bs-select-4'],
-                        ['data_id' => 'inputState', 'index' => 4, 'aria_owns' => 'bs-select-5'],
-                        ['data_id' => 'TipoDocumento2', 'index' => 11, 'aria_owns' => 'bs-select-6'],
+                        ['data_id' => 'var_canal_front', 'index' => 0, 'aria_owns' => 'bs-select-1', 'name' => 'Canal'],
+                        ['data_id' => 'inputState', 'index' => 1, 'aria_owns' => 'bs-select-2', 'name' => 'Sistema'],
+                        ['data_id' => 'inputState', 'index' => 2, 'aria_owns' => 'bs-select-3', 'name' => 'UEN'],
+                        ['data_id' => 'inputState', 'index' => 3, 'aria_owns' => 'bs-select-4', 'name' => 'Tecnologia'],
+                        ['data_id' => 'inputState', 'index' => 4, 'aria_owns' => 'bs-select-5', 'name' => 'Tipo_Documento_Campo4'], // Este parece ser diferente
+                        ['data_id' => 'TipoDocumento2', 'index' => 11, 'aria_owns' => 'bs-select-6', 'name' => 'Ciudad'], // Ciudad está en el índice 11
                     ];
 
                     foreach ($dropdowns as $dropdown) {
-                        // Validar que el índice exista en la línea actual del CSV
-                        if (!isset($datos[$dropdown['index']])) {
-                            echo "⚠️ Índice '{$dropdown['index']}' no definido en CSV para data-id '{$dropdown['data_id']}'. Saltando...\n";
+                        if (!isset($datos[$dropdown['index']]) || empty(trim($datos[$dropdown['index']]))) {
+                            error_log("Valor vacío para {$dropdown['name']} en índice {$dropdown['index']}\n", 3, 'debug_bot.log');
                             continue;
                         }
-
+                        
                         $valor = trim($datos[$dropdown['index']]);
-                        if (empty($valor)) {
-                            echo "⚠️ Valor vacío para data-id '{$dropdown['data_id']}'. Saltando...\n";
-                            continue;
+                        $encontrado = false;
+                        
+                        error_log("Procesando {$dropdown['name']}: '$valor'\n", 3, 'debug_bot.log');
+
+                        // MEJORA: Esperar específicamente a que el dropdown esté listo
+                        $dropdownBoton = (new WebDriverWait($driver, 12))->until(
+                            WebDriverExpectedCondition::elementToBeClickable(
+                                WebDriverBy::cssSelector("button" . (isset($dropdown['data_id']) ? "[data-id='{$dropdown['data_id']}']" : "") . "[aria-owns='{$dropdown['aria_owns']}']")
+                            )
+                        );
+
+                        // Hacer scroll al elemento y esperar
+                        $driver->executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", [$dropdownBoton]);
+                        sleep(1);
+
+                        // Verificar que el dropdown no esté ya abierto
+                        $isOpen = $dropdownBoton->getAttribute('aria-expanded') === 'true';
+                        if (!$isOpen) {
+                            try {
+                                $dropdownBoton->click();
+                            } catch (Facebook\WebDriver\Exception\ElementClickInterceptedException $e) {
+                                $driver->executeScript("arguments[0].click();", [$dropdownBoton]);
+                            }
+                            
+                            // Esperar a que se abra el dropdown
+                            sleep(1);
                         }
 
-                        // Si es el segundo dropdown, usar solo aria-owns
-                        if ($dropdown['aria_owns'] === 'bs-select-2') {
-                            $dropdownBoton = (new WebDriverWait($driver, 10))->until(
-                                WebDriverExpectedCondition::presenceOfElementLocated(
-                                    WebDriverBy::cssSelector("button[aria-owns='{$dropdown['aria_owns']}']")
-                                )
-                            );
-                        } else {
-                            // Para los demás dropdowns, usar data-id y aria-owns
-                            $dropdownBoton = (new WebDriverWait($driver, 10))->until(
-                                WebDriverExpectedCondition::presenceOfElementLocated(
-                                    WebDriverBy::cssSelector("button[data-id='{$dropdown['data_id']}'][aria-owns='{$dropdown['aria_owns']}']")
-                                )
-                            );
-                        }
-
-                        $driver->executeScript("arguments[0].scrollIntoView(true);", [$dropdownBoton]);
-                        usleep(500000);
-
-                        try {
-                            $dropdownBoton->click();
-                        } catch (Facebook\WebDriver\Exception\ElementClickInterceptedException $e) {
-                            // Si está tapado, click con JS para evitar error
-                            $driver->executeScript("arguments[0].click();", [$dropdownBoton]);
-                        }
-
-                        // Esperar las opciones desplegadas
-                        $opciones = (new WebDriverWait($driver, 10))->until(
+                        // MEJORA: Esperar más tiempo para que las opciones se carguen
+                        $opciones = (new WebDriverWait($driver, 12))->until(
                             WebDriverExpectedCondition::presenceOfAllElementsLocatedBy(
                                 WebDriverBy::cssSelector("#{$dropdown['aria_owns']} ul li")
                             )
                         );
 
-                        $opcionSeleccionada = false;
+                        // Esperar un poco más para asegurar que todas las opciones estén cargadas
+                        usleep(500000);
+
                         foreach ($opciones as $opcion) {
                             try {
                                 $span = $opcion->findElement(WebDriverBy::cssSelector('span.text'));
                                 $textoOpcion = trim($span->getText());
-
-                                echo "Comparando: CSV='{$valor}' con opción='{$textoOpcion}'\n"; flush();
-
+                                
                                 if (strcasecmp($textoOpcion, $valor) === 0) {
-                                    $driver->executeScript("arguments[0].scrollIntoView(true);", [$opcion]);
+                                    $driver->executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", [$opcion]);
                                     usleep(300000);
-                                    $opcion->click();
-
-                                    echo "✅ Opción '{$textoOpcion}' seleccionada correctamente.\n"; flush();
-
-                                    $opcionSeleccionada = true;
+                                    
+                                    try {
+                                        $opcion->click();
+                                    } catch (Facebook\WebDriver\Exception\ElementClickInterceptedException $e) {
+                                        $driver->executeScript("arguments[0].click();", [$opcion]);
+                                    }
+                                    
+                                    $encontrado = true;
+                                    error_log("✓ Seleccionado {$dropdown['name']}: '$valor'\n", 3, 'debug_bot.log');
                                     break;
                                 }
                             } catch (Exception $e) {
-                                echo "⚠️ Error accediendo a opción: " . $e->getMessage() . "\n"; flush();
+                                // Si no se puede leer el texto de esta opción, continuar con la siguiente
+                                continue;
+                            }
+                        }
+                        
+                        if (!$encontrado) {
+                            error_log("✗ Valor NO encontrado en {$dropdown['name']}: '$valor'\n", 3, 'errores_bot.log');
+                            
+                            // Intentar cerrar el dropdown si está abierto
+                            try {
+                                $driver->executeScript("arguments[0].click();", [$dropdownBoton]);
+                            } catch (Exception $e) {
+                                // Ignorar errores al cerrar
                             }
                         }
 
-                        if (!$opcionSeleccionada) {
-                            echo "Opción '{$valor}' no encontrada en menú con data-id '{$dropdown['data_id']}' y aria-owns '{$dropdown['aria_owns']}'.\n";
-                            continue 2; // pasa a siguiente línea CSV
-                        }
+                        // Pequeña pausa entre dropdowns
+                        usleep(300000);
                     }
 
-                    // Asignar valores a campos de texto por ID
+                    // Continuar con campos de texto
                     $camposTexto = [
                         ['id' => 'NumeroDocumento', 'index' => 5],
                         ['id' => 'Cliente', 'index' => 6],
@@ -216,70 +211,86 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     ];
 
                     foreach ($camposTexto as $campo) {
-                        if (!isset($datos[$campo['index']])) {
-                            echo "⚠️ Valor faltante para campo '{$campo['id']}'. Saltando...\n";
-                            continue;
-                        }
-
-                        $valorCampo = trim($datos[$campo['index']]);
+                        if (!isset($datos[$campo['index']])) continue;
                         $input = (new WebDriverWait($driver, 10))->until(
-                            WebDriverExpectedCondition::presenceOfElementLocated(
-                                WebDriverBy::id($campo['id'])
-                            )
+                            WebDriverExpectedCondition::presenceOfElementLocated(WebDriverBy::id($campo['id']))
                         );
                         $input->clear();
-                        $input->sendKeys($valorCampo);
-
-                        echo "✅ Campo '{$campo['id']}' completado con '{$valorCampo}'.\n"; flush();
+                        $input->sendKeys(trim($datos[$campo['index']]));
                     }
 
-                    $driver->wait(10)->until(
+                    sleep(4);
+
+                    // Guardar
+                    $botonGuardar = $driver->wait(10)->until(
                         WebDriverExpectedCondition::elementToBeClickable(
                             WebDriverBy::xpath("//button[normalize-space()='Guardar']")
                         )
-                    )->click();
+                    );
+                    
+                    try {
+                        $botonGuardar->click();
+                    } catch (Facebook\WebDriver\Exception\ElementClickInterceptedException $e) {
+                        $driver->executeScript("arguments[0].click();", [$botonGuardar]);
+                    }
 
+                    // Navegar a DATOS CLIENTE
                     $spanDatosCliente = (new WebDriverWait($driver, 10))->until(
                         WebDriverExpectedCondition::elementToBeClickable(
                             WebDriverBy::xpath("//span[contains(@class, 'nav-text') and normalize-space(text())='DATOS CLIENTE']")
                         )
                     );
                     $driver->executeScript("arguments[0].scrollIntoView(true);", [$spanDatosCliente]);
-                    usleep(300000); // Espera breve antes del clic
-                    $spanDatosCliente->click();
+                    usleep(300000);
+                    
+                    try {
+                        $spanDatosCliente->click();
+                    } catch (Facebook\WebDriver\Exception\ElementClickInterceptedException $e) {
+                        $driver->executeScript("arguments[0].click();", [$spanDatosCliente]);
+                    }
+
+                    // Añadir a 'Gestiones_Realizadas.csv'
+                    fputcsv($file, $datos);
+                    $lineasProcesadas[] = $datos;
 
                 } catch (TimeoutException $e) {
+                    error_log("TimeoutException en registro: " . implode(',', $datos) . " - Error: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
                     echo "<script>alert('Se ha superado el tiempo de espera');</script>";
-                        header("Location: script_Bot.php");
+                    header("Location: script_Bot.php");
                     exit;
+                } catch (Exception $e) {
+                    error_log("Error general en registro: " . implode(',', $datos) . " - Error: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
+                    continue;
                 }
             }
 
-            $driver->quit();
-            header("Location: again.php");
-
-            // Cerrar los archivos abiertos
+            // Eliminar líneas procesadas de process.csv
             fclose($gestor);
-            fclose($file);
+            $gestor = fopen($archivo, 'r');
+            $todasLasLineas = [];
+            while (($linea = fgetcsv($gestor)) !== false) {
+                if (strcasecmp(trim($linea[0]), 'Canal') === 0 || !in_array($linea, $lineasProcesadas)) {
+                    $todasLasLineas[] = $linea;
+                }
+            }
+            fclose($gestor);
+            file_put_contents($archivo, '');
+            $gestor = fopen($archivo, 'w');
+            foreach ($todasLasLineas as $linea) fputcsv($gestor, $linea);
+            fclose($gestor);
 
-        } catch (TimeoutException $e) {
-            echo "<script type='text/javascript'>
-                alert('Se ha superado el tiempo de entrega');
-            </script>";
-            header("Location: script_Bot.php");
-        } catch (NoSuchElementException $e) {
-            echo "<script type='text/javascript'>
-                alert('Elemento no encontrado o Inexistente');
-            </script>";
-            header("Location: script_Bot.php");
-        } finally {
             $driver->quit();
+            fclose($file);
             header("Location: again.php");
+
+        } catch (TimeoutException | NoSuchElementException $e) {
+            echo "<script>alert('Error: {$e->getMessage()}');</script>";
+            $driver->quit();
+            header("Location: script_Bot.php");
         }
     }
 }
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
