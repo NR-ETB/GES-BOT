@@ -64,7 +64,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             if (!$fileExists2) {
                 fputcsv($file, [
-                    'Canal','Sistema','UEN','Tecnologia','Tipo_de_Documento','Numero_de_Documento','Cliente','Contacto','Linea_del_Servicio','Pedido_Orden','Cuenta_de_Facturacion','Ciudad'
+                    'Canal','Sistema','UEN','Tecnologia','Tipo_de_Documento','Numero_de_Documento','Cliente','Contacto','Linea_del_Servicio','Pedido_Orden','Cuenta_de_Facturacion','Ciudad','Direccion','Plan','Error','Solucion','Adjunto'
                 ]);
             }
 
@@ -246,6 +246,40 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         }
 
                         sleep(2); // Reducido de 3 a 2
+
+                        if (isset($datos[12]) && !empty(trim($datos[12]))) {
+                            try {
+                                $valor = trim($datos[12]);
+                                $enlace = $driver->wait(10)->until(
+                                    WebDriverExpectedCondition::elementToBeClickable(
+                                        WebDriverBy::xpath("//a[normalize-space(text())='$valor']")
+                                    )
+                                );
+                                $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$enlace]);
+                                usleep(300000);
+                                $enlace->click();
+                            } catch (Exception $e) {
+                                error_log("Error haciendo clic en opción: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
+                            }
+                        }
+
+                        $comentario = "Texto que deseas ingresar"; // O por ejemplo: $datos[13]
+                        $textarea = $driver->wait(10)->until(
+                            WebDriverExpectedCondition::presenceOfElementLocated(
+                                WebDriverBy::xpath("//textarea[@name='ErrorPresentado']")
+                            )
+                        );
+                        $textarea->clear(); // Limpia el contenido anterior
+                        $textarea->sendKeys($comentario);
+
+                        $solucion = "Texto de solución requerida"; // O, por ejemplo: $datos[14]
+                        $textareaSolucion = $driver->wait(10)->until(
+                            WebDriverExpectedCondition::presenceOfElementLocated(
+                                WebDriverBy::xpath("//textarea[@name='SolucionRequerida']")
+                            )
+                        );
+                        $textareaSolucion->clear();
+                        $textareaSolucion->sendKeys($solucion);
 
                         // Navegar a DATOS CLIENTE
                         $spanDatosCliente = (new WebDriverWait($driver, 12))->until(
