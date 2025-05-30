@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES['csvFile'])) {
                 $cabecera = fgetcsv($handle);
 
                 // Abrir o crear el archivo process.csv para agregar datos
-                $outputFile = 'View/ges/process.csv';
+                $outputFile = './process.csv';
                 $archivoExiste = file_exists($outputFile);
                 $modo = $archivoExiste ? 'a' : 'w';
 
@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES['csvFile'])) {
                     fclose($outputHandle);
                     echo "<script type='text/javascript'>
                         alert('Base Exitosamente Anexada');
-                        window.location.href = 'script_Bot.php';
+                        window.location.href = './script_Bot.php';
                     </script>";
                 } else {
                     echo "<script type='text/javascript'>

@@ -1,0 +1,167 @@
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,1000454857,PACA CARDONA CORDERO,7619270442098,459152932,0626,9513,BOGOTA
+Procesando Canal: 'ASEGURAMIENTO'
+✓ Seleccionado Canal: 'ASEGURAMIENTO'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro procesado exitosamente: ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,1000454857,PACA CARDONA CORDERO,7619270442098,459152932,0626,9513,BOGOTA
+✓ Registro guardado en Gestiones_Realizadas.csv
+✓ Archivo process.csv actualizado, eliminadas 1 líneas procesadas
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,1000454857,PACA CARDONA CORDERO,7619270442098,459152932,0626,9513,BOGOTA
+Procesando Canal: 'ASEGURAMIENTO'
+✓ Seleccionado Canal: 'ASEGURAMIENTO'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro procesado exitosamente: ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,1000454857,PACA CARDONA CORDERO,7619270442098,459152932,0626,9513,BOGOTA
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,1000454858,JOSUÉ BUENDÍA MALDONADO,0570702522975,599134934,0627,9514,BOGOTA
+Procesando Canal: 'VENTAS'
+✓ Seleccionado Canal: 'VENTAS'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro procesado exitosamente: VENTAS,SUMA,HOGARES,FTTH,CC,1000454858,JOSUÉ BUENDÍA MALDONADO,0570702522975,599134934,0627,9514,BOGOTA
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): CALL CENTER,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,1000454859,PEPITO SEBASTIÁN,3912852667548,117677062,0628,9515,BOGOTA
+Procesando Canal: 'CALL CENTER'
+✓ Seleccionado Canal: 'CALL CENTER'
+Procesando Sistema: 'SIEBEL SOMOS Y CONVERGENTE'
+✓ Seleccionado Sistema: 'SIEBEL SOMOS Y CONVERGENTE'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro procesado exitosamente: CALL CENTER,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,1000454859,PEPITO SEBASTIÁN,3912852667548,117677062,0628,9515,BOGOTA
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,1000454860,ISIDORO DIAZ ZAPATA,0086354045257,223086921,0629,9516,BOGOTA
+Procesando Canal: 'ESCRITA'
+✓ Seleccionado Canal: 'ESCRITA'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro procesado exitosamente: ESCRITA,SUMA,HOGARES,FTTH,CC,1000454860,ISIDORO DIAZ ZAPATA,0086354045257,223086921,0629,9516,BOGOTA
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,1000454861,NARCISO MORENO FIGUEROLA,9821283102301,951816433,0630,9517,BOGOTA
+Procesando Canal: 'REDES SOCIALES'
+✓ Seleccionado Canal: 'REDES SOCIALES'
+Procesando Sistema: 'SIEBEL SOMOS Y CONVERGENTE'
+✓ Seleccionado Sistema: 'SIEBEL SOMOS Y CONVERGENTE'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro procesado exitosamente: REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,1000454861,NARCISO MORENO FIGUEROLA,9821283102301,951816433,0630,9517,BOGOTA
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): ASEGURAMIENTO,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,1000454862,NIDIA MARIANELA JIMÉNEZ POMBO,2764279899458,417699148,0631,9518,BOGOTA
+Procesando Canal: 'ASEGURAMIENTO'
+✓ Seleccionado Canal: 'ASEGURAMIENTO'
+Procesando Sistema: 'SIEBEL SOMOS Y CONVERGENTE'
+✓ Seleccionado Sistema: 'SIEBEL SOMOS Y CONVERGENTE'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro procesado exitosamente: ASEGURAMIENTO,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,1000454862,NIDIA MARIANELA JIMÉNEZ POMBO,2764279899458,417699148,0631,9518,BOGOTA
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,1000454863,FAUSTINO DE CARNERO,2921621984897,407402100,0632,9519,BOGOTA
+Procesando Canal: 'VENTAS'
+✓ Seleccionado Canal: 'VENTAS'
+Procesando Sistema: 'SIEBEL SOMOS Y CONVERGENTE'
+✓ Seleccionado Sistema: 'SIEBEL SOMOS Y CONVERGENTE'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro procesado exitosamente: VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,1000454863,FAUSTINO DE CARNERO,2921621984897,407402100,0632,9519,BOGOTA
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,1000454864,TADEO CAÑELLAS MÁRMOL,5836892482669,301000350,0633,9520,BOGOTA
+Procesando Canal: 'VENTAS'
+✓ Seleccionado Canal: 'VENTAS'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro procesado exitosamente: VENTAS,SUMA,HOGARES,FTTH,CC,1000454864,TADEO CAÑELLAS MÁRMOL,5836892482669,301000350,0633,9520,BOGOTA
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): ESCRITA,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,1000454865,CARMINA AZCONA QUEROL,5380606715798,503633594,0634,9521,BOGOTA
+Procesando Canal: 'ESCRITA'
+✓ Seleccionado Canal: 'ESCRITA'
+Procesando Sistema: 'SIEBEL SOMOS Y CONVERGENTE'
+✓ Seleccionado Sistema: 'SIEBEL SOMOS Y CONVERGENTE'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro procesado exitosamente: ESCRITA,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,1000454865,CARMINA AZCONA QUEROL,5380606715798,503633594,0634,9521,BOGOTA
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,1000454866,ELIGIO LEOPOLDO MORCILLO BENAVENTE,5906063649384,407466805,0635,9522,BOGOTA
+Procesando Canal: 'VENTAS'
+✓ Seleccionado Canal: 'VENTAS'
+Procesando Sistema: 'SIEBEL SOMOS Y CONVERGENTE'
+✓ Seleccionado Sistema: 'SIEBEL SOMOS Y CONVERGENTE'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro procesado exitosamente: VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,1000454866,ELIGIO LEOPOLDO MORCILLO BENAVENTE,5906063649384,407466805,0635,9522,BOGOTA
+✓ Registro guardado en Gestiones_Realizadas.csv
+✓ Archivo process.csv actualizado, eliminadas 10 líneas procesadas
