@@ -1,0 +1,161 @@
+Procesando trámite: ADECUACIONES
+Procesando trámite: ADECUACIONES
+Archivo de imagen no encontrado: /ruta/completa/imagenes/router_change.png
+Procesamiento completado con errores
+Error general en registro (intento 1): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,1000454403,JULIÁN MEJÍA,3209876543,856281303,0204,ACC12003,BOGOTA,ADECUACIONES,Sin respuesta en router,Reemplazo de router,router_change.png - Error: stale element reference: stale element not found
+  (Session info: chrome=137.0.7151.57)
+Error general en registro (intento 1): CANAL DIGITAL,SUMA,HOGARES,FTTH,CC,1000454404,SANDRA FONSECA,3187654321,856281304,0205,ACC12004,BOGOTA,ADECUACIONES,Error DNS,Reconfigurar DNS,dns_fix.png - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.57)
+Error general en registro (intento 2): CANAL DIGITAL,SUMA,HOGARES,FTTH,CC,1000454404,SANDRA FONSECA,3187654321,856281304,0205,ACC12004,BOGOTA,ADECUACIONES,Error DNS,Reconfigurar DNS,dns_fix.png - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.57)
+✗ Registro falló después de 2 intentos por error general
+Error general en registro (intento 1): ESCRITA,SUMA,HOGARES,FTTH,CC,1000454405,LUIS ZAPATA,3134567890,856281305,0206,ACC12005,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,sync_issue.png - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.57)
+Error general en registro (intento 2): ESCRITA,SUMA,HOGARES,FTTH,CC,1000454405,LUIS ZAPATA,3134567890,856281305,0206,ACC12005,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,sync_issue.png - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.57)
+✗ Registro falló después de 2 intentos por error general
+Error general en registro (intento 1): VENTAS,SUMA,HOGARES,FTTH,CC,1000454406,ANA BELTRÁN,3191122334,856281306,0207,ACC12006,BOGOTA,ADECUACIONES,No navega en páginas https,Verificar puertos y firewall,https_blocked.png - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.57)
+Error general en registro (intento 2): VENTAS,SUMA,HOGARES,FTTH,CC,1000454406,ANA BELTRÁN,3191122334,856281306,0207,ACC12006,BOGOTA,ADECUACIONES,No navega en páginas https,Verificar puertos y firewall,https_blocked.png - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.57)
+✗ Registro falló después de 2 intentos por error general
+Error general en registro (intento 1): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,1000454407,CRISTIAN VÉLEZ,3059988776,856281307,0208,ACC12007,BOGOTA,ADECUACIONES,Servicio muy lento,Cambio de canal WiFi,wifi_channel.png - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.57)
+Error general en registro (intento 2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,1000454407,CRISTIAN VÉLEZ,3059988776,856281307,0208,ACC12007,BOGOTA,ADECUACIONES,Servicio muy lento,Cambio de canal WiFi,wifi_channel.png - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.57)
+✗ Registro falló después de 2 intentos por error general
+Error general en registro (intento 1): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,1000454408,PAULA NIETO,3173344556,856281308,0209,ACC12008,BOGOTA,ADECUACIONES,LED rojo en ONT,Validar fibra óptica,red_led.png - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.57)
+Error general en registro (intento 2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,1000454408,PAULA NIETO,3173344556,856281308,0209,ACC12008,BOGOTA,ADECUACIONES,LED rojo en ONT,Validar fibra óptica,red_led.png - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.57)
+✗ Registro falló después de 2 intentos por error general
+Error general en registro (intento 1): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,1000454409,JORGE LIZARAZO,3167788990,856281309,0210,ACC12009,BOGOTA,ADECUACIONES,Problemas en videollamadas,Asignar nuevo gateway,videocall_issue.png - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.57)
+Error general en registro (intento 2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,1000454409,JORGE LIZARAZO,3167788990,856281309,0210,ACC12009,BOGOTA,ADECUACIONES,Problemas en videollamadas,Asignar nuevo gateway,videocall_issue.png - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.57)
+✗ Registro falló después de 2 intentos por error general
+Archivo de imagen no encontrado: /ruta/completa/imagenes/router_change.png
+Procesamiento completado con errores
+Error llenando campo NumeroDocumento: invalid session id
+Error llenando campo Cliente: invalid session id
+Error llenando campo Contacto: invalid session id
+Error llenando campo LineaServicio: invalid session id
+Error llenando campo PedidoOrden: invalid session id
+Error llenando campo CuentaFacturacion: invalid session id
+Error general en registro (intento 1): CANAL DIGITAL,SUMA,HOGARES,FTTH,CC,1000454404,SANDRA FONSECA,3187654321,856281304,0205,ACC12004,BOGOTA,ADECUACIONES,Error DNS,Reconfigurar DNS,dns_fix.png - Error: invalid session id
+Error general en registro (intento 2): CANAL DIGITAL,SUMA,HOGARES,FTTH,CC,1000454404,SANDRA FONSECA,3187654321,856281304,0205,ACC12004,BOGOTA,ADECUACIONES,Error DNS,Reconfigurar DNS,dns_fix.png - Error: invalid session id
+✗ Registro falló después de 2 intentos por error general
+Error general en registro (intento 1): ESCRITA,SUMA,HOGARES,FTTH,CC,1000454405,LUIS ZAPATA,3134567890,856281305,0206,ACC12005,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,sync_issue.png - Error: invalid session id
+Error general en registro (intento 2): ESCRITA,SUMA,HOGARES,FTTH,CC,1000454405,LUIS ZAPATA,3134567890,856281305,0206,ACC12005,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,sync_issue.png - Error: invalid session id
+✗ Registro falló después de 2 intentos por error general
+Error general en registro (intento 1): VENTAS,SUMA,HOGARES,FTTH,CC,1000454406,ANA BELTRÁN,3191122334,856281306,0207,ACC12006,BOGOTA,ADECUACIONES,No navega en páginas https,Verificar puertos y firewall,https_blocked.png - Error: invalid session id
+Error general en registro (intento 2): VENTAS,SUMA,HOGARES,FTTH,CC,1000454406,ANA BELTRÁN,3191122334,856281306,0207,ACC12006,BOGOTA,ADECUACIONES,No navega en páginas https,Verificar puertos y firewall,https_blocked.png - Error: invalid session id
+✗ Registro falló después de 2 intentos por error general
+Error general en registro (intento 1): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,1000454407,CRISTIAN VÉLEZ,3059988776,856281307,0208,ACC12007,BOGOTA,ADECUACIONES,Servicio muy lento,Cambio de canal WiFi,wifi_channel.png - Error: invalid session id
+Error general en registro (intento 2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,1000454407,CRISTIAN VÉLEZ,3059988776,856281307,0208,ACC12007,BOGOTA,ADECUACIONES,Servicio muy lento,Cambio de canal WiFi,wifi_channel.png - Error: invalid session id
+✗ Registro falló después de 2 intentos por error general
+Error general en registro (intento 1): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,1000454408,PAULA NIETO,3173344556,856281308,0209,ACC12008,BOGOTA,ADECUACIONES,LED rojo en ONT,Validar fibra óptica,red_led.png - Error: invalid session id
+Error general en registro (intento 2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,1000454408,PAULA NIETO,3173344556,856281308,0209,ACC12008,BOGOTA,ADECUACIONES,LED rojo en ONT,Validar fibra óptica,red_led.png - Error: invalid session id
+✗ Registro falló después de 2 intentos por error general
+Error general en registro (intento 1): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,1000454409,JORGE LIZARAZO,3167788990,856281309,0210,ACC12009,BOGOTA,ADECUACIONES,Problemas en videollamadas,Asignar nuevo gateway,videocall_issue.png - Error: invalid session id
+Error general en registro (intento 2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,1000454409,JORGE LIZARAZO,3167788990,856281309,0210,ACC12009,BOGOTA,ADECUACIONES,Problemas en videollamadas,Asignar nuevo gateway,videocall_issue.png - Error: invalid session id
+✗ Registro falló después de 2 intentos por error general
+Error llenando campo NumeroDocumento: invalid session id
+Error llenando campo Cliente: invalid session id
+Error llenando campo Contacto: invalid session id
+Error llenando campo LineaServicio: invalid session id
+Error llenando campo PedidoOrden: invalid session id
+Error llenando campo CuentaFacturacion: invalid session id
+Error general en registro (intento 1): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,1000454403,JULIÁN MEJÍA,3209876543,856281303,0204,ACC12003,BOGOTA,ADECUACIONES,Sin respuesta en router,Reemplazo de router,router_change.png - Error: invalid session id
+Error general en registro (intento 2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,1000454403,JULIÁN MEJÍA,3209876543,856281303,0204,ACC12003,BOGOTA,ADECUACIONES,Sin respuesta en router,Reemplazo de router,router_change.png - Error: invalid session id
+✗ Registro falló después de 2 intentos por error general
+Error general en registro (intento 1): CANAL DIGITAL,SUMA,HOGARES,FTTH,CC,1000454404,SANDRA FONSECA,3187654321,856281304,0205,ACC12004,BOGOTA,ADECUACIONES,Error DNS,Reconfigurar DNS,dns_fix.png - Error: invalid session id
+Error general en registro (intento 2): CANAL DIGITAL,SUMA,HOGARES,FTTH,CC,1000454404,SANDRA FONSECA,3187654321,856281304,0205,ACC12004,BOGOTA,ADECUACIONES,Error DNS,Reconfigurar DNS,dns_fix.png - Error: invalid session id
+✗ Registro falló después de 2 intentos por error general
+Error general en registro (intento 1): ESCRITA,SUMA,HOGARES,FTTH,CC,1000454405,LUIS ZAPATA,3134567890,856281305,0206,ACC12005,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,sync_issue.png - Error: invalid session id
+Error general en registro (intento 2): ESCRITA,SUMA,HOGARES,FTTH,CC,1000454405,LUIS ZAPATA,3134567890,856281305,0206,ACC12005,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,sync_issue.png - Error: invalid session id
+✗ Registro falló después de 2 intentos por error general
+Error general en registro (intento 1): VENTAS,SUMA,HOGARES,FTTH,CC,1000454406,ANA BELTRÁN,3191122334,856281306,0207,ACC12006,BOGOTA,ADECUACIONES,No navega en páginas https,Verificar puertos y firewall,https_blocked.png - Error: invalid session id
+Error general en registro (intento 2): VENTAS,SUMA,HOGARES,FTTH,CC,1000454406,ANA BELTRÁN,3191122334,856281306,0207,ACC12006,BOGOTA,ADECUACIONES,No navega en páginas https,Verificar puertos y firewall,https_blocked.png - Error: invalid session id
+✗ Registro falló después de 2 intentos por error general
+Error general en registro (intento 1): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,1000454407,CRISTIAN VÉLEZ,3059988776,856281307,0208,ACC12007,BOGOTA,ADECUACIONES,Servicio muy lento,Cambio de canal WiFi,wifi_channel.png - Error: invalid session id
+Error general en registro (intento 2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,1000454407,CRISTIAN VÉLEZ,3059988776,856281307,0208,ACC12007,BOGOTA,ADECUACIONES,Servicio muy lento,Cambio de canal WiFi,wifi_channel.png - Error: invalid session id
+✗ Registro falló después de 2 intentos por error general
+Error general en registro (intento 1): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,1000454408,PAULA NIETO,3173344556,856281308,0209,ACC12008,BOGOTA,ADECUACIONES,LED rojo en ONT,Validar fibra óptica,red_led.png - Error: invalid session id
+Error general en registro (intento 2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,1000454408,PAULA NIETO,3173344556,856281308,0209,ACC12008,BOGOTA,ADECUACIONES,LED rojo en ONT,Validar fibra óptica,red_led.png - Error: invalid session id
+✗ Registro falló después de 2 intentos por error general
+Error general en registro (intento 1): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,1000454409,JORGE LIZARAZO,3167788990,856281309,0210,ACC12009,BOGOTA,ADECUACIONES,Problemas en videollamadas,Asignar nuevo gateway,videocall_issue.png - Error: invalid session id
+Error general en registro (intento 2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,1000454409,JORGE LIZARAZO,3167788990,856281309,0210,ACC12009,BOGOTA,ADECUACIONES,Problemas en videollamadas,Asignar nuevo gateway,videocall_issue.png - Error: invalid session id
+✗ Registro falló después de 2 intentos por error general
+Error llenando textarea ErrorPresentado: 
+Error llenando textarea SolucionRequerida: 
+Archivo de imagen no encontrado: /ruta/completa/imagenes/router_change.png
+Procesamiento completado con errores
+Error general en registro (intento 1): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,1000454403,JULIÁN MEJÍA,3209876543,856281303,0204,ACC12003,BOGOTA,ADECUACIONES,Sin respuesta en router,Reemplazo de router,router_change.png - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[normalize-space()='Guardar']"}
+  (Session info: chrome=137.0.7151.57)
+Error general en registro (intento 1): CANAL DIGITAL,SUMA,HOGARES,FTTH,CC,1000454404,SANDRA FONSECA,3187654321,856281304,0205,ACC12004,BOGOTA,ADECUACIONES,Error DNS,Reconfigurar DNS,dns_fix.png - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.57)
+Error general en registro (intento 2): CANAL DIGITAL,SUMA,HOGARES,FTTH,CC,1000454404,SANDRA FONSECA,3187654321,856281304,0205,ACC12004,BOGOTA,ADECUACIONES,Error DNS,Reconfigurar DNS,dns_fix.png - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.57)
+✗ Registro falló después de 2 intentos por error general
+Error general en registro (intento 1): ESCRITA,SUMA,HOGARES,FTTH,CC,1000454405,LUIS ZAPATA,3134567890,856281305,0206,ACC12005,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,sync_issue.png - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.57)
+Error general en registro (intento 2): ESCRITA,SUMA,HOGARES,FTTH,CC,1000454405,LUIS ZAPATA,3134567890,856281305,0206,ACC12005,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,sync_issue.png - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.57)
+✗ Registro falló después de 2 intentos por error general
+Error general en registro (intento 1): VENTAS,SUMA,HOGARES,FTTH,CC,1000454406,ANA BELTRÁN,3191122334,856281306,0207,ACC12006,BOGOTA,ADECUACIONES,No navega en páginas https,Verificar puertos y firewall,https_blocked.png - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.57)
+Error general en registro (intento 2): VENTAS,SUMA,HOGARES,FTTH,CC,1000454406,ANA BELTRÁN,3191122334,856281306,0207,ACC12006,BOGOTA,ADECUACIONES,No navega en páginas https,Verificar puertos y firewall,https_blocked.png - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.57)
+✗ Registro falló después de 2 intentos por error general
+Error general en registro (intento 1): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,1000454407,CRISTIAN VÉLEZ,3059988776,856281307,0208,ACC12007,BOGOTA,ADECUACIONES,Servicio muy lento,Cambio de canal WiFi,wifi_channel.png - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.57)
+Error general en registro (intento 2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,1000454407,CRISTIAN VÉLEZ,3059988776,856281307,0208,ACC12007,BOGOTA,ADECUACIONES,Servicio muy lento,Cambio de canal WiFi,wifi_channel.png - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.57)
+✗ Registro falló después de 2 intentos por error general
+Error general en registro (intento 1): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,1000454408,PAULA NIETO,3173344556,856281308,0209,ACC12008,BOGOTA,ADECUACIONES,LED rojo en ONT,Validar fibra óptica,red_led.png - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.57)
+Error general en registro (intento 2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,1000454408,PAULA NIETO,3173344556,856281308,0209,ACC12008,BOGOTA,ADECUACIONES,LED rojo en ONT,Validar fibra óptica,red_led.png - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.57)
+✗ Registro falló después de 2 intentos por error general
+Error general en registro (intento 1): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,1000454409,JORGE LIZARAZO,3167788990,856281309,0210,ACC12009,BOGOTA,ADECUACIONES,Problemas en videollamadas,Asignar nuevo gateway,videocall_issue.png - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.57)
+Error general en registro (intento 2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,1000454409,JORGE LIZARAZO,3167788990,856281309,0210,ACC12009,BOGOTA,ADECUACIONES,Problemas en videollamadas,Asignar nuevo gateway,videocall_issue.png - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.57)
+✗ Registro falló después de 2 intentos por error general
+Error llenando textarea ErrorPresentado: 
+Error llenando textarea SolucionRequerida: 
+Archivo de imagen no encontrado: /ruta/completa/imagenes/router_change.png
+Procesamiento completado con errores
+Error general en registro (intento 1): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,1000454403,JULIÁN MEJÍA,3209876543,856281303,0204,ACC12003,BOGOTA,ADECUACIONES,Sin respuesta en router,Reemplazo de router,router_change.png - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[normalize-space()='Guardar']"}
+  (Session info: chrome=137.0.7151.57)
+Error general en registro (intento 1): CANAL DIGITAL,SUMA,HOGARES,FTTH,CC,1000454404,SANDRA FONSECA,3187654321,856281304,0205,ACC12004,BOGOTA,ADECUACIONES,Error DNS,Reconfigurar DNS,dns_fix.png - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.57)
+Error general en registro (intento 2): CANAL DIGITAL,SUMA,HOGARES,FTTH,CC,1000454404,SANDRA FONSECA,3187654321,856281304,0205,ACC12004,BOGOTA,ADECUACIONES,Error DNS,Reconfigurar DNS,dns_fix.png - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.57)
+✗ Registro falló después de 2 intentos por error general
+Error general en registro (intento 1): ESCRITA,SUMA,HOGARES,FTTH,CC,1000454405,LUIS ZAPATA,3134567890,856281305,0206,ACC12005,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,sync_issue.png - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.57)
+Error general en registro (intento 2): ESCRITA,SUMA,HOGARES,FTTH,CC,1000454405,LUIS ZAPATA,3134567890,856281305,0206,ACC12005,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,sync_issue.png - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.57)
+✗ Registro falló después de 2 intentos por error general
+Error general en registro (intento 1): VENTAS,SUMA,HOGARES,FTTH,CC,1000454406,ANA BELTRÁN,3191122334,856281306,0207,ACC12006,BOGOTA,ADECUACIONES,No navega en páginas https,Verificar puertos y firewall,https_blocked.png - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.57)
+Error general en registro (intento 2): VENTAS,SUMA,HOGARES,FTTH,CC,1000454406,ANA BELTRÁN,3191122334,856281306,0207,ACC12006,BOGOTA,ADECUACIONES,No navega en páginas https,Verificar puertos y firewall,https_blocked.png - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.57)
+✗ Registro falló después de 2 intentos por error general
+Error general en registro (intento 1): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,1000454407,CRISTIAN VÉLEZ,3059988776,856281307,0208,ACC12007,BOGOTA,ADECUACIONES,Servicio muy lento,Cambio de canal WiFi,wifi_channel.png - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.57)
+Error general en registro (intento 2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,1000454407,CRISTIAN VÉLEZ,3059988776,856281307,0208,ACC12007,BOGOTA,ADECUACIONES,Servicio muy lento,Cambio de canal WiFi,wifi_channel.png - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.57)
+✗ Registro falló después de 2 intentos por error general
+Error general en registro (intento 1): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,1000454408,PAULA NIETO,3173344556,856281308,0209,ACC12008,BOGOTA,ADECUACIONES,LED rojo en ONT,Validar fibra óptica,red_led.png - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.57)
+Error general en registro (intento 2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,1000454408,PAULA NIETO,3173344556,856281308,0209,ACC12008,BOGOTA,ADECUACIONES,LED rojo en ONT,Validar fibra óptica,red_led.png - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.57)
+✗ Registro falló después de 2 intentos por error general
+Error general en registro (intento 1): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,1000454409,JORGE LIZARAZO,3167788990,856281309,0210,ACC12009,BOGOTA,ADECUACIONES,Problemas en videollamadas,Asignar nuevo gateway,videocall_issue.png - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.57)
+Error general en registro (intento 2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,1000454409,JORGE LIZARAZO,3167788990,856281309,0210,ACC12009,BOGOTA,ADECUACIONES,Problemas en videollamadas,Asignar nuevo gateway,videocall_issue.png - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.57)
+✗ Registro falló después de 2 intentos por error general

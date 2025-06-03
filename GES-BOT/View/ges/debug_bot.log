@@ -1,0 +1,188 @@
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,1000454403,JULIÁN MEJÍA,3209876543,856281303,0204,ACC12003,BOGOTA,ADECUACIONES,Sin respuesta en router,Reemplazo de router,router_change.png
+Procesando Canal: 'REDES SOCIALES'
+✓ Seleccionado Canal: 'REDES SOCIALES'
+Procesando Sistema: 'SIEBEL SOMOS Y CONVERGENTE'
+✓ Seleccionado Sistema: 'SIEBEL SOMOS Y CONVERGENTE'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,1000454403,JULIÁN MEJÍA,3209876543,856281303,0204,ACC12003,BOGOTA,ADECUACIONES,Sin respuesta en router,Reemplazo de router,router_change.png
+Procesando Canal: 'REDES SOCIALES'
+✓ Seleccionado Canal: 'REDES SOCIALES'
+Procesando Sistema: 'SIEBEL SOMOS Y CONVERGENTE'
+✓ Seleccionado Sistema: 'SIEBEL SOMOS Y CONVERGENTE'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,1000454403,JULIÁN MEJÍA,3209876543,856281303,0204,ACC12003,BOGOTA,ADECUACIONES,Sin respuesta en router,Reemplazo de router,router_change.png
+Procesando Canal: 'REDES SOCIALES'
+✓ Seleccionado Canal: 'REDES SOCIALES'
+Procesando Sistema: 'SIEBEL SOMOS Y CONVERGENTE'
+✓ Seleccionado Sistema: 'SIEBEL SOMOS Y CONVERGENTE'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): CANAL DIGITAL,SUMA,HOGARES,FTTH,CC,1000454404,SANDRA FONSECA,3187654321,856281304,0205,ACC12004,BOGOTA,ADECUACIONES,Error DNS,Reconfigurar DNS,dns_fix.png
+Procesando registro (intento 2/2): CANAL DIGITAL,SUMA,HOGARES,FTTH,CC,1000454404,SANDRA FONSECA,3187654321,856281304,0205,ACC12004,BOGOTA,ADECUACIONES,Error DNS,Reconfigurar DNS,dns_fix.png
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,1000454405,LUIS ZAPATA,3134567890,856281305,0206,ACC12005,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,sync_issue.png
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,1000454405,LUIS ZAPATA,3134567890,856281305,0206,ACC12005,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,sync_issue.png
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,1000454406,ANA BELTRÁN,3191122334,856281306,0207,ACC12006,BOGOTA,ADECUACIONES,No navega en páginas https,Verificar puertos y firewall,https_blocked.png
+Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,1000454406,ANA BELTRÁN,3191122334,856281306,0207,ACC12006,BOGOTA,ADECUACIONES,No navega en páginas https,Verificar puertos y firewall,https_blocked.png
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,1000454407,CRISTIAN VÉLEZ,3059988776,856281307,0208,ACC12007,BOGOTA,ADECUACIONES,Servicio muy lento,Cambio de canal WiFi,wifi_channel.png
+Procesando registro (intento 2/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,1000454407,CRISTIAN VÉLEZ,3059988776,856281307,0208,ACC12007,BOGOTA,ADECUACIONES,Servicio muy lento,Cambio de canal WiFi,wifi_channel.png
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,1000454408,PAULA NIETO,3173344556,856281308,0209,ACC12008,BOGOTA,ADECUACIONES,LED rojo en ONT,Validar fibra óptica,red_led.png
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,1000454408,PAULA NIETO,3173344556,856281308,0209,ACC12008,BOGOTA,ADECUACIONES,LED rojo en ONT,Validar fibra óptica,red_led.png
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,1000454409,JORGE LIZARAZO,3167788990,856281309,0210,ACC12009,BOGOTA,ADECUACIONES,Problemas en videollamadas,Asignar nuevo gateway,videocall_issue.png
+Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,1000454409,JORGE LIZARAZO,3167788990,856281309,0210,ACC12009,BOGOTA,ADECUACIONES,Problemas en videollamadas,Asignar nuevo gateway,videocall_issue.png
+✓ Archivo process.csv actualizado, eliminadas 1 líneas procesadas
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,1000454403,JULIÁN MEJÍA,3209876543,856281303,0204,ACC12003,BOGOTA,ADECUACIONES,Sin respuesta en router,Reemplazo de router,router_change.png
+Procesando Canal: 'REDES SOCIALES'
+✓ Seleccionado Canal: 'REDES SOCIALES'
+Procesando Sistema: 'SIEBEL SOMOS Y CONVERGENTE'
+✓ Seleccionado Sistema: 'SIEBEL SOMOS Y CONVERGENTE'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro procesado exitosamente: REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,1000454403,JULIÁN MEJÍA,3209876543,856281303,0204,ACC12003,BOGOTA,ADECUACIONES,Sin respuesta en router,Reemplazo de router,router_change.png
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): CANAL DIGITAL,SUMA,HOGARES,FTTH,CC,1000454404,SANDRA FONSECA,3187654321,856281304,0205,ACC12004,BOGOTA,ADECUACIONES,Error DNS,Reconfigurar DNS,dns_fix.png
+Procesando Canal: 'CANAL DIGITAL'
+Error en dropdown Canal: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=137.0.7151.57)
+Procesando Sistema: 'SUMA'
+Error en dropdown Sistema: invalid session id
+Procesando UEN: 'HOGARES'
+Error en dropdown UEN: invalid session id
+Procesando Tecnologia: 'FTTH'
+Error en dropdown Tecnologia: invalid session id
+Procesando Tipo_Documento_Campo4: 'CC'
+Error en dropdown Tipo_Documento_Campo4: invalid session id
+Procesando Ciudad: 'BOGOTA'
+Error en dropdown Ciudad: invalid session id
+Procesando registro (intento 2/2): CANAL DIGITAL,SUMA,HOGARES,FTTH,CC,1000454404,SANDRA FONSECA,3187654321,856281304,0205,ACC12004,BOGOTA,ADECUACIONES,Error DNS,Reconfigurar DNS,dns_fix.png
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,1000454405,LUIS ZAPATA,3134567890,856281305,0206,ACC12005,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,sync_issue.png
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,1000454405,LUIS ZAPATA,3134567890,856281305,0206,ACC12005,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,sync_issue.png
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,1000454406,ANA BELTRÁN,3191122334,856281306,0207,ACC12006,BOGOTA,ADECUACIONES,No navega en páginas https,Verificar puertos y firewall,https_blocked.png
+Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,1000454406,ANA BELTRÁN,3191122334,856281306,0207,ACC12006,BOGOTA,ADECUACIONES,No navega en páginas https,Verificar puertos y firewall,https_blocked.png
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,1000454407,CRISTIAN VÉLEZ,3059988776,856281307,0208,ACC12007,BOGOTA,ADECUACIONES,Servicio muy lento,Cambio de canal WiFi,wifi_channel.png
+Procesando registro (intento 2/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,1000454407,CRISTIAN VÉLEZ,3059988776,856281307,0208,ACC12007,BOGOTA,ADECUACIONES,Servicio muy lento,Cambio de canal WiFi,wifi_channel.png
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,1000454408,PAULA NIETO,3173344556,856281308,0209,ACC12008,BOGOTA,ADECUACIONES,LED rojo en ONT,Validar fibra óptica,red_led.png
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,1000454408,PAULA NIETO,3173344556,856281308,0209,ACC12008,BOGOTA,ADECUACIONES,LED rojo en ONT,Validar fibra óptica,red_led.png
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,1000454409,JORGE LIZARAZO,3167788990,856281309,0210,ACC12009,BOGOTA,ADECUACIONES,Problemas en videollamadas,Asignar nuevo gateway,videocall_issue.png
+Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,1000454409,JORGE LIZARAZO,3167788990,856281309,0210,ACC12009,BOGOTA,ADECUACIONES,Problemas en videollamadas,Asignar nuevo gateway,videocall_issue.png
+✓ Archivo process.csv actualizado, eliminadas 1 líneas procesadas
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,1000454403,JULIÁN MEJÍA,3209876543,856281303,0204,ACC12003,BOGOTA,ADECUACIONES,Sin respuesta en router,Reemplazo de router,router_change.png
+Procesando Canal: 'REDES SOCIALES'
+✓ Seleccionado Canal: 'REDES SOCIALES'
+Procesando Sistema: 'SIEBEL SOMOS Y CONVERGENTE'
+✓ Seleccionado Sistema: 'SIEBEL SOMOS Y CONVERGENTE'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+Error en dropdown Tecnologia: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=137.0.7151.57)
+Procesando Tipo_Documento_Campo4: 'CC'
+Error en dropdown Tipo_Documento_Campo4: invalid session id
+Procesando Ciudad: 'BOGOTA'
+Error en dropdown Ciudad: invalid session id
+Procesando registro (intento 2/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,1000454403,JULIÁN MEJÍA,3209876543,856281303,0204,ACC12003,BOGOTA,ADECUACIONES,Sin respuesta en router,Reemplazo de router,router_change.png
+Procesando registro (intento 1/2): CANAL DIGITAL,SUMA,HOGARES,FTTH,CC,1000454404,SANDRA FONSECA,3187654321,856281304,0205,ACC12004,BOGOTA,ADECUACIONES,Error DNS,Reconfigurar DNS,dns_fix.png
+Procesando registro (intento 2/2): CANAL DIGITAL,SUMA,HOGARES,FTTH,CC,1000454404,SANDRA FONSECA,3187654321,856281304,0205,ACC12004,BOGOTA,ADECUACIONES,Error DNS,Reconfigurar DNS,dns_fix.png
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,1000454405,LUIS ZAPATA,3134567890,856281305,0206,ACC12005,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,sync_issue.png
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,1000454405,LUIS ZAPATA,3134567890,856281305,0206,ACC12005,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,sync_issue.png
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,1000454406,ANA BELTRÁN,3191122334,856281306,0207,ACC12006,BOGOTA,ADECUACIONES,No navega en páginas https,Verificar puertos y firewall,https_blocked.png
+Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,1000454406,ANA BELTRÁN,3191122334,856281306,0207,ACC12006,BOGOTA,ADECUACIONES,No navega en páginas https,Verificar puertos y firewall,https_blocked.png
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,1000454407,CRISTIAN VÉLEZ,3059988776,856281307,0208,ACC12007,BOGOTA,ADECUACIONES,Servicio muy lento,Cambio de canal WiFi,wifi_channel.png
+Procesando registro (intento 2/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,1000454407,CRISTIAN VÉLEZ,3059988776,856281307,0208,ACC12007,BOGOTA,ADECUACIONES,Servicio muy lento,Cambio de canal WiFi,wifi_channel.png
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,1000454408,PAULA NIETO,3173344556,856281308,0209,ACC12008,BOGOTA,ADECUACIONES,LED rojo en ONT,Validar fibra óptica,red_led.png
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,1000454408,PAULA NIETO,3173344556,856281308,0209,ACC12008,BOGOTA,ADECUACIONES,LED rojo en ONT,Validar fibra óptica,red_led.png
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,1000454409,JORGE LIZARAZO,3167788990,856281309,0210,ACC12009,BOGOTA,ADECUACIONES,Problemas en videollamadas,Asignar nuevo gateway,videocall_issue.png
+Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,1000454409,JORGE LIZARAZO,3167788990,856281309,0210,ACC12009,BOGOTA,ADECUACIONES,Problemas en videollamadas,Asignar nuevo gateway,videocall_issue.png
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,1000454403,JULIÁN MEJÍA,3209876543,856281303,0204,ACC12003,BOGOTA,ADECUACIONES,Sin respuesta en router,Reemplazo de router,router_change.png
+Procesando Canal: 'REDES SOCIALES'
+✓ Seleccionado Canal: 'REDES SOCIALES'
+Procesando Sistema: 'SIEBEL SOMOS Y CONVERGENTE'
+✓ Seleccionado Sistema: 'SIEBEL SOMOS Y CONVERGENTE'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,1000454403,JULIÁN MEJÍA,3209876543,856281303,0204,ACC12003,BOGOTA,ADECUACIONES,Sin respuesta en router,Reemplazo de router,router_change.png
+Procesando Canal: 'REDES SOCIALES'
+✓ Seleccionado Canal: 'REDES SOCIALES'
+Procesando Sistema: 'SIEBEL SOMOS Y CONVERGENTE'
+✓ Seleccionado Sistema: 'SIEBEL SOMOS Y CONVERGENTE'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): CANAL DIGITAL,SUMA,HOGARES,FTTH,CC,1000454404,SANDRA FONSECA,3187654321,856281304,0205,ACC12004,BOGOTA,ADECUACIONES,Error DNS,Reconfigurar DNS,dns_fix.png
+Procesando registro (intento 2/2): CANAL DIGITAL,SUMA,HOGARES,FTTH,CC,1000454404,SANDRA FONSECA,3187654321,856281304,0205,ACC12004,BOGOTA,ADECUACIONES,Error DNS,Reconfigurar DNS,dns_fix.png
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,1000454405,LUIS ZAPATA,3134567890,856281305,0206,ACC12005,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,sync_issue.png
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,1000454405,LUIS ZAPATA,3134567890,856281305,0206,ACC12005,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,sync_issue.png
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,1000454406,ANA BELTRÁN,3191122334,856281306,0207,ACC12006,BOGOTA,ADECUACIONES,No navega en páginas https,Verificar puertos y firewall,https_blocked.png
+Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,1000454406,ANA BELTRÁN,3191122334,856281306,0207,ACC12006,BOGOTA,ADECUACIONES,No navega en páginas https,Verificar puertos y firewall,https_blocked.png
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,1000454407,CRISTIAN VÉLEZ,3059988776,856281307,0208,ACC12007,BOGOTA,ADECUACIONES,Servicio muy lento,Cambio de canal WiFi,wifi_channel.png
+Procesando registro (intento 2/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,1000454407,CRISTIAN VÉLEZ,3059988776,856281307,0208,ACC12007,BOGOTA,ADECUACIONES,Servicio muy lento,Cambio de canal WiFi,wifi_channel.png
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,1000454408,PAULA NIETO,3173344556,856281308,0209,ACC12008,BOGOTA,ADECUACIONES,LED rojo en ONT,Validar fibra óptica,red_led.png
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,1000454408,PAULA NIETO,3173344556,856281308,0209,ACC12008,BOGOTA,ADECUACIONES,LED rojo en ONT,Validar fibra óptica,red_led.png
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,1000454409,JORGE LIZARAZO,3167788990,856281309,0210,ACC12009,BOGOTA,ADECUACIONES,Problemas en videollamadas,Asignar nuevo gateway,videocall_issue.png
+Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,1000454409,JORGE LIZARAZO,3167788990,856281309,0210,ACC12009,BOGOTA,ADECUACIONES,Problemas en videollamadas,Asignar nuevo gateway,videocall_issue.png
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,1000454403,JULIÁN MEJÍA,3209876543,856281303,0204,ACC12003,BOGOTA,ADECUACIONES,Sin respuesta en router,Reemplazo de router,router_change.png
+Procesando Canal: 'REDES SOCIALES'
+✓ Seleccionado Canal: 'REDES SOCIALES'
+Procesando Sistema: 'SIEBEL SOMOS Y CONVERGENTE'
+✓ Seleccionado Sistema: 'SIEBEL SOMOS Y CONVERGENTE'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): CANAL DIGITAL,SUMA,HOGARES,FTTH,CC,1000454404,SANDRA FONSECA,3187654321,856281304,0205,ACC12004,BOGOTA,ADECUACIONES,Error DNS,Reconfigurar DNS,dns_fix.png
+Procesando registro (intento 2/2): CANAL DIGITAL,SUMA,HOGARES,FTTH,CC,1000454404,SANDRA FONSECA,3187654321,856281304,0205,ACC12004,BOGOTA,ADECUACIONES,Error DNS,Reconfigurar DNS,dns_fix.png
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,1000454405,LUIS ZAPATA,3134567890,856281305,0206,ACC12005,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,sync_issue.png
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,1000454405,LUIS ZAPATA,3134567890,856281305,0206,ACC12005,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,sync_issue.png
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,1000454406,ANA BELTRÁN,3191122334,856281306,0207,ACC12006,BOGOTA,ADECUACIONES,No navega en páginas https,Verificar puertos y firewall,https_blocked.png
+Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,1000454406,ANA BELTRÁN,3191122334,856281306,0207,ACC12006,BOGOTA,ADECUACIONES,No navega en páginas https,Verificar puertos y firewall,https_blocked.png
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,1000454407,CRISTIAN VÉLEZ,3059988776,856281307,0208,ACC12007,BOGOTA,ADECUACIONES,Servicio muy lento,Cambio de canal WiFi,wifi_channel.png
+Procesando registro (intento 2/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,1000454407,CRISTIAN VÉLEZ,3059988776,856281307,0208,ACC12007,BOGOTA,ADECUACIONES,Servicio muy lento,Cambio de canal WiFi,wifi_channel.png
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,1000454408,PAULA NIETO,3173344556,856281308,0209,ACC12008,BOGOTA,ADECUACIONES,LED rojo en ONT,Validar fibra óptica,red_led.png
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,1000454408,PAULA NIETO,3173344556,856281308,0209,ACC12008,BOGOTA,ADECUACIONES,LED rojo en ONT,Validar fibra óptica,red_led.png
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,1000454409,JORGE LIZARAZO,3167788990,856281309,0210,ACC12009,BOGOTA,ADECUACIONES,Problemas en videollamadas,Asignar nuevo gateway,videocall_issue.png
+Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,1000454409,JORGE LIZARAZO,3167788990,856281309,0210,ACC12009,BOGOTA,ADECUACIONES,Problemas en videollamadas,Asignar nuevo gateway,videocall_issue.png
