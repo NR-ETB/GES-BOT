@@ -1,10 +1,1 @@
-Canal,Sistema,UEN,Tecnologia,Tipo_de_Documento,Numero_de_Documento,Cliente,Contacto,Linea_del_Servicio,Single,Pedido,Ciudad,Tramite,"Cuenta de Facturacion",Direccion,Plan,Error,Solucion,Adjunto
-ASEGURAMIENTO,"SIEBEL SOMOS Y CONVERGENTE",HOGARES,FTTH,CC,1000454401,"MARCELA RODRÍGUEZ",3101234567,856281301,0202,9051,BOGOTA,ACC12001,"Cra 10 #23-45","Plan Pro","Cortes esporádicos","Actualizar firmware",firmware_update.png
-"LINEA ESPECIAL",SUMA,HOGARES,FTTH,CC,1000454402,"LINA PARRA",3012345678,856281302,0203,9052,BOGOTA,ADECUACIONES,ACC12002,"Calle 100 #7-89","Plan Avanzado","Alta latencia","Optimizar red",latency_fix.png
-"REDES SOCIALES","SIEBEL SOMOS Y CONVERGENTE",HOGARES,FTTH,CC,1000454403,"JULIÁN MEJÍA",3209876543,856281303,0204,9053,BOGOTA,ADECUACIONES,ACC12003,"Cra 50 #15-60","Plan Corporativo","Sin respuesta en router","Reemplazo de router",router_change.png
-"CANAL DIGITAL",SUMA,HOGARES,FTTH,CC,1000454404,"SANDRA FONSECA",3187654321,856281304,0205,9054,BOGOTA,ADECUACIONES,ACC12004,"Calle 80 #10-15","Plan Básico","Error DNS","Reconfigurar DNS",dns_fix.png
-ESCRITA,SUMA,HOGARES,FTTH,CC,1000454405,"LUIS ZAPATA",3134567890,856281305,0206,9055,BOGOTA,ADECUACIONES,ACC12005,"Cra 40 #22-33","Plan Avanzado",Desincronización,"Reiniciar ONT",sync_issue.png
-VENTAS,SUMA,HOGARES,FTTH,CC,1000454406,"ANA BELTRÁN",3191122334,856281306,0207,9056,BOGOTA,ADECUACIONES,ACC12006,"Calle 60 #20-22","Plan Pro","No navega en páginas https","Verificar puertos y firewall",https_blocked.png
-"LINEA ESPECIAL","SIEBEL SOMOS Y CONVERGENTE",HOGARES,FTTH,CC,1000454407,"CRISTIAN VÉLEZ",3059988776,856281307,0208,9057,BOGOTA,ADECUACIONES,ACC12007,"Cra 33 #44-55","Plan Básico","Servicio muy lento","Cambio de canal WiFi",wifi_channel.png
-ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,1000454408,"PAULA NIETO",3173344556,856281308,0209,9058,BOGOTA,ADECUACIONES,ACC12008,"Calle 25 #66-77","Plan Avanzado","LED rojo en ONT","Validar fibra óptica",red_led.png
-"REDES SOCIALES",SUMA,HOGARES,FTTH,CC,1000454409,"JORGE LIZARAZO",3167788990,856281309,0210,9059,BOGOTA,ADECUACIONES,ACC12009,"Cra 15 #88-99","Plan Corporativo","Problemas en videollamadas","Asignar nuevo gateway",videocall_issue.png
+Canal,Sistema,UEN,Tecnologia,Tipo_de_Documento,Numero_de_Documento,Cliente,Contacto,"Línea del servicio | Single","Pedido | Orden","Cuenta de Facturacion",Ciudad,Tramite,Error,Solucion,Adjunto

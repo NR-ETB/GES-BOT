@@ -64,7 +64,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             if (!$fileExists2) {
                 fputcsv($file, [
-                    'Canal','Sistema','UEN','Tecnologia','Tipo_de_Documento','Numero_de_Documento','Cliente','Contacto','Linea_del_Servicio','Pedido_Orden','Cuenta_de_Facturacion','Ciudad','Direccion','Plan','Error','Solucion','Adjunto'
+                    'Canal','Sistema','UEN','Tecnologia','Tipo_de_Documento','Numero_de_Documento','Cliente','Contacto','Linea_del_Servicio','Pedido_Orden','Cuenta_de_Facturacion','Ciudad','Error','Solucion','Adjunto'
                 ]);
             }
 
@@ -90,7 +90,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         }
 
                         // Verificar que estemos en la página correcta
-                        $driver->wait(12)->until( // Reducido de 20 a 12
+                        $driver->wait(6)->until( // Reducido de 20 a 12
                             WebDriverExpectedCondition::elementToBeClickable(WebDriverBy::xpath("//button[text()='Siguiente']"))
                         );
 
@@ -99,7 +99,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         sleep(1); // Reducido de 2 a 1
 
                         // Hacer clic en "Siguiente" 
-                        $botonSiguiente = $driver->wait(10)->until( // Reducido de 15 a 10
+                        $botonSiguiente = $driver->wait(6)->until( // Reducido de 15 a 10
                             WebDriverExpectedCondition::elementToBeClickable(WebDriverBy::xpath("//button[text()='Siguiente']"))
                         );
                         
@@ -135,7 +135,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                             try {
                                 // Esperar a que el dropdown esté listo
-                                $dropdownBoton = (new WebDriverWait($driver, 12))->until( // Reducido de 20 a 12
+                                $dropdownBoton = (new WebDriverWait($driver, 6))->until( // Reducido de 20 a 12
                                     WebDriverExpectedCondition::elementToBeClickable(
                                         WebDriverBy::cssSelector("button" . (isset($dropdown['data_id']) ? "[data-id='{$dropdown['data_id']}']" : "") . "[aria-owns='{$dropdown['aria_owns']}']")
                                     )
@@ -157,7 +157,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                 }
 
                                 // Esperar las opciones
-                                $opciones = (new WebDriverWait($driver, 12))->until( // Reducido de 20 a 12
+                                $opciones = (new WebDriverWait($driver, 6))->until( // Reducido de 20 a 12
                                     WebDriverExpectedCondition::presenceOfAllElementsLocatedBy(
                                         WebDriverBy::cssSelector("#{$dropdown['aria_owns']} ul li")
                                     )
@@ -220,7 +220,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             if (!isset($datos[$campo['index']])) continue;
                             
                             try {
-                                $input = (new WebDriverWait($driver, 10))->until( // Reducido de 15 a 10
+                                $input = (new WebDriverWait($driver, 6))->until( // Reducido de 15 a 10
                                     WebDriverExpectedCondition::presenceOfElementLocated(WebDriverBy::id($campo['id']))
                                 );
                                 $input->clear();
@@ -230,10 +230,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             }
                         }
 
-                        sleep(3); // Reducido de 5 a 3
+                        sleep(2); // Reducido de 5 a 3
 
                         // Guardar
-                        $botonGuardar = $driver->wait(12)->until( // Reducido de 20 a 12
+                        $botonGuardar = $driver->wait(6)->until( // Reducido de 20 a 12
                             WebDriverExpectedCondition::elementToBeClickable(
                                 WebDriverBy::xpath("//button[normalize-space()='Guardar']")
                             )
@@ -247,42 +247,228 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                         sleep(2); // Reducido de 3 a 2
 
+                        $procesamientoExitoso = true;
+
                         if (isset($datos[12]) && !empty(trim($datos[12]))) {
                             try {
                                 $valor = trim($datos[12]);
-                                $enlace = $driver->wait(10)->until(
+                                
+                                // Escapar valor para XPath seguro
+                                $valorEscapado = json_encode($valor);
+                                $xpath = "//li/a[contains(text(), $valorEscapado)]";
+                                
+                                $enlace = $driver->wait(8)->until(
                                     WebDriverExpectedCondition::elementToBeClickable(
-                                        WebDriverBy::xpath("//a[normalize-space(text())='$valor']")
+                                        WebDriverBy::xpath($xpath)
                                     )
                                 );
+                                
                                 $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$enlace]);
-                                usleep(300000);
+                                usleep(300000); // 300ms
                                 $enlace->click();
+                                
+                                // Verificar que el clic fue exitoso esperando algún cambio
+                                usleep(500000); // Esperar medio segundo para que se procese
+                                
                             } catch (Exception $e) {
-                                error_log("Error haciendo clic en opción: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
+                                $procesamientoExitoso = false;
+                                error_log("Error haciendo clic en opción '$valor': " . $e->getMessage() . "\n", 3, 'errores_bot.log');
                             }
                         }
 
-                        $comentario = "Texto que deseas ingresar"; // O por ejemplo: $datos[13]
-                        $textarea = $driver->wait(10)->until(
-                            WebDriverExpectedCondition::presenceOfElementLocated(
-                                WebDriverBy::xpath("//textarea[@name='ErrorPresentado']")
-                            )
-                        );
-                        $textarea->clear(); // Limpia el contenido anterior
-                        $textarea->sendKeys($comentario);
+                        $camposTextarea = [
+                            ['name' => 'ErrorPresentado', 'index' => 13],
+                            ['name' => 'SolucionRequerida', 'index' => 14],
+                        ];
 
-                        $solucion = "Texto de solución requerida"; // O, por ejemplo: $datos[14]
-                        $textareaSolucion = $driver->wait(10)->until(
-                            WebDriverExpectedCondition::presenceOfElementLocated(
-                                WebDriverBy::xpath("//textarea[@name='SolucionRequerida']")
+                        foreach ($camposTextarea as $campo) {
+                            if (!isset($datos[$campo['index']]) || empty(trim($datos[$campo['index']]))) {
+                                continue;
+                            }
+                            
+                            try {
+                                $textarea = $driver->wait(6)->until(
+                                    WebDriverExpectedCondition::presenceOfElementLocated(
+                                        WebDriverBy::xpath("//textarea[@name='{$campo['name']}']")
+                                    )
+                                );
+                                
+                                $textarea->clear();
+                                $texto = trim($datos[$campo['index']]);
+                                $textarea->sendKeys($texto);
+                                
+                                // Verificar que el texto se escribió correctamente
+                                $textoActual = $textarea->getAttribute('value');
+                                if ($textoActual !== $texto) {
+                                    error_log("Advertencia: El texto en {$campo['name']} no coincide\n", 3, 'errores_bot.log');
+                                }
+                                
+                            } catch (Exception $e) {
+                                $procesamientoExitoso = false;
+                                error_log("Error llenando textarea {$campo['name']}: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
+                            }
+                        }
+
+                        if (isset($datos[15]) && !empty(trim($datos[15]))) {
+                            $nombreImagen = trim($datos[15]);
+                            $rutaCompleta = "/ruta/completa/imagenes/" . $nombreImagen;
+                            
+                            // Validar que el archivo existe
+                            if (!file_exists($rutaCompleta)) {
+                                $procesamientoExitoso = false;
+                                error_log("Archivo de imagen no encontrado: $rutaCompleta\n", 3, 'errores_bot.log');
+                            } else {
+                                try {
+                                    // Entrar al iframe con espera explícita
+                                    $iframe = $driver->wait(6)->until(
+                                        WebDriverExpectedCondition::presenceOfElementLocated(
+                                            WebDriverBy::xpath("//iframe[contains(@src, 'B_User_archivo_Ok3.php')]")
+                                        )
+                                    );
+                                    $driver->switchTo()->frame($iframe);
+                                    
+                                    // Ubicar el input file con espera
+                                    $inputFile = $driver->wait(6)->until(
+                                        WebDriverExpectedCondition::presenceOfElementLocated(
+                                            WebDriverBy::xpath("//input[@type='file']")
+                                        )
+                                    );
+                                    
+                                    // Enviar la imagen
+                                    $inputFile->sendKeys($rutaCompleta);
+                                    
+                                    // Esperar un momento para que se procese la carga
+                                    usleep(1000000); // 1 segundo
+                                    
+                                    error_log("Imagen subida exitosamente: $nombreImagen\n", 3, 'errores_bot.log');
+                                    
+                                } catch (Exception $e) {
+                                    $procesamientoExitoso = false;
+                                    error_log("Error subiendo imagen '$nombreImagen': " . $e->getMessage() . "\n", 3, 'errores_bot.log');
+                                } finally {
+                                    // Siempre volver al contexto principal
+                                    try {
+                                        $driver->switchTo()->defaultContent();
+                                    } catch (Exception $ex) {
+                                        error_log("Error crítico: No se pudo volver al contexto principal: " . $ex->getMessage() . "\n", 3, 'errores_bot.log');
+                                    }
+                                }
+                            }
+                        }
+
+                        // Log del resultado final
+                        if ($procesamientoExitoso) {
+                            error_log("Procesamiento completado exitosamente\n", 3, 'errores_bot.log');
+                        } else {
+                            error_log("Procesamiento completado con errores\n", 3, 'errores_bot.log');
+                        }
+
+                        $procesamientoExitoso = true;
+
+                        // Validación del span TRAMITES después de subir la imagen (elemento superpuesto)
+                        try {
+                            // Buscar el span con clase "nav-text" que contiene "TRAMITES"
+                            $spanTramites = $driver->wait(8)->until(
+                                WebDriverExpectedCondition::presenceOfElementLocated(
+                                    WebDriverBy::xpath("//span[@class='nav-text' and contains(text(), 'TRAMITES')]")
+                                )
+                            );
+                            
+                            // Verificar si está presente (no necesariamente visible por estar superpuesto)
+                            if ($spanTramites) {
+                                // Verificar clases o atributos que indiquen si está activo
+                                $clases = $spanTramites->getAttribute('class');
+                                $elementoPadre = $spanTramites->findElement(WebDriverBy::xpath('..'));
+                                $clasesPadre = $elementoPadre->getAttribute('class');
+                                
+                                // Validar si está activo por clases CSS
+                                if (strpos($clases, 'active') !== false || 
+                                    strpos($clases, 'selected') !== false ||
+                                    strpos($clasesPadre, 'active') !== false) {
+                                    
+                                    error_log("✓ Span TRAMITES está activo - Continuando con el proceso normal\n", 3, 'errores_bot.log');
+                                    // El programa continúa normal
+                                    
+                                } else {
+                                    error_log("⚠ Span TRAMITES no está activo - Intentando activarlo\n", 3, 'errores_bot.log');
+                                    
+                                    // MÉTODO 1: Clic por JavaScript (ignora superposición)
+                                    try {
+                                        $driver->executeScript("arguments[0].click();", [$spanTramites]);
+                                        error_log("✓ Clic realizado en TRAMITES via JavaScript\n", 3, 'errores_bot.log');
+                                        usleep(500000);
+                                        
+                                    } catch (Exception $jsError) {
+                                        error_log("Error con JavaScript click: " . $jsError->getMessage() . "\n", 3, 'errores_bot.log');
+                                        
+                                        // MÉTODO 2: Intentar clic en elemento padre
+                                        try {
+                                            $elementoPadre = $spanTramites->findElement(WebDriverBy::xpath('..'));
+                                            $driver->executeScript("arguments[0].click();", [$elementoPadre]);
+                                            error_log("✓ Clic realizado en elemento padre de TRAMITES\n", 3, 'errores_bot.log');
+                                            
+                                        } catch (Exception $padreError) {
+                                            error_log("Error con clic en padre: " . $padreError->getMessage() . "\n", 3, 'errores_bot.log');
+                                            
+                                            // MÉTODO 3: Scroll y esperar antes del clic
+                                            try {
+                                                $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$spanTramites]);
+                                                usleep(1000000); // Esperar 1 segundo
+                                                
+                                                // Remover overlay si existe
+                                                $driver->executeScript("
+                                                    var overlays = document.querySelectorAll('.overlay, .modal-backdrop, .loading');
+                                                    overlays.forEach(function(overlay) { overlay.style.display = 'none'; });
+                                                ");
+                                                
+                                                $spanTramites->click();
+                                                error_log("✓ Clic realizado después de remover overlays\n", 3, 'errores_bot.log');
+                                                
+                                            } catch (Exception $finalError) {
+                                                error_log("Error final intentando clic: " . $finalError->getMessage() . "\n", 3, 'errores_bot.log');
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            
+                        } catch (Exception $e) {
+                            error_log("⚠ Span TRAMITES no encontrado: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
+                            
+                            // Último intento con selector más amplio
+                            try {
+                                $driver->executeScript("
+                                    var tramitesElements = document.querySelectorAll('*');
+                                    for(var i = 0; i < tramitesElements.length; i++) {
+                                        if(tramitesElements[i].textContent.includes('TRAMITES')) {
+                                            tramitesElements[i].click();
+                                            console.log('Clic en TRAMITES por JavaScript global');
+                                            break;
+                                        }
+                                    }
+                                ");
+                                error_log("✓ Clic realizado en TRAMITES via búsqueda JavaScript global\n", 3, 'errores_bot.log');
+                                
+                            } catch (Exception $ex) {
+                                error_log("Error con método alternativo: " . $ex->getMessage() . "\n", 3, 'errores_bot.log');
+                            }
+                        }
+
+                        // Guardar
+                        $botonGuardar_2 = $driver->wait(8)->until( // Reducido de 20 a 12
+                            WebDriverExpectedCondition::elementToBeClickable(
+                                WebDriverBy::xpath("//button[normalize-space()='Guardar']")
                             )
                         );
-                        $textareaSolucion->clear();
-                        $textareaSolucion->sendKeys($solucion);
+                        
+                        try {
+                            $botonGuardar_2->click();
+                        } catch (Facebook\WebDriver\Exception\ElementClickInterceptedException $e) {
+                            $driver->executeScript("arguments[0].click();", [$botonGuardar_2]);
+                        }
 
                         // Navegar a DATOS CLIENTE
-                        $spanDatosCliente = (new WebDriverWait($driver, 12))->until(
+                        $spanDatosCliente = (new WebDriverWait($driver, 8))->until(
                             WebDriverExpectedCondition::elementToBeClickable(
                                 WebDriverBy::xpath("//span[contains(@class, 'nav-text') and normalize-space(text())='DATOS CLIENTE']")
                             )
