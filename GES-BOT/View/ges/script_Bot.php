@@ -251,6 +251,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                         if (isset($datos[12]) && !empty(trim($datos[12]))) {
                             try {
+
                                 $valor = trim($datos[12]);
                                 
                                 if ($valor === "ADECUACIONES") {
@@ -305,10 +306,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                             error_log("Error llenando textarea {$campo['name']}: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
                                         }
                                     }
+
+                                                                        sleep(3); 
                                     
                                 } else if ($valor === "ADICION DE BUNDLE AUXILIAR") {
 
                                     $valor = trim($datos[12]);
+                                    $valor_2 = trim($datos[16]);
                                     
                                     // Escapar valor para XPath seguro
                                     $valorEscapado = json_encode($valor);
@@ -326,7 +330,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                     
                                     usleep(500000); 
 
-                                    if ($valor === "DIRECTV GO") {
+                                    if ($valor_2 === "DIRECTV GO") {
                                         // Seleccionar checkbox DIRECTV GO
                                         $checkbox = $driver->wait(8)->until(
                                             WebDriverExpectedCondition::elementToBeClickable(
@@ -337,7 +341,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                             $checkbox->click();
                                         }
                                         
-                                    } else if ($valor === "PARAMOUNT") {
+                                    } else if ($valor_2 === "PARAMOUNT") {
                                         // Seleccionar checkbox PARAMOUNT
                                         $checkbox = $driver->wait(8)->until(
                                             WebDriverExpectedCondition::elementToBeClickable(
@@ -348,7 +352,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                             $checkbox->click();
                                         }
                                         
-                                    } else if ($valor === "UNIVERSAL") {
+                                    } else if ($valor_2 === "UNIVERSAL") {
                                         // Seleccionar checkbox UNIVERSAL
                                         $checkbox = $driver->wait(8)->until(
                                             WebDriverExpectedCondition::elementToBeClickable(
@@ -359,7 +363,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                             $checkbox->click();
                                         }
                                         
-                                    } else if ($valor === "WIN SPORT ONLINE") {
+                                    } else if ($valor_2 === "WIN SPORT ONLINE") {
                                         // Seleccionar checkbox WIN SPORT ONLINE
                                         $checkbox = $driver->wait(8)->until(
                                             WebDriverExpectedCondition::elementToBeClickable(
@@ -370,7 +374,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                             $checkbox->click();
                                         }
                                         
-                                    } else if ($valor === "HBO MAX") {
+                                    } else if ($valor_2 === "HBO MAX") {
                                         // Seleccionar checkbox HBO MAX
                                         $checkbox = $driver->wait(8)->until(
                                             WebDriverExpectedCondition::elementToBeClickable(
@@ -384,7 +388,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                     
                                     } else {
                                         // Si no coincide con ninguna opción específica, buscar por texto del label
-                                        $valorEscapado = json_encode($valor);
+                                        $valorEscapado = json_encode($$valor_2);
                                         $xpath = "//label[contains(text(), $valorEscapado)]/preceding-sibling::input[@type='checkbox']";
                                         
                                         $checkbox = $driver->wait(8)->until(
@@ -432,10 +436,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                             error_log("Error llenando textarea {$campo['name']}: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
                                         }
                                     }
+
+                                                                        sleep(3); 
                                     
                                 } else if ($valor === "ADICION DE SVAS") {
 
                                     $valor = trim($datos[12]);
+                                    $valor_2 = trim($datos[16]);
                                     
                                     // Escapar valor para XPath seguro
                                     $valorEscapado = json_encode($valor);
@@ -453,7 +460,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                     
                                     usleep(500000); 
 
-                                    if ($valor === "DECO") {
+                                    if ($valor_2 === "DECO") {
                                         // Seleccionar checkbox DECO
                                         $checkbox = $driver->wait(8)->until(
                                             WebDriverExpectedCondition::elementToBeClickable(
@@ -464,7 +471,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                             $checkbox->click();
                                         }
                                         
-                                    } else if ($valor === "WIFI PLUS") {
+                                    } else if ($valor_2 === "WIFI PLUS") {
                                         // Seleccionar checkbox WIFI PLUS
                                         $checkbox = $driver->wait(8)->until(
                                             WebDriverExpectedCondition::elementToBeClickable(
@@ -475,7 +482,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                             $checkbox->click();
                                         }
                                         
-                                    } else if ($valor === "SOLUCION AP MESH 2") {
+                                    } else if ($valor_2 === "SOLUCION AP MESH 2") {
                                         // Seleccionar checkbox SOLUCION AP MESH 2
                                         $checkbox = $driver->wait(8)->until(
                                             WebDriverExpectedCondition::elementToBeClickable(
@@ -486,7 +493,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                             $checkbox->click();
                                         }
                                         
-                                    } else if ($valor === "SOLUCION AP MESH 3") {
+                                    } else if ($valor_2 === "SOLUCION AP MESH 3") {
                                         // Seleccionar checkbox SOLUCION AP MESH 3
                                         $checkbox = $driver->wait(8)->until(
                                             WebDriverExpectedCondition::elementToBeClickable(
@@ -497,7 +504,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                             $checkbox->click();
                                         }
                                         
-                                    } else if ($valor === "AP MESH ADICIONAL") {
+                                    } else if ($valor_2 === "AP MESH ADICIONAL") {
                                         // Seleccionar checkbox AP MESH ADICIONAL
                                         $checkbox = $driver->wait(8)->until(
                                             WebDriverExpectedCondition::elementToBeClickable(
@@ -508,7 +515,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                             $checkbox->click();
                                         }
                                         
-                                    } else if ($valor === "HOTPACK") {
+                                    } else if ($valor_2 === "HOTPACK") {
                                         // Seleccionar checkbox HOTPACK
                                         $checkbox = $driver->wait(8)->until(
                                             WebDriverExpectedCondition::elementToBeClickable(
@@ -519,7 +526,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                             $checkbox->click();
                                         }
                                         
-                                    } else if ($valor === "PUNTO CABLEADO") {
+                                    } else if ($valor_2 === "PUNTO CABLEADO") {
                                         // Seleccionar checkbox PUNTO CABLEADO
                                         $checkbox = $driver->wait(8)->until(
                                             WebDriverExpectedCondition::elementToBeClickable(
@@ -530,7 +537,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                             $checkbox->click();
                                         }
                                         
-                                    } else if ($valor === "SVA MAS VELOCIDAD") {
+                                    } else if ($valor_2 === "SVA MAS VELOCIDAD") {
                                         // Seleccionar checkbox SVA MAS VELOCIDAD
                                         $checkbox = $driver->wait(8)->until(
                                             WebDriverExpectedCondition::elementToBeClickable(
@@ -541,7 +548,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                             $checkbox->click();
                                         }
                                         
-                                    } else if ($valor === "HBO PACK") {
+                                    } else if ($valor_2 === "HBO PACK") {
                                         // Seleccionar checkbox HBO PACK
                                         $checkbox = $driver->wait(8)->until(
                                             WebDriverExpectedCondition::elementToBeClickable(
@@ -552,7 +559,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                             $checkbox->click();
                                         }
                                         
-                                    } else if ($valor === "WIN SPORT SD/HD/DTV") {
+                                    } else if ($valor_2 === "WIN SPORT SD/HD/DTV") {
                                         // Seleccionar checkbox WIN SPORT SD/HD/DTV
                                         $checkbox = $driver->wait(8)->until(
                                             WebDriverExpectedCondition::elementToBeClickable(
@@ -564,8 +571,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                         }
                                         
                                     } else {
-                                        // Si no coincide con ninguna opción específica, buscar por valor
-                                        $valorEscapado = json_encode($valor);
+                                        // Si no coincide con ninguna opción específica, buscar por valor_2
+                                        $valorEscapado = json_encode($valor_2);
                                         $xpath = "//input[@type='checkbox' and @value=$valorEscapado]";
                                         
                                         $checkbox = $driver->wait(8)->until(
@@ -613,10 +620,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                             error_log("Error llenando textarea {$campo['name']}: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
                                         }
                                     }
+
+                                                                        sleep(3); 
                                     
                                 } else if ($valor === "CAMBIO DE BUNDLE AUXILIAR") {
 
                                     $valor = trim($datos[12]);
+                                    $valor_2 = trim($datos[17]);
                                     
                                     // Escapar valor para XPath seguro
                                     $valorEscapado = json_encode($valor);
@@ -629,47 +639,83 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                     );
                                     
                                     $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$enlace]);
-                                    usleep(300000); // 300ms
+                                    usleep(300000);
                                     $enlace->click();
-                                    
                                     usleep(500000); 
 
-                                    if ($valor === "NUEVO DIRECTV FULL") {
-                                        // Seleccionar opción NUEVO DIRECTV FULL
+                                    // PASO CRÍTICO: Abrir el dropdown primero
+                                    try {
+                                        // Buscar el botón del dropdown (puede tener diferentes selectores)
+                                        $dropdownButton = null;
+                                        $selectoresDropdown = [
+                                            "//button[contains(@class, 'dropdown-toggle')]",
+                                            "//div[contains(@class, 'dropdown')]//button",
+                                            "//select[contains(@name, 'bundle') or contains(@name, 'Bundle')]",
+                                            "//div[@role='button' and contains(@class, 'select')]"
+                                        ];
+                                        
+                                        foreach ($selectoresDropdown as $selector) {
+                                            try {
+                                                $dropdownButton = $driver->wait(3)->until(
+                                                    WebDriverExpectedCondition::elementToBeClickable(
+                                                        WebDriverBy::xpath($selector)
+                                                    )
+                                                );
+                                                error_log("Dropdown encontrado con selector: $selector\n", 3, 'errores_bot.log');
+                                                break;
+                                            } catch (Exception $e) {
+                                                continue;
+                                            }
+                                        }
+                                        
+                                        if ($dropdownButton) {
+                                            $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$dropdownButton]);
+                                            usleep(300000);
+                                            $dropdownButton->click();
+                                            usleep(800000); // Esperar a que se abra el dropdown
+                                            error_log("Dropdown abierto exitosamente\n", 3, 'errores_bot.log');
+                                        } else {
+                                            error_log("No se pudo encontrar el botón del dropdown\n", 3, 'errores_bot.log');
+                                        }
+                                        
+                                    } catch (Exception $e) {
+                                        error_log("Error abriendo dropdown: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
+                                    }
+
+                                    // Ahora seleccionar la opción específica
+                                    if ($valor_2 === "NUEVO DIRECTV FULL") {
                                         $opcion = $driver->wait(8)->until(
                                             WebDriverExpectedCondition::elementToBeClickable(
                                                 WebDriverBy::xpath("//a[@role='option' and contains(.,'NUEVO DIRECTV FULL')]")
                                             )
                                         );
                                         $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$opcion]);
-                                        usleep(300000); // 300ms
+                                        usleep(300000);
                                         $opcion->click();
                                         
-                                    } else if ($valor === "NUEVO DIRECTV FLEX") {
-                                        // Seleccionar opción NUEVO DIRECTV FLEX
+                                    } else if ($valor_2 === "NUEVO DIRECTV FLEX") {
                                         $opcion = $driver->wait(8)->until(
                                             WebDriverExpectedCondition::elementToBeClickable(
                                                 WebDriverBy::xpath("//a[@role='option' and contains(.,'NUEVO DIRECTV FLEX')]")
                                             )
                                         );
                                         $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$opcion]);
-                                        usleep(300000); // 300ms
+                                        usleep(300000);
                                         $opcion->click();
                                         
-                                    } else if ($valor === "NUEVO DIRECTV BASICO") {
-                                        // Seleccionar opción NUEVO DIRECTV BASICO
+                                    } else if ($valor_2 === "NUEVO DIRECTV BASICO") {
                                         $opcion = $driver->wait(8)->until(
                                             WebDriverExpectedCondition::elementToBeClickable(
                                                 WebDriverBy::xpath("//a[@role='option' and contains(.,'NUEVO DIRECTV BASICO')]")
                                             )
                                         );
                                         $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$opcion]);
-                                        usleep(300000); // 300ms
+                                        usleep(300000);
                                         $opcion->click();
                                         
                                     } else {
                                         // Si no coincide con ninguna opción específica, buscar por texto
-                                        $valorEscapado = json_encode($valor);
+                                        $valorEscapado = json_encode($valor_2);
                                         $xpath = "//a[@role='option' and contains(text(), $valorEscapado)]";
                                         
                                         $opcion = $driver->wait(8)->until(
@@ -679,7 +725,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                         );
                                         
                                         $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$opcion]);
-                                        usleep(300000); // 300ms
+                                        usleep(300000);
                                         $opcion->click();
                                     }
 
@@ -704,7 +750,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                             $texto = trim($datos[$campo['index']]);
                                             $textarea->sendKeys($texto);
                                             
-                                            // Verificar que el texto se escribió correctamente
                                             $textoActual = $textarea->getAttribute('value');
                                             if ($textoActual !== $texto) {
                                                 error_log("Advertencia: El texto en {$campo['name']} no coincide\n", 3, 'errores_bot.log');
@@ -715,6 +760,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                             error_log("Error llenando textarea {$campo['name']}: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
                                         }
                                     }
+
+                                    sleep(3); 
                                     
                                 } else if ($valor === "CAMBIO DE ESTRATO") {
 
@@ -722,8 +769,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                     // Definir los campos de input con sus respectivos índices del CSV
                                     $camposInput = [
-                                        ['name' => 'DireccionActual', 'index' => 15],    // Ajusta el índice según tu CSV
-                                        ['name' => 'DireccionDestino', 'index' => 16],   // Ajusta el índice según tu CSV
+                                        ['name' => 'DireccionActual', 'index' => 18],    // Ajusta el índice según tu CSV
+                                        ['name' => 'DireccionDestino', 'index' => 19],   // Ajusta el índice según tu CSV
                                     ];
 
                                     foreach ($camposInput as $campo) {
@@ -732,7 +779,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                         }
                                         
                                         try {
-                                            $input = $driver->wait(6)->until(
+                                            $input = $driver->wait(10)->until(
                                                 WebDriverExpectedCondition::presenceOfElementLocated(
                                                     WebDriverBy::xpath("//input[@name='{$campo['name']}']")
                                                 )
@@ -811,6 +858,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                             error_log("Error llenando textarea {$campo['name']}: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
                                         }
                                     }
+
+                                                                        sleep(3); 
                                     
                                 } else if ($valor === "CAMBIO DE NUMERO") {
 
@@ -864,6 +913,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                             error_log("Error llenando textarea {$campo['name']}: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
                                         }
                                     }
+
+                                                                        sleep(3); 
                                     
                                 } else if ($valor === "CAMBIO DE PLAN") {
 
@@ -871,8 +922,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                    // Definir los campos de input con sus respectivos índices del CSV
                                     $camposInput = [
-                                        ['name' => 'DireccionDestino', 'index' => 15],   // Ajusta el índice según tu CSV
-                                        ['name' => 'PlanOfrecido', 'index' => 16],       // Ajusta el índice según tu CSV
+                                        ['name' => 'DireccionDestino', 'index' => 19],   // Ajusta el índice según tu CSV
+                                        ['name' => 'PlanOfrecido', 'index' => 20],       // Ajusta el índice según tu CSV
                                     ];
 
                                     foreach ($camposInput as $campo) {
@@ -881,7 +932,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                         }
                                         
                                         try {
-                                            $input = $driver->wait(6)->until(
+                                            $input = $driver->wait(10)->until(
                                                 WebDriverExpectedCondition::presenceOfElementLocated(
                                                     WebDriverBy::xpath("//input[@name='{$campo['name']}']")
                                                 )
@@ -960,6 +1011,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                             error_log("Error llenando textarea {$campo['name']}: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
                                         }
                                     }
+
+                                                                        sleep(3); 
                                     
                                 } else if ($valor === "CAMBIO DE TECNOLOGIA") {
 
@@ -967,9 +1020,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                     // Definir los campos de input con sus respectivos índices del CSV
                                     $camposInput = [
-                                        ['name' => 'DireccionActual', 'index' => 15],    // Ajusta el índice según tu CSV
-                                        ['name' => 'DireccionDestino', 'index' => 16],   // Ajusta el índice según tu CSV
-                                        ['name' => 'PlanOfrecido', 'index' => 17],       // Ajusta el índice según tu CSV
+                                        ['name' => 'DireccionActual', 'index' => 18],    // Ajusta el índice según tu CSV
+                                        ['name' => 'DireccionDestino', 'index' => 19],   // Ajusta el índice según tu CSV
+                                        ['name' => 'PlanOfrecido', 'index' => 20],       // Ajusta el índice según tu CSV
                                     ];
 
                                     foreach ($camposInput as $campo) {
@@ -1057,6 +1110,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                             error_log("Error llenando textarea {$campo['name']}: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
                                         }
                                     }
+
+                                    sleep(3); 
                                     
                                 } else if ($valor === "CANCELACION INMEDIATA") {
 
@@ -1064,7 +1119,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                     
                                     // Definir los campos de input con sus respectivos índices del CSV
                                     $camposInput = [
-                                        ['name' => 'DireccionDestino', 'index' => 15],   // Ajusta el índice según tu CSV
+                                        ['name' => 'DireccionDestino', 'index' => 19],   // Ajusta el índice según tu CSV
                                     ];
 
                                     foreach ($camposInput as $campo) {
@@ -1152,12 +1207,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                             error_log("Error llenando textarea {$campo['name']}: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
                                         }
                                     }
+
+                                                                        sleep(3); 
                                     
                                 } else if ($valor === "CANCELACION VOLUNTARIA") {
 
-                                     $valor = trim($datos[12]);
+                                    $valor = trim($datos[12]);
+                                    $valor_2 = trim($datos[21]);
         
-                                    if ($valor === "MOTIVO ECONOMICO") {
+                                    if ($valor_2 === "MOTIVO ECONOMICO") {
                                         $opcion = $driver->wait(8)->until(
                                             WebDriverExpectedCondition::elementToBeClickable(
                                                 WebDriverBy::xpath("//a[@role='option' and contains(.,'MOTIVO ECONOMICO')]")
@@ -1167,7 +1225,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                         usleep(300000);
                                         $opcion->click();
                                         
-                                    } else if ($valor === "FALLA DEL SERVICIO") {
+                                    } else if ($valor_2 === "FALLA DEL SERVICIO") {
                                         $opcion = $driver->wait(8)->until(
                                             WebDriverExpectedCondition::elementToBeClickable(
                                                 WebDriverBy::xpath("//a[@role='option' and contains(.,'FALLA DEL SERVICIO')]")
@@ -1177,7 +1235,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                         usleep(300000);
                                         $opcion->click();
                                         
-                                    } else if ($valor === "MEJOR OFERTA DE LA COMPETENCIA") {
+                                    } else if ($valor_2 === "MEJOR OFERTA DE LA COMPETENCIA") {
                                         $opcion = $driver->wait(8)->until(
                                             WebDriverExpectedCondition::elementToBeClickable(
                                                 WebDriverBy::xpath("//a[@role='option' and contains(.,'MEJOR OFERTA DE LA COMPETENCIA')]")
@@ -1187,7 +1245,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                         usleep(300000);
                                         $opcion->click();
                                         
-                                    } else if ($valor === "TRASLADO SIN COBERTURA") {
+                                    } else if ($valor_2 === "TRASLADO SIN COBERTURA") {
                                         $opcion = $driver->wait(8)->until(
                                             WebDriverExpectedCondition::elementToBeClickable(
                                                 WebDriverBy::xpath("//a[@role='option' and contains(.,'TRASLADO SIN COBERTURA')]")
@@ -1197,7 +1255,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                         usleep(300000);
                                         $opcion->click();
                                         
-                                    } else if ($valor === "VIAJE FUERA DE LA CIUDAD") {
+                                    } else if ($valor_2 === "VIAJE FUERA DE LA CIUDAD") {
                                         $opcion = $driver->wait(8)->until(
                                             WebDriverExpectedCondition::elementToBeClickable(
                                                 WebDriverBy::xpath("//a[@role='option' and contains(.,'VIAJE FUERA DE LA CIUDAD')]")
@@ -1207,7 +1265,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                         usleep(300000);
                                         $opcion->click();
                                         
-                                    } else if ($valor === "INCONFORMIDAD CON LA FACTURA") {
+                                    } else if ($valor_2 === "INCONFORMIDAD CON LA FACTURA") {
                                         $opcion = $driver->wait(8)->until(
                                             WebDriverExpectedCondition::elementToBeClickable(
                                                 WebDriverBy::xpath("//a[@role='option' and contains(.,'INCONFORMIDAD CON LA FACTURA')]")
@@ -1217,7 +1275,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                         usleep(300000);
                                         $opcion->click();
                                         
-                                    } else if ($valor === "MOTIVOS PERSONALES") {
+                                    } else if ($valor_2 === "MOTIVOS PERSONALES") {
                                         $opcion = $driver->wait(8)->until(
                                             WebDriverExpectedCondition::elementToBeClickable(
                                                 WebDriverBy::xpath("//a[@role='option' and contains(.,'MOTIVOS PERSONALES')]")
@@ -1227,7 +1285,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                         usleep(300000);
                                         $opcion->click();
                                         
-                                    } else if ($valor === "INCONFORMIDAD CON EL SERVICIO") {
+                                    } else if ($valor_2 === "INCONFORMIDAD CON EL SERVICIO") {
                                         $opcion = $driver->wait(8)->until(
                                             WebDriverExpectedCondition::elementToBeClickable(
                                                 WebDriverBy::xpath("//a[@role='option' and contains(.,'INCONFORMIDAD CON EL SERVICIO')]")
@@ -1237,7 +1295,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                         usleep(300000);
                                         $opcion->click();
                                         
-                                    } else if ($valor === "TITULAR FALLECIDO") {
+                                    } else if ($valor_2 === "TITULAR FALLECIDO") {
                                         $opcion = $driver->wait(8)->until(
                                             WebDriverExpectedCondition::elementToBeClickable(
                                                 WebDriverBy::xpath("//a[@role='option' and contains(.,'TITULAR FALLECIDO')]")
@@ -1249,7 +1307,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                         
                                     } else {
                                         // Fallback para opciones no listadas
-                                        $valorEscapado = json_encode($valor);
+                                        $valorEscapado = json_encode($valor_2);
                                         $xpath = "//a[@role='option' and contains(text(), $valorEscapado)]";
                                         
                                         $opcion = $driver->wait(8)->until(
@@ -1376,7 +1434,57 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                     // Código específico para FALLA TECNICA
                                     
                                 } else if ($valor === "MI ETB") {
-                                    // Código específico para MI ETB
+
+                                    $valor = trim($datos[12]);
+                                    
+                                    // Escapar valor para XPath seguro
+                                    $valorEscapado = json_encode($valor);
+                                    $xpath = "//li/a[contains(text(), $valorEscapado)]";
+                                    
+                                    $enlace = $driver->wait(8)->until(
+                                        WebDriverExpectedCondition::elementToBeClickable(
+                                            WebDriverBy::xpath($xpath)
+                                        )
+                                    );
+                                    
+                                    $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$enlace]);
+                                    usleep(300000); // 300ms
+                                    $enlace->click();
+                                    
+                                    usleep(500000); 
+
+                                    $camposTextarea = [
+                                        ['name' => 'ErrorPresentado', 'index' => 13],
+                                        ['name' => 'SolucionRequerida', 'index' => 14],
+                                    ];
+
+                                    foreach ($camposTextarea as $campo) {
+                                        if (!isset($datos[$campo['index']]) || empty(trim($datos[$campo['index']]))) {
+                                            continue;
+                                        }
+                                        
+                                        try {
+                                            $textarea = $driver->wait(6)->until(
+                                                WebDriverExpectedCondition::presenceOfElementLocated(
+                                                    WebDriverBy::xpath("//textarea[@name='{$campo['name']}']")
+                                                )
+                                            );
+                                            
+                                            $textarea->clear();
+                                            $texto = trim($datos[$campo['index']]);
+                                            $textarea->sendKeys($texto);
+                                            
+                                            // Verificar que el texto se escribió correctamente
+                                            $textoActual = $textarea->getAttribute('value');
+                                            if ($textoActual !== $texto) {
+                                                error_log("Advertencia: El texto en {$campo['name']} no coincide\n", 3, 'errores_bot.log');
+                                            }
+                                            
+                                        } catch (Exception $e) {
+                                            $procesamientoExitoso = false;
+                                            error_log("Error llenando textarea {$campo['name']}: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
+                                        }
+                                    }
                                     
                                 } else if ($valor === "MODIFICACION ADICIONAL CATEGORIA") {
                                     // Código específico para MODIFICACION ADICIONAL CATEGORIA
@@ -1563,6 +1671,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             catch (Exception $e) {
                 error_log("Error final procesando archivos: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
+                $driver->quit();
             }
 
             } catch (TimeoutException | NoSuchElementException $e) {
