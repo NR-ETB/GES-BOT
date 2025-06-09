@@ -309,7 +309,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                     sleep(3); 
                                     
-                                } else if ($valor === "ADICION DE BUNDLE AUXILIAR") {
+                                } else if ($valor === "ADICION DE BUNDLE AUXILIAR") { //CHECKED 
 
                                     $valor = trim($datos[12]);
                                     $valor_2 = trim($datos[16]);
@@ -439,7 +439,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                     sleep(3); 
                                     
-                                } else if ($valor === "ADICION DE SVAS") {
+                                } else if ($valor === "ADICION DE SVAS") { //CHECKED 
 
                                     $valor = trim($datos[12]);
                                     $valor_2 = trim($datos[16]);
@@ -623,7 +623,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                     sleep(3); 
                                     
-                                } else if ($valor === "CAMBIO DE BUNDLE AUXILIAR") {
+                                } else if ($valor === "CAMBIO DE BUNDLE AUXILIAR") { //CHECKED 
 
                                     $valor = trim($datos[12]);
                                     $valor_2 = trim($datos[17]);
@@ -861,7 +861,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                                                         sleep(3); 
                                     
-                                } else if ($valor === "CAMBIO DE NUMERO") {
+                                } else if ($valor === "CAMBIO DE NUMERO") { //CHECKED 
 
                                     $valor = trim($datos[12]);
                                     
@@ -1014,7 +1014,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                                                         sleep(3); 
                                     
-                                } else if ($valor === "CAMBIO DE TECNOLOGIA") {
+                                } else if ($valor === "CAMBIO DE TECNOLOGIA") { //CON BUGS 
 
                                     $valor = trim($datos[12]);
 
@@ -2412,7 +2412,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                     sleep(3);
                                     
-                                } else if ($valor === "FALLA TECNICA") {
+                                } else if ($valor === "FALLA TECNICA") { //CHECKED 
 
                                     $valor = trim($datos[12]);
                                     
@@ -2465,7 +2465,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                         }
                                     }
                                     
-                                } else if ($valor === "MI ETB") {
+                                } else if ($valor === "MI ETB") { //CHECKED 
 
                                     $valor = trim($datos[12]);
                                     
@@ -2754,7 +2754,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                     sleep(3);
                                     
-                                } else if ($valor === "ORDEN DE RETOMA EQUIPOS") {
+                                } else if ($valor === "ORDEN DE RETOMA EQUIPOS") { //CHECKED 
                                     
                                     $valor = trim($datos[12]);
                                     
@@ -2809,7 +2809,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                     sleep(3);
                                     
-                                } else if ($valor === "RECONEXION POR PAGO") {
+                                } else if ($valor === "RECONEXION POR PAGO") { //CHECKED 
                                     
                                     $valor = trim($datos[12]);
                                     
@@ -2864,7 +2864,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                     sleep(3);
                                     
-                                } else if ($valor === "RECONEXION VOLUNTARIA") {
+                                } else if ($valor === "RECONEXION VOLUNTARIA") { //CHECKED 
 
                                     $valor = trim($datos[12]);
                                     
@@ -3004,7 +3004,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                     sleep(3);
                                     
-                                } else if ($valor === "RETIRO DE BUNDLE AUXILIAR") {
+                                } else if ($valor === "RETIRO DE BUNDLE AUXILIAR") { //CHECKED 
                                     
                                     $valor = trim($datos[12]);
                                     $valor_2 = trim($datos[17]);
@@ -3144,7 +3144,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                     sleep(3);
                                     
-                                } else if ($valor === "RETIRO DE INCREMENTO") {
+                                } else if ($valor === "RETIRO DE INCREMENTO") { //CHECKED 
 
                                     $valor = trim($datos[12]);
                                     
@@ -3199,7 +3199,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                     sleep(3); 
                                     
-                                } else if ($valor === "RETIRO DE SVAS") {
+                                } else if ($valor === "RETIRO DE SVAS") { //CHECKED 
                                     
                                     $valor = trim($datos[12]);
                                     $valor_2 = trim($datos[16]);
@@ -3983,22 +3983,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                     sleep(3);
                                     
                                 } else {
-                                    // Trámite no reconocido - usar el código original de XPath
-                                    $valorEscapado = json_encode($valor);
-                                    $xpath = "//li/a[contains(text(), $valorEscapado)]";
-                                    
-                                    $enlace = $driver->wait(8)->until(
-                                        WebDriverExpectedCondition::elementToBeClickable(
-                                            WebDriverBy::xpath($xpath)
-                                        )
-                                    );
-                                    
-                                    $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$enlace]);
-                                    usleep(300000); // 300ms
-                                    $enlace->click();
-                                    
-                                    // Verificar que el clic fue exitoso esperando algún cambio
-                                    usleep(500000); // Esperar medio segundo para que se procese
+                                    $procesamientoExitoso = false;
+                                    error_log("Error procesando trámite '$valor': " . $e->getMessage() . "\n", 3, 'errores_bot.log');
                                 }
                                 
                             } catch (Exception $e) {
