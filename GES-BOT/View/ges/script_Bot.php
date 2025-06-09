@@ -3417,19 +3417,570 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                     sleep(3);
                                     
                                 } else if ($valor === "SERVICIOS SUPLEMENTARIOS") {
-                                    // Código específico para SERVICIOS SUPLEMENTARIOS
+                                    
+                                    $valor = trim($datos[12]);
+                                    $serviciosSuplemantarios = trim($datos[0]);
+
+                                    try {
+                                        // Buscar y completar el campo ServiciosSuplemantarios
+                                        $campo = $driver->wait(5)->until(
+                                            WebDriverExpectedCondition::elementToBeClickable(
+                                                WebDriverBy::xpath("//input[@name='ServiciosSuplemantarios']")
+                                            )
+                                        );
+                                        
+                                        $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$campo]);
+                                        usleep(200000);
+                                        
+                                        $campo->clear();
+                                        $campo->sendKeys($serviciosSuplemantarios);
+                                        
+                                        error_log("Campo ServiciosSuplemantarios completado: $serviciosSuplemantarios\n", 3, 'errores_bot.log');
+                                        
+                                    } catch (Exception $e) {
+                                        error_log("Error en campo ServiciosSuplemantarios: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
+                                        
+                                        // Método alternativo con JavaScript
+                                        $driver->executeScript("
+                                            var campo = document.querySelector('input[name=\"ServiciosSuplemantarios\"]') || 
+                                                    document.querySelector('input[id=\"DireccionActual\"]');
+                                            if (campo) {
+                                                campo.value = arguments[0];
+                                                campo.dispatchEvent(new Event('change', { bubbles: true }));
+                                            }
+                                        ", [$serviciosSuplemantarios]);
+                                    }
+
+                                    // Escapar valor para XPath seguro
+                                    $valorEscapado = json_encode($valor);
+                                    $xpath = "//li/a[contains(text(), $valorEscapado)]";
+                                    
+                                    $enlace = $driver->wait(8)->until(
+                                        WebDriverExpectedCondition::elementToBeClickable(
+                                            WebDriverBy::xpath($xpath)
+                                        )
+                                    );
+                                    
+                                    $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$enlace]);
+                                    usleep(300000); // 300ms
+                                    $enlace->click();
+                                    
+                                    usleep(500000); 
+
+                                    $camposTextarea = [
+                                        ['name' => 'ErrorPresentado', 'index' => 13],
+                                        ['name' => 'SolucionRequerida', 'index' => 14],
+                                    ];
+
+                                    foreach ($camposTextarea as $campo) {
+                                        if (!isset($datos[$campo['index']]) || empty(trim($datos[$campo['index']]))) {
+                                            continue;
+                                        }
+                                        
+                                        try {
+                                            $textarea = $driver->wait(6)->until(
+                                                WebDriverExpectedCondition::presenceOfElementLocated(
+                                                    WebDriverBy::xpath("//textarea[@name='{$campo['name']}']")
+                                                )
+                                            );
+                                            
+                                            $textarea->clear();
+                                            $texto = trim($datos[$campo['index']]);
+                                            $textarea->sendKeys($texto);
+                                            
+                                            // Verificar que el texto se escribió correctamente
+                                            $textoActual = $textarea->getAttribute('value');
+                                            if ($textoActual !== $texto) {
+                                                error_log("Advertencia: El texto en {$campo['name']} no coincide\n", 3, 'errores_bot.log');
+                                            }
+                                            
+                                        } catch (Exception $e) {
+                                            $procesamientoExitoso = false;
+                                            error_log("Error llenando textarea {$campo['name']}: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
+                                        }
+                                    }
+
+                                    sleep(3);
                                     
                                 } else if ($valor === "SINCRONIZAR ACTIVOS") {
-                                    // Código específico para SINCRONIZAR ACTIVOS
+                                    
+                                    $planOfrecido = trim($fila[0]); // Cambia el índice
+                                    $direccionActual = trim($fila[1]); // Cambia el índice  
+                                    $direccionDestino = trim($fila[2]); // Cambia el índice
+
+                                    try {
+                                        // Campo PlanOfrecido
+                                        $campo = $driver->wait(5)->until(
+                                            WebDriverExpectedCondition::elementToBeClickable(
+                                                WebDriverBy::xpath("//input[@name='PlanOfrecido']")
+                                            )
+                                        );
+                                        
+                                        $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$campo]);
+                                        usleep(200000);
+                                        
+                                        $campo->clear();
+                                        $campo->sendKeys($planOfrecido);
+                                        
+                                        error_log("Campo PlanOfrecido completado: $planOfrecido\n", 3, 'errores_bot.log');
+                                        
+                                    } catch (Exception $e) {
+                                        error_log("Error en campo PlanOfrecido: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
+                                        
+                                        $driver->executeScript("
+                                            var campo = document.querySelector('input[name=\"PlanOfrecido\"]');
+                                            if (campo) {
+                                                campo.value = arguments[0];
+                                                campo.dispatchEvent(new Event('change', { bubbles: true }));
+                                            }
+                                        ", [$planOfrecido]);
+                                    }
+
+                                    try {
+                                        // Campo DireccionActual
+                                        $campo = $driver->wait(5)->until(
+                                            WebDriverExpectedCondition::elementToBeClickable(
+                                                WebDriverBy::xpath("//input[@name='DireccionActual']")
+                                            )
+                                        );
+                                        
+                                        $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$campo]);
+                                        usleep(200000);
+                                        
+                                        $campo->clear();
+                                        $campo->sendKeys($direccionActual);
+                                        
+                                        error_log("Campo DireccionActual completado: $direccionActual\n", 3, 'errores_bot.log');
+                                        
+                                    } catch (Exception $e) {
+                                        error_log("Error en campo DireccionActual: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
+                                        
+                                        $driver->executeScript("
+                                            var campo = document.querySelector('input[name=\"DireccionActual\"]');
+                                            if (campo) {
+                                                campo.value = arguments[0];
+                                                campo.dispatchEvent(new Event('change', { bubbles: true }));
+                                            }
+                                        ", [$direccionActual]);
+                                    }
+
+                                    try {
+                                        // Campo DireccionDestino
+                                        $campo = $driver->wait(5)->until(
+                                            WebDriverExpectedCondition::elementToBeClickable(
+                                                WebDriverBy::xpath("//input[@name='DireccionDestino']")
+                                            )
+                                        );
+                                        
+                                        $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$campo]);
+                                        usleep(200000);
+                                        
+                                        $campo->clear();
+                                        $campo->sendKeys($direccionDestino);
+                                        
+                                        error_log("Campo DireccionDestino completado: $direccionDestino\n", 3, 'errores_bot.log');
+                                        
+                                    } catch (Exception $e) {
+                                        error_log("Error en campo DireccionDestino: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
+                                        
+                                        $driver->executeScript("
+                                            var campo = document.querySelector('input[name=\"DireccionDestino\"]');
+                                            if (campo) {
+                                                campo.value = arguments[0];
+                                                campo.dispatchEvent(new Event('change', { bubbles: true }));
+                                            }
+                                        ", [$direccionDestino]);
+                                    }
+
+                                    // Escapar valor para XPath seguro
+                                    $valorEscapado = json_encode($valor);
+                                    $xpath = "//li/a[contains(text(), $valorEscapado)]";
+                                    
+                                    $enlace = $driver->wait(8)->until(
+                                        WebDriverExpectedCondition::elementToBeClickable(
+                                            WebDriverBy::xpath($xpath)
+                                        )
+                                    );
+                                    
+                                    $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$enlace]);
+                                    usleep(300000); // 300ms
+                                    $enlace->click();
+                                    
+                                    usleep(500000); 
+
+                                    $camposTextarea = [
+                                        ['name' => 'ErrorPresentado', 'index' => 13],
+                                        ['name' => 'SolucionRequerida', 'index' => 14],
+                                    ];
+
+                                    foreach ($camposTextarea as $campo) {
+                                        if (!isset($datos[$campo['index']]) || empty(trim($datos[$campo['index']]))) {
+                                            continue;
+                                        }
+                                        
+                                        try {
+                                            $textarea = $driver->wait(6)->until(
+                                                WebDriverExpectedCondition::presenceOfElementLocated(
+                                                    WebDriverBy::xpath("//textarea[@name='{$campo['name']}']")
+                                                )
+                                            );
+                                            
+                                            $textarea->clear();
+                                            $texto = trim($datos[$campo['index']]);
+                                            $textarea->sendKeys($texto);
+                                            
+                                            // Verificar que el texto se escribió correctamente
+                                            $textoActual = $textarea->getAttribute('value');
+                                            if ($textoActual !== $texto) {
+                                                error_log("Advertencia: El texto en {$campo['name']} no coincide\n", 3, 'errores_bot.log');
+                                            }
+                                            
+                                        } catch (Exception $e) {
+                                            $procesamientoExitoso = false;
+                                            error_log("Error llenando textarea {$campo['name']}: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
+                                        }
+                                    }
+
+                                    sleep(3);
                                     
                                 } else if ($valor === "SINCRONIZAR DIRECCION") {
-                                    // Código específico para SINCRONIZAR DIRECCION
+                                    
+                                    $valor = trim($datos[12]);
+                                    $direccionActual = trim($fila[0]); // Cambia el índice
+                                    $direccionDestino = trim($fila[1]); // Cambia el índice
+
+                                    try {
+                                        // Campo DireccionActual
+                                        $campo = $driver->wait(5)->until(
+                                            WebDriverExpectedCondition::elementToBeClickable(
+                                                WebDriverBy::xpath("//input[@name='DireccionActual']")
+                                            )
+                                        );
+                                        
+                                        $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$campo]);
+                                        usleep(200000);
+                                        
+                                        $campo->clear();
+                                        $campo->sendKeys($direccionActual);
+                                        
+                                        error_log("Campo DireccionActual completado: $direccionActual\n", 3, 'errores_bot.log');
+                                        
+                                    } catch (Exception $e) {
+                                        error_log("Error en campo DireccionActual: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
+                                        
+                                        $driver->executeScript("
+                                            var campo = document.querySelector('input[name=\"DireccionActual\"]');
+                                            if (campo) {
+                                                campo.value = arguments[0];
+                                                campo.dispatchEvent(new Event('change', { bubbles: true }));
+                                            }
+                                        ", [$direccionActual]);
+                                    }
+
+                                    try {
+                                        // Campo DireccionDestino
+                                        $campo = $driver->wait(5)->until(
+                                            WebDriverExpectedCondition::elementToBeClickable(
+                                                WebDriverBy::xpath("//input[@name='DireccionDestino']")
+                                            )
+                                        );
+                                        
+                                        $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$campo]);
+                                        usleep(200000);
+                                        
+                                        $campo->clear();
+                                        $campo->sendKeys($direccionDestino);
+                                        
+                                        error_log("Campo DireccionDestino completado: $direccionDestino\n", 3, 'errores_bot.log');
+                                        
+                                    } catch (Exception $e) {
+                                        error_log("Error en campo DireccionDestino: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
+                                        
+                                        $driver->executeScript("
+                                            var campo = document.querySelector('input[name=\"DireccionDestino\"]');
+                                            if (campo) {
+                                                campo.value = arguments[0];
+                                                campo.dispatchEvent(new Event('change', { bubbles: true }));
+                                            }
+                                        ", [$direccionDestino]);
+                                    }
+
+                                    // Escapar valor para XPath seguro
+                                    $valorEscapado = json_encode($valor);
+                                    $xpath = "//li/a[contains(text(), $valorEscapado)]";
+                                    
+                                    $enlace = $driver->wait(8)->until(
+                                        WebDriverExpectedCondition::elementToBeClickable(
+                                            WebDriverBy::xpath($xpath)
+                                        )
+                                    );
+                                    
+                                    $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$enlace]);
+                                    usleep(300000); // 300ms
+                                    $enlace->click();
+                                    
+                                    usleep(500000); 
+
+                                    $camposTextarea = [
+                                        ['name' => 'ErrorPresentado', 'index' => 13],
+                                        ['name' => 'SolucionRequerida', 'index' => 14],
+                                    ];
+
+                                    foreach ($camposTextarea as $campo) {
+                                        if (!isset($datos[$campo['index']]) || empty(trim($datos[$campo['index']]))) {
+                                            continue;
+                                        }
+                                        
+                                        try {
+                                            $textarea = $driver->wait(6)->until(
+                                                WebDriverExpectedCondition::presenceOfElementLocated(
+                                                    WebDriverBy::xpath("//textarea[@name='{$campo['name']}']")
+                                                )
+                                            );
+                                            
+                                            $textarea->clear();
+                                            $texto = trim($datos[$campo['index']]);
+                                            $textarea->sendKeys($texto);
+                                            
+                                            // Verificar que el texto se escribió correctamente
+                                            $textoActual = $textarea->getAttribute('value');
+                                            if ($textoActual !== $texto) {
+                                                error_log("Advertencia: El texto en {$campo['name']} no coincide\n", 3, 'errores_bot.log');
+                                            }
+                                            
+                                        } catch (Exception $e) {
+                                            $procesamientoExitoso = false;
+                                            error_log("Error llenando textarea {$campo['name']}: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
+                                        }
+                                    }
+
+                                    sleep(3);
                                     
                                 } else if ($valor === "SUSPENSION VOLUNTARIA") {
-                                    // Código específico para SUSPENSION VOLUNTARIA
+                                    
+                                    $valor = trim($datos[12]);
+                                    $fechaConstitucion = trim($fila[0]); // Cambia el índice
+                                    $fechaFin = trim($fila[1]); // Cambia el índice
+
+                                    try {
+                                        // Campo FechaConstitucion
+                                        $campo = $driver->wait(5)->until(
+                                            WebDriverExpectedCondition::elementToBeClickable(
+                                                WebDriverBy::xpath("//input[@name='FechaConstitucion']")
+                                            )
+                                        );
+                                        
+                                        $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$campo]);
+                                        usleep(200000);
+                                        
+                                        $campo->clear();
+                                        $campo->sendKeys($fechaConstitucion);
+                                        
+                                        error_log("Campo FechaConstitucion completado: $fechaConstitucion\n", 3, 'errores_bot.log');
+                                        
+                                    } catch (Exception $e) {
+                                        error_log("Error en campo FechaConstitucion: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
+                                        
+                                        $driver->executeScript("
+                                            var campo = document.querySelector('input[name=\"FechaConstitucion\"]');
+                                            if (campo) {
+                                                campo.value = arguments[0];
+                                                campo.dispatchEvent(new Event('change', { bubbles: true }));
+                                            }
+                                        ", [$fechaConstitucion]);
+                                    }
+
+                                    try {
+                                        // Campo FechaFin
+                                        $campo = $driver->wait(5)->until(
+                                            WebDriverExpectedCondition::elementToBeClickable(
+                                                WebDriverBy::xpath("//input[@name='FechaFin']")
+                                            )
+                                        );
+                                        
+                                        $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$campo]);
+                                        usleep(200000);
+                                        
+                                        $campo->clear();
+                                        $campo->sendKeys($fechaFin);
+                                        
+                                        error_log("Campo FechaFin completado: $fechaFin\n", 3, 'errores_bot.log');
+                                        
+                                    } catch (Exception $e) {
+                                        error_log("Error en campo FechaFin: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
+                                        
+                                        $driver->executeScript("
+                                            var campo = document.querySelector('input[name=\"FechaFin\"]');
+                                            if (campo) {
+                                                campo.value = arguments[0];
+                                                campo.dispatchEvent(new Event('change', { bubbles: true }));
+                                            }
+                                        ", [$fechaFin]);
+                                    }
+
+                                    // Escapar valor para XPath seguro
+                                    $valorEscapado = json_encode($valor);
+                                    $xpath = "//li/a[contains(text(), $valorEscapado)]";
+                                    
+                                    $enlace = $driver->wait(8)->until(
+                                        WebDriverExpectedCondition::elementToBeClickable(
+                                            WebDriverBy::xpath($xpath)
+                                        )
+                                    );
+                                    
+                                    $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$enlace]);
+                                    usleep(300000); // 300ms
+                                    $enlace->click();
+                                    
+                                    usleep(500000); 
+
+                                    $camposTextarea = [
+                                        ['name' => 'ErrorPresentado', 'index' => 13],
+                                        ['name' => 'SolucionRequerida', 'index' => 14],
+                                    ];
+
+                                    foreach ($camposTextarea as $campo) {
+                                        if (!isset($datos[$campo['index']]) || empty(trim($datos[$campo['index']]))) {
+                                            continue;
+                                        }
+                                        
+                                        try {
+                                            $textarea = $driver->wait(6)->until(
+                                                WebDriverExpectedCondition::presenceOfElementLocated(
+                                                    WebDriverBy::xpath("//textarea[@name='{$campo['name']}']")
+                                                )
+                                            );
+                                            
+                                            $textarea->clear();
+                                            $texto = trim($datos[$campo['index']]);
+                                            $textarea->sendKeys($texto);
+                                            
+                                            // Verificar que el texto se escribió correctamente
+                                            $textoActual = $textarea->getAttribute('value');
+                                            if ($textoActual !== $texto) {
+                                                error_log("Advertencia: El texto en {$campo['name']} no coincide\n", 3, 'errores_bot.log');
+                                            }
+                                            
+                                        } catch (Exception $e) {
+                                            $procesamientoExitoso = false;
+                                            error_log("Error llenando textarea {$campo['name']}: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
+                                        }
+                                    }
+
+                                    sleep(3);
                                     
                                 } else if ($valor === "TRASLADO") {
-                                    // Código específico para TRASLADO
+                                    
+                                    $valor = trim($datos[12]);
+                                    $fechaConstitucion = trim($fila[0]); // Cambia el índice
+                                    $fechaFin = trim($fila[1]); // Cambia el índice
+
+                                    try {
+                                        // Campo FechaConstitucion
+                                        $campo = $driver->wait(5)->until(
+                                            WebDriverExpectedCondition::elementToBeClickable(
+                                                WebDriverBy::xpath("//input[@name='FechaConstitucion']")
+                                            )
+                                        );
+                                        
+                                        $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$campo]);
+                                        usleep(200000);
+                                        
+                                        $campo->clear();
+                                        $campo->sendKeys($fechaConstitucion);
+                                        
+                                        error_log("Campo FechaConstitucion completado: $fechaConstitucion\n", 3, 'errores_bot.log');
+                                        
+                                    } catch (Exception $e) {
+                                        error_log("Error en campo FechaConstitucion: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
+                                        
+                                        $driver->executeScript("
+                                            var campo = document.querySelector('input[name=\"FechaConstitucion\"]');
+                                            if (campo) {
+                                                campo.value = arguments[0];
+                                                campo.dispatchEvent(new Event('change', { bubbles: true }));
+                                            }
+                                        ", [$fechaConstitucion]);
+                                    }
+
+                                    try {
+                                        // Campo FechaFin
+                                        $campo = $driver->wait(5)->until(
+                                            WebDriverExpectedCondition::elementToBeClickable(
+                                                WebDriverBy::xpath("//input[@name='FechaFin']")
+                                            )
+                                        );
+                                        
+                                        $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$campo]);
+                                        usleep(200000);
+                                        
+                                        $campo->clear();
+                                        $campo->sendKeys($fechaFin);
+                                        
+                                        error_log("Campo FechaFin completado: $fechaFin\n", 3, 'errores_bot.log');
+                                        
+                                    } catch (Exception $e) {
+                                        error_log("Error en campo FechaFin: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
+                                        
+                                        $driver->executeScript("
+                                            var campo = document.querySelector('input[name=\"FechaFin\"]');
+                                            if (campo) {
+                                                campo.value = arguments[0];
+                                                campo.dispatchEvent(new Event('change', { bubbles: true }));
+                                            }
+                                        ", [$fechaFin]);
+                                    }
+
+                                    // Escapar valor para XPath seguro
+                                    $valorEscapado = json_encode($valor);
+                                    $xpath = "//li/a[contains(text(), $valorEscapado)]";
+                                    
+                                    $enlace = $driver->wait(8)->until(
+                                        WebDriverExpectedCondition::elementToBeClickable(
+                                            WebDriverBy::xpath($xpath)
+                                        )
+                                    );
+                                    
+                                    $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$enlace]);
+                                    usleep(300000); // 300ms
+                                    $enlace->click();
+                                    
+                                    usleep(500000); 
+
+                                    $camposTextarea = [
+                                        ['name' => 'ErrorPresentado', 'index' => 13],
+                                        ['name' => 'SolucionRequerida', 'index' => 14],
+                                    ];
+
+                                    foreach ($camposTextarea as $campo) {
+                                        if (!isset($datos[$campo['index']]) || empty(trim($datos[$campo['index']]))) {
+                                            continue;
+                                        }
+                                        
+                                        try {
+                                            $textarea = $driver->wait(6)->until(
+                                                WebDriverExpectedCondition::presenceOfElementLocated(
+                                                    WebDriverBy::xpath("//textarea[@name='{$campo['name']}']")
+                                                )
+                                            );
+                                            
+                                            $textarea->clear();
+                                            $texto = trim($datos[$campo['index']]);
+                                            $textarea->sendKeys($texto);
+                                            
+                                            // Verificar que el texto se escribió correctamente
+                                            $textoActual = $textarea->getAttribute('value');
+                                            if ($textoActual !== $texto) {
+                                                error_log("Advertencia: El texto en {$campo['name']} no coincide\n", 3, 'errores_bot.log');
+                                            }
+                                            
+                                        } catch (Exception $e) {
+                                            $procesamientoExitoso = false;
+                                            error_log("Error llenando textarea {$campo['name']}: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
+                                        }
+                                    }
+
+                                    sleep(3);
                                     
                                 } else {
                                     // Trámite no reconocido - usar el código original de XPath
