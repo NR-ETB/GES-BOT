@@ -1,4 +1,4 @@
-Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_7,3120000007,956281306,1205,ACC22007,BOGOTA,CAMBIO DE TECNOLOGIA,CALLE 45 21 A 23,CALLE 52 78 B 21, SUPERMEGA PRO PLAN MAX 500G,Sin respuesta en router,Reemplazo de router,router_change.png
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_10,3120000007,956281306,1205,ACC22007,BOGOTA,CAMBIO DE ESTRATO,CALLE 45 21 A 23,CALLE 52 78 B 21, SUPERMEGA PRO PLAN MAX 500G,Sin respuesta en router,Reemplazo de router,router_change.png
 Procesando Canal: 'REDES SOCIALES'
 ✓ Seleccionado Canal: 'REDES SOCIALES'
 Procesando Sistema: 'SIEBEL SOMOS Y CONVERGENTE'
@@ -11,6 +11,22 @@ Procesando Tipo_Documento_Campo4: 'CC'
 ✓ Seleccionado Tipo_Documento_Campo4: 'CC'
 Procesando Ciudad: 'BOGOTA'
 ✓ Seleccionado Ciudad: 'BOGOTA'
-✓ Registro procesado exitosamente: REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_7,3120000007,956281306,1205,ACC22007,BOGOTA,CAMBIO DE TECNOLOGIA,CALLE 45 21 A 23,CALLE 52 78 B 21, SUPERMEGA PRO PLAN MAX 500G,Sin respuesta en router,Reemplazo de router,router_change.png
+✓ Registro procesado exitosamente: REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_10,3120000007,956281306,1205,ACC22007,BOGOTA,CAMBIO DE ESTRATO,CALLE 45 21 A 23,CALLE 52 78 B 21, SUPERMEGA PRO PLAN MAX 500G,Sin respuesta en router,Reemplazo de router,router_change.png
+✓ Registro guardado en Gestiones_Realizadas.csv
+✓ Archivo process.csv actualizado, eliminadas 1 líneas procesadas
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_10,3120000007,956281306,1205,ACC22007,BOGOTA,CAMBIO DE ESTRATO,CALLE 45 21 A 23,CALLE 52 78 B 21, SUPERMEGA PRO PLAN MAX 500G,Sin respuesta en router,Reemplazo de router,router_change.png
+Procesando Canal: 'REDES SOCIALES'
+✓ Seleccionado Canal: 'REDES SOCIALES'
+Procesando Sistema: 'SIEBEL SOMOS Y CONVERGENTE'
+✓ Seleccionado Sistema: 'SIEBEL SOMOS Y CONVERGENTE'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro procesado exitosamente: REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_10,3120000007,956281306,1205,ACC22007,BOGOTA,CAMBIO DE ESTRATO,CALLE 45 21 A 23,CALLE 52 78 B 21, SUPERMEGA PRO PLAN MAX 500G,Sin respuesta en router,Reemplazo de router,router_change.png
 ✓ Registro guardado en Gestiones_Realizadas.csv
 ✓ Archivo process.csv actualizado, eliminadas 1 líneas procesadas
