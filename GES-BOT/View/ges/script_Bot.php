@@ -1216,7 +1216,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                     sleep(3); 
                                     
-                                } else if ($valor === "CANCELACION VOLUNTARIA") { //TESTING
+                                } else if ($valor === "CANCELACION VOLUNTARIA") { //CHECKED
 
                                     $valor = trim($datos[12]);
                                     $valor_2 = trim($datos[14]);
@@ -1447,7 +1447,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                     sleep(3);
                                     
-                                } else if ($valor === "CESION DE CONTRATO PERSONA NATURAL") { //TESTING 
+                                } else if ($valor === "CESION DE CONTRATO PERSONA NATURAL") { //CHECKED 
 
                                     $valor = trim($datos[12]);
 
@@ -1588,7 +1588,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                     sleep(3);
                        
-                                } else if ($valor === "CESION DE CONTRATO PERSONA JURIDICA") { //TESTING
+                                } else if ($valor === "CESION DE CONTRATO PERSONA JURIDICA") { //CHECKED
 
                                     $valor = trim($datos[12]);
 
@@ -3702,19 +3702,37 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                     sleep(3);
                                     
-                                } else if ($valor === "SUSPENSION VOLUNTARIA") { //TESTING 
+                                } else if ($valor === "SUSPENSION VOLUNTARIA") { //CHECKED 
                                     
                                     $valor = trim($datos[12]);
-                                    $fechaInicio = trim($datos[16]); // CORREGIDO: usar $datos consistentemente
-                                    $fechaFin = trim($datos[17]);    // CORREGIDO: usar $datos consistentemente
+                                    $fechaInicio = trim($datos[16]);
+                                    $fechaFin = trim($datos[17]);
 
-                                    // Variable para controlar el procesamiento
                                     $procesamientoExitoso = true;
 
                                     try {
-                                        // PASO 1: PROCESAR CAMPOS DE FECHA PRIMERO
-                                        
-                                        // Campo FechaConstitucion
+                                        // PRIMERO: hacer clic en el enlace
+                                        if (!empty($valor)) {
+                                            $valorEscapado = json_encode($valor);
+                                            $xpath = "//li/a[contains(text(), $valorEscapado)]";
+
+                                            $enlace = $driver->wait(8)->until(
+                                                WebDriverExpectedCondition::elementToBeClickable(
+                                                    WebDriverBy::xpath($xpath)
+                                                )
+                                            );
+
+                                            $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$enlace]);
+                                            usleep(500000);
+                                            $enlace->click();
+
+                                            usleep(800000); // Esperar que cargue todo
+                                            error_log("Enlace '$valor' clickeado exitosamente\n", 3, 'proceso_bot.log');
+                                        } else {
+                                            error_log("Valor del enlace está vacío (índice 12)\n", 3, 'proceso_bot.log');
+                                        }
+
+                                        // DESPUÉS: procesar campos de fecha
                                         if (!empty($fechaInicio)) {
                                             try {
                                                 $campo = $driver->wait(8)->until(
@@ -3722,45 +3740,27 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                         WebDriverBy::xpath("//input[@name='FechaConstitucion']")
                                                     )
                                                 );
-                                                
+
                                                 $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$campo]);
                                                 usleep(300000);
-                                                
-                                                // Hacer click para enfocar
                                                 $campo->click();
                                                 usleep(200000);
-                                                
                                                 $campo->clear();
                                                 usleep(200000);
                                                 $campo->sendKeys($fechaInicio);
-                                                
-                                                // Disparar eventos para validaciones
+
                                                 $driver->executeScript("arguments[0].dispatchEvent(new Event('input', { bubbles: true }));", [$campo]);
                                                 $driver->executeScript("arguments[0].dispatchEvent(new Event('change', { bubbles: true }));", [$campo]);
                                                 $driver->executeScript("arguments[0].blur();", [$campo]);
-                                                
+
                                                 usleep(300000);
-                                                
                                                 error_log("Campo FechaConstitucion completado: $fechaInicio\n", 3, 'proceso_bot.log');
-                                                
+
                                             } catch (Exception $e) {
                                                 error_log("Error en campo FechaConstitucion: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
-                                                
-                                                // Fallback con JavaScript
-                                                $driver->executeScript("
-                                                    var campo = document.querySelector('input[name=\"FechaConstitucion\"]');
-                                                    if (campo) {
-                                                        campo.value = arguments[0];
-                                                        campo.dispatchEvent(new Event('input', { bubbles: true }));
-                                                        campo.dispatchEvent(new Event('change', { bubbles: true }));
-                                                    }
-                                                ", [$fechaInicio]);
                                             }
-                                        } else {
-                                            error_log("FechaConstitucion está vacía (índice 16)\n", 3, 'proceso_bot.log');
                                         }
-                                        
-                                        // Campo FechaFin
+
                                         if (!empty($fechaFin)) {
                                             try {
                                                 $campo = $driver->wait(8)->until(
@@ -3768,83 +3768,28 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                         WebDriverBy::xpath("//input[@name='FechaFin']")
                                                     )
                                                 );
-                                                
+
                                                 $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$campo]);
                                                 usleep(300000);
-                                                
-                                                // Hacer click para enfocar
                                                 $campo->click();
                                                 usleep(200000);
-                                                
                                                 $campo->clear();
                                                 usleep(200000);
                                                 $campo->sendKeys($fechaFin);
-                                                
-                                                // Disparar eventos para validaciones
+
                                                 $driver->executeScript("arguments[0].dispatchEvent(new Event('input', { bubbles: true }));", [$campo]);
                                                 $driver->executeScript("arguments[0].dispatchEvent(new Event('change', { bubbles: true }));", [$campo]);
                                                 $driver->executeScript("arguments[0].blur();", [$campo]);
-                                                
+
                                                 usleep(300000);
-                                                
                                                 error_log("Campo FechaFin completado: $fechaFin\n", 3, 'proceso_bot.log');
-                                                
+
                                             } catch (Exception $e) {
                                                 error_log("Error en campo FechaFin: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
-                                                
-                                                // Fallback con JavaScript
-                                                $driver->executeScript("
-                                                    var campo = document.querySelector('input[name=\"FechaFin\"]');
-                                                    if (campo) {
-                                                        campo.value = arguments[0];
-                                                        campo.dispatchEvent(new Event('input', { bubbles: true }));
-                                                        campo.dispatchEvent(new Event('change', { bubbles: true }));
-                                                    }
-                                                ", [$fechaFin]);
                                             }
-                                        } else {
-                                            error_log("FechaFin está vacía (índice 17)\n", 3, 'proceso_bot.log');
-                                        }
-                                        
-                                        // Esperar que se procesen los campos de fecha
-                                        usleep(800000);
-
-                                    } catch (Exception $e) {
-                                        $procesamientoExitoso = false;
-                                        error_log("Error general procesando campos de fecha: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
-                                    }
-
-                                    try {
-                                        // PASO 2: PROCESAR ENLACE
-                                        if (!empty($valor)) {
-                                            // Escapar valor para XPath seguro
-                                            $valorEscapado = json_encode($valor);
-                                            $xpath = "//li/a[contains(text(), $valorEscapado)]";
-                                            
-                                            $enlace = $driver->wait(8)->until(
-                                                WebDriverExpectedCondition::elementToBeClickable(
-                                                    WebDriverBy::xpath($xpath)
-                                                )
-                                            );
-                                            
-                                            $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$enlace]);
-                                            usleep(500000); // Esperar más tiempo
-                                            $enlace->click();
-                                            
-                                            usleep(800000); // Esperar que se procese el click
-                                            
-                                            error_log("Enlace '$valor' clickeado exitosamente\n", 3, 'proceso_bot.log');
-                                        } else {
-                                            error_log("Valor del enlace está vacío (índice 12)\n", 3, 'proceso_bot.log');
                                         }
 
-                                    } catch (Exception $e) {
-                                        $procesamientoExitoso = false;
-                                        error_log("Error procesando enlace: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
-                                    }
-
-                                    try {
-                                        // PASO 3: PROCESAR TEXTAREAS
+                                        // FINALMENTE: procesar textareas
                                         $camposTextarea = [
                                             ['name' => 'ErrorPresentado', 'index' => 19],
                                             ['name' => 'SolucionRequerida', 'index' => 20],
@@ -3855,47 +3800,38 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 error_log("Campo {$campo['name']} está vacío (índice {$campo['index']})\n", 3, 'proceso_bot.log');
                                                 continue;
                                             }
-                                            
+
                                             try {
                                                 $textarea = $driver->wait(8)->until(
                                                     WebDriverExpectedCondition::presenceOfElementLocated(
                                                         WebDriverBy::xpath("//textarea[@name='{$campo['name']}']")
                                                     )
                                                 );
-                                                
+
                                                 $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$textarea]);
                                                 usleep(300000);
-                                                
-                                                // Hacer click para enfocar
                                                 $textarea->click();
                                                 usleep(200000);
-                                                
                                                 $textarea->clear();
                                                 usleep(200000);
-                                                
                                                 $texto = trim($datos[$campo['index']]);
                                                 $textarea->sendKeys($texto);
-                                                
-                                                // Verificar que el texto se escribió correctamente
+
                                                 $textoActual = $textarea->getAttribute('value');
                                                 if ($textoActual !== $texto) {
-                                                    error_log("ADVERTENCIA: El texto en {$campo['name']} no coincide. Esperado: '$texto', Actual: '$textoActual'\n", 3, 'errores_bot.log');
-                                                    
-                                                    // Intentar de nuevo
+                                                    error_log("ADVERTENCIA: El texto en {$campo['name']} no coincide. Reintentando...\n", 3, 'errores_bot.log');
                                                     $textarea->clear();
                                                     usleep(200000);
                                                     $textarea->sendKeys($texto);
                                                 }
-                                                
-                                                // Disparar eventos
+
                                                 $driver->executeScript("arguments[0].dispatchEvent(new Event('input', { bubbles: true }));", [$textarea]);
                                                 $driver->executeScript("arguments[0].dispatchEvent(new Event('change', { bubbles: true }));", [$textarea]);
                                                 $driver->executeScript("arguments[0].blur();", [$textarea]);
-                                                
+
                                                 usleep(300000);
-                                                
                                                 error_log("Campo {$campo['name']} completado exitosamente\n", 3, 'proceso_bot.log');
-                                                
+
                                             } catch (Exception $e) {
                                                 $procesamientoExitoso = false;
                                                 error_log("Error llenando textarea {$campo['name']}: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
@@ -3904,14 +3840,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                     } catch (Exception $e) {
                                         $procesamientoExitoso = false;
-                                        error_log("Error general procesando textareas: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
+                                        error_log("Error general procesando formulario: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
                                     }
 
-                                    // Verificar resultado final
                                     if ($procesamientoExitoso) {
                                         error_log("Formulario procesado exitosamente - Fechas: '$fechaInicio' - '$fechaFin', Enlace: '$valor'\n", 3, 'proceso_bot.log');
                                     } else {
-                                        error_log("Hubo errores al procesar el formulario. Revisar errores_bot.log para detalles\n", 3, 'proceso_bot.log');
+                                        error_log("Hubo errores al procesar el formulario. Revisar errores_bot.log\n", 3, 'proceso_bot.log');
                                     }
 
                                     sleep(3);
