@@ -1,4 +1,0 @@
-Canal,Sistema,UEN,Tecnologia,Tipo_de_Documento,Numero_de_Documento,Cliente,Contacto,Línea del servicio | Single,Pedido | Orden,"Cuenta de Facturacion",Ciudad,Tramite,Motivo Cancelacion,SoportePQR,Fecha Inicio,Fecha Fin,Plan Ofrecido,Meses Descuento Manual,Porcentaje,Error,Solucion,Adjunto
-ESCRITA,SUMA,HOGARES,FTTH,CC,2001123456,"PRUEBA_G1",3123000001,856281300,1306,ACD22001,BOGOTA,CANCELACION VOLUNTARIA,MOTIVO ECONOMICO,,,,,,,Falta de Recursos Economicos,"Ofrecer un productos mas al alcance del cliente",
-VENTAS,SUMA,HOGARES,FTTH,CC,2001123456,"PRUEBA_G2",3124000001,856281200,1309,ACD22002,SOACHA,SUSPENCION VOLUNTARIA,,,05/03/2022,11/05/2022,,,,No especificada,"Indagar con el cliente para saber el porque",
-VENTAS,SUMA,HOGARES,FTTH,CC,2001123456,"PRUEBA_G3",3124000001,856281200,1309,ACD22002,SOACHA,DESCUENTOS,,PQR2005,05/03/2025,11/05/2025,DESCUENTO AUN MAS PRO MAX 25%,MARZO - MAYO,25%,No especificada,"Ninguna",

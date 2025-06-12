@@ -1,3 +1,0 @@
-chromedriver --port=9515
-cd C:\Selenium
-java -jar selenium-server-4.28.1.jar standalone
