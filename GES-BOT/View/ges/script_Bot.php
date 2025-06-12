@@ -1219,7 +1219,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                 } else if ($valor === "CANCELACION VOLUNTARIA") { //CHECKED
 
                                     $valor = trim($datos[12]);
-                                    $valor_2 = trim($datos[14]);
+                                    $valor_2 = trim($datos[13]);
 
                                     if ($valor_2 === "MOTIVO ECONOMICO") {
                                         $opcion = $driver->wait(8)->until(
@@ -1330,8 +1330,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                     // PASO 2: PROCESAR CAMPOS INPUT CON VALIDACIÓN MEJORADA
                                     $camposInput = [
-                                        ['name' => 'SoportePQR', 'index' => 14],         
-                                        ['name' => 'DireccionDestino', 'index' => 15],   
+                                        ['name' => 'SoportePQR', 'index' => 20],         
+                                        ['name' => 'DireccionDestino', 'index' => 21],   
                                     ];
 
                                     foreach ($camposInput as $campo) {
@@ -1938,18 +1938,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                     $camposFormulario = [
                                         // Campos de fecha
-                                        ['name' => 'FechaInicio', 'type' => 'date', 'index' => '16'],
-                                        ['name' => 'FechaFin', 'type' => 'date', 'index' => '17'],
+                                        ['name' => 'FechaInicio', 'type' => 'date', 'index' => '15'],
+                                        ['name' => 'FechaFin', 'type' => 'date', 'index' => '16'],
                                         
                                         // Campos de input de texto
-                                        ['name' => 'PlanoPredio', 'type' => 'input', 'index' => '18'],
+                                        ['name' => 'PlanoPredio', 'type' => 'input', 'index' => '17'],
                                         ['name' => 'SoportePQR', 'type' => 'input', 'index' => '14'],
                                         
                                         // Campo de textarea
-                                        ['name' => 'MesesAplicarDescuentoManual', 'type' => 'textarea', 'index' => '19'],
+                                        ['name' => 'MesesAplicarDescuentoManual', 'type' => 'textarea', 'index' => '18'],
                                         
                                         // Campo numérico con restricciones específicas
-                                        ['name' => 'Porcentaje', 'type' => 'number', 'index' => '20', 'min' => 0, 'max' => 100],
+                                        ['name' => 'Porcentaje', 'type' => 'number', 'index' => '19', 'min' => 0, 'max' => 100],
                                     ];
 
                                     // Variable para controlar si el procesamiento fue exitoso
@@ -2178,8 +2178,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                     error_log("=== LLENANDO SEGUNDO FORMULARIO (TEXTAREAS) ===\n", 3, 'proceso_bot.log');
 
                                     $camposTextarea = [
-                                        ['name' => 'ErrorPresentado', 'index' => 21],
-                                        ['name' => 'SolucionRequerida', 'index' => 22],
+                                        ['name' => 'ErrorPresentado', 'index' => 20],
+                                        ['name' => 'SolucionRequerida', 'index' => 21],
                                     ];
 
                                     foreach ($camposTextarea as $campo) {
@@ -3705,8 +3705,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                 } else if ($valor === "SUSPENSION VOLUNTARIA") { //CHECKED 
                                     
                                     $valor = trim($datos[12]);
-                                    $fechaInicio = trim($datos[16]);
-                                    $fechaFin = trim($datos[17]);
+                                    $fechaInicio = trim($datos[15]);
+                                    $fechaFin = trim($datos[16]);
 
                                     $procesamientoExitoso = true;
 
@@ -3791,8 +3791,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                         // FINALMENTE: procesar textareas
                                         $camposTextarea = [
-                                            ['name' => 'ErrorPresentado', 'index' => 19],
-                                            ['name' => 'SolucionRequerida', 'index' => 20],
+                                            ['name' => 'ErrorPresentado', 'index' => 20],
+                                            ['name' => 'SolucionRequerida', 'index' => 21],
                                         ];
 
                                         foreach ($camposTextarea as $campo) {
@@ -4177,11 +4177,55 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             } 
 
             catch (Exception $e) {
+
+                if (!empty($lineasProcesadas)) {
+                    fclose($gestor);
+                    $gestor = fopen($archivo, 'r');
+                    $todasLasLineas = [];
+                    while (($linea = fgetcsv($gestor)) !== false) {
+                        if (strcasecmp(trim($linea[0]), 'Canal') === 0 || !in_array($linea, $lineasProcesadas)) {
+                            $todasLasLineas[] = $linea;
+                        }
+                    }
+                    fclose($gestor);
+                    
+                    file_put_contents($archivo, '');
+                    $gestor = fopen($archivo, 'w');
+                    foreach ($todasLasLineas as $linea) {
+                        fputcsv($gestor, $linea);
+                    }
+                    fclose($gestor);
+                    
+                    error_log("✓ Archivo process.csv actualizado, eliminadas " . count($lineasProcesadas) . " líneas procesadas\n", 3, 'debug_bot.log');
+                }
+
                 error_log("Error final procesando archivos: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
                 $driver->quit();
             }
 
             } catch (TimeoutException | NoSuchElementException $e) {
+
+                    if (!empty($lineasProcesadas)) {
+                        fclose($gestor);
+                        $gestor = fopen($archivo, 'r');
+                        $todasLasLineas = [];
+                        while (($linea = fgetcsv($gestor)) !== false) {
+                            if (strcasecmp(trim($linea[0]), 'Canal') === 0 || !in_array($linea, $lineasProcesadas)) {
+                                $todasLasLineas[] = $linea;
+                            }
+                        }
+                        fclose($gestor);
+                        
+                        file_put_contents($archivo, '');
+                        $gestor = fopen($archivo, 'w');
+                        foreach ($todasLasLineas as $linea) {
+                            fputcsv($gestor, $linea);
+                        }
+                        fclose($gestor);
+                        
+                        error_log("✓ Archivo process.csv actualizado, eliminadas " . count($lineasProcesadas) . " líneas procesadas\n", 3, 'debug_bot.log');
+                    }
+
                     echo "<script>alert('Error: {$e->getMessage()}');</script>";
                     $driver->quit();
                     header("Location: View/ges/script_Bot.php");
