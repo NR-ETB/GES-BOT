@@ -18,24 +18,24 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES['csvFile'])) {
                 $cabecera = fgetcsv($handle);
 
                 // Abrir o crear el archivo process.csv para agregar datos
-                $outputFile = './process.csv';
+                $outputFile = 'View/ges/process.csv';
                 $archivoExiste = file_exists($outputFile);
                 $modo = $archivoExiste ? 'a' : 'w';
 
                 if (($outputHandle = fopen($outputFile, $modo)) !== FALSE) {
                     // Si el archivo no existe o está vacío, escribir la cabecera
                     if (!$archivoExiste || filesize($outputFile) === 0) {
-                        fwrite($outputHandle, implode(',', $cabecera) . PHP_EOL);
+                        fputcsv($outputHandle, $cabecera);  // CAMBIO AQUÍ
                     }
 
                     // Leer cada línea del CSV y escribirla en process.csv
                     while (($data = fgetcsv($handle, 2000, ',')) !== FALSE) {
-                        fwrite($outputHandle, implode(',', $data) . PHP_EOL);
+                        fputcsv($outputHandle, $data);  // CAMBIO AQUÍ
                     }
                     fclose($outputHandle);
                     echo "<script type='text/javascript'>
                         alert('Base Exitosamente Anexada');
-                        window.location.href = './script_Bot.php';
+                        window.location.href = 'View/ges/script_Bot.php';
                     </script>";
                 } else {
                     echo "<script type='text/javascript'>

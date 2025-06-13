@@ -1,0 +1,219 @@
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_C1,3120000002,956281301,1207,ACC22002,BOGOTA,ADICION DE BUNDLE AUXILIAR,PARAMOUNT +,No navega en páginas https,Verificar puertos y firewall,
+Procesando Canal: 'VENTAS'
+✓ Seleccionado Canal: 'VENTAS'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro procesado exitosamente: VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_C1,3120000002,956281301,1207,ACC22002,BOGOTA,ADICION DE BUNDLE AUXILIAR,PARAMOUNT +,No navega en páginas https,Verificar puertos y firewall,
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): ASEGURAMIENTO,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123467,PRUEBA_C2,3120000012,956281301,1209,ACC22012,BOGOTA,RETIRO DE BUNDLE AUXILIAR,PARAMOUNT,No navega en páginas https,Verificar puertos y firewall,
+Procesando Canal: 'ASEGURAMIENTO'
+✓ Seleccionado Canal: 'ASEGURAMIENTO'
+Procesando Sistema: 'SIEBEL SOMOS Y CONVERGENTE'
+✓ Seleccionado Sistema: 'SIEBEL SOMOS Y CONVERGENTE'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro procesado exitosamente: ASEGURAMIENTO,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123467,PRUEBA_C2,3120000012,956281301,1209,ACC22012,BOGOTA,RETIRO DE BUNDLE AUXILIAR,PARAMOUNT,No navega en páginas https,Verificar puertos y firewall,
+✓ Registro guardado en Gestiones_Realizadas.csv
+✓ Archivo process.csv actualizado, eliminadas 2 líneas procesadas
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_C1,3120000002,956281301,1207,ACC22002,BOGOTA,ADICION DE BUNDLE AUXILIAR,PARAMOUNT +,No navega en páginas https,Verificar puertos y firewall,
+Procesando Canal: 'VENTAS'
+✓ Seleccionado Canal: 'VENTAS'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro procesado exitosamente: VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_C1,3120000002,956281301,1207,ACC22002,BOGOTA,ADICION DE BUNDLE AUXILIAR,PARAMOUNT +,No navega en páginas https,Verificar puertos y firewall,
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): ASEGURAMIENTO,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123467,PRUEBA_C2,3120000012,956281301,1209,ACC22012,BOGOTA,RETIRO DE BUNDLE AUXILIAR,PARAMOUNT,No navega en páginas https,Verificar puertos y firewall,
+Procesando Canal: 'ASEGURAMIENTO'
+Error en dropdown Canal: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=137.0.7151.104)
+Procesando Sistema: 'SIEBEL SOMOS Y CONVERGENTE'
+Error en dropdown Sistema: invalid session id
+Procesando UEN: 'HOGARES'
+Error en dropdown UEN: invalid session id
+Procesando Tecnologia: 'FTTH'
+Error en dropdown Tecnologia: invalid session id
+Procesando Tipo_Documento_Campo4: 'CC'
+Error en dropdown Tipo_Documento_Campo4: invalid session id
+Procesando Ciudad: 'BOGOTA'
+Error en dropdown Ciudad: invalid session id
+Procesando registro (intento 2/2): ASEGURAMIENTO,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123467,PRUEBA_C2,3120000012,956281301,1209,ACC22012,BOGOTA,RETIRO DE BUNDLE AUXILIAR,PARAMOUNT,No navega en páginas https,Verificar puertos y firewall,
+✓ Archivo process.csv actualizado, eliminadas 1 líneas procesadas
+Procesando registro (intento 1/2): ASEGURAMIENTO,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123467,PRUEBA_C2,3120000012,956281301,1209,ACC22012,BOGOTA,RETIRO DE BUNDLE AUXILIAR,PARAMOUNT,No navega en páginas https,Verificar puertos y firewall,
+Procesando Canal: 'ASEGURAMIENTO'
+✓ Seleccionado Canal: 'ASEGURAMIENTO'
+Procesando Sistema: 'SIEBEL SOMOS Y CONVERGENTE'
+✓ Seleccionado Sistema: 'SIEBEL SOMOS Y CONVERGENTE'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro procesado exitosamente: ASEGURAMIENTO,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123467,PRUEBA_C2,3120000012,956281301,1209,ACC22012,BOGOTA,RETIRO DE BUNDLE AUXILIAR,PARAMOUNT,No navega en páginas https,Verificar puertos y firewall,
+✓ Registro guardado en Gestiones_Realizadas.csv
+✓ Archivo process.csv actualizado, eliminadas 1 líneas procesadas
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_C1,3120000002,956281301,1207,ACC22002,BOGOTA,ADICION DE BUNDLE AUXILIAR,WIN SPORT ONLINE,No navega en páginas https,Verificar puertos y firewall,
+Procesando Canal: 'VENTAS'
+✓ Seleccionado Canal: 'VENTAS'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro procesado exitosamente: VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_C1,3120000002,956281301,1207,ACC22002,BOGOTA,ADICION DE BUNDLE AUXILIAR,WIN SPORT ONLINE,No navega en páginas https,Verificar puertos y firewall,
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): ASEGURAMIENTO,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123467,PRUEBA_C2,3120000012,956281301,1209,ACC22012,BOGOTA,RETIRO DE BUNDLE AUXILIAR,PARAMOUNT,No navega en páginas https,Verificar puertos y firewall,
+Procesando Canal: 'ASEGURAMIENTO'
+✓ Seleccionado Canal: 'ASEGURAMIENTO'
+Procesando Sistema: 'SIEBEL SOMOS Y CONVERGENTE'
+✓ Seleccionado Sistema: 'SIEBEL SOMOS Y CONVERGENTE'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro procesado exitosamente: ASEGURAMIENTO,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123467,PRUEBA_C2,3120000012,956281301,1209,ACC22012,BOGOTA,RETIRO DE BUNDLE AUXILIAR,PARAMOUNT,No navega en páginas https,Verificar puertos y firewall,
+✓ Registro guardado en Gestiones_Realizadas.csv
+✓ Archivo process.csv actualizado, eliminadas 2 líneas procesadas
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_C1,3120000002,956281301,1207,ACC22002,BOGOTA,ADICION DE BUNDLE AUXILIAR,WIN SPORT ONLINE,No navega en páginas https,Verificar puertos y firewall,
+Procesando Canal: 'VENTAS'
+✓ Seleccionado Canal: 'VENTAS'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro procesado exitosamente: VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_C1,3120000002,956281301,1207,ACC22002,BOGOTA,ADICION DE BUNDLE AUXILIAR,WIN SPORT ONLINE,No navega en páginas https,Verificar puertos y firewall,
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): ASEGURAMIENTO,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123467,PRUEBA_C2,3120000012,956281301,1209,ACC22012,BOGOTA,RETIRO DE BUNDLE AUXILIAR,PARAMOUNT,No navega en páginas https,Verificar puertos y firewall,
+Procesando Canal: 'ASEGURAMIENTO'
+✓ Seleccionado Canal: 'ASEGURAMIENTO'
+Procesando Sistema: 'SIEBEL SOMOS Y CONVERGENTE'
+✓ Seleccionado Sistema: 'SIEBEL SOMOS Y CONVERGENTE'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro guardado en Gestiones_Realizadas.csv
+✓ Archivo process.csv actualizado, eliminadas 2 líneas procesadas
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_C1,3120000002,956281301,1207,ACC22002,BOGOTA,ADICION DE BUNDLE AUXILIAR,WIN SPORT ONLINE,No navega en páginas https,Verificar puertos y firewall,
+Procesando Canal: 'VENTAS'
+✓ Seleccionado Canal: 'VENTAS'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro procesado exitosamente: VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_C1,3120000002,956281301,1207,ACC22002,BOGOTA,ADICION DE BUNDLE AUXILIAR,WIN SPORT ONLINE,No navega en páginas https,Verificar puertos y firewall,
+✓ Registro guardado en Gestiones_Realizadas.csv
+✓ Archivo process.csv actualizado, eliminadas 1 líneas procesadas
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_C1,3120000002,956281301,1207,ACC22002,BOGOTA,ADICION DE BUNDLE AUXILIAR,WIN SPORT ONLINE,No navega en páginas https,Verificar puertos y firewall,
+Procesando Canal: 'VENTAS'
+✓ Seleccionado Canal: 'VENTAS'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro procesado exitosamente: VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_C1,3120000002,956281301,1207,ACC22002,BOGOTA,ADICION DE BUNDLE AUXILIAR,WIN SPORT ONLINE,No navega en páginas https,Verificar puertos y firewall,
+✓ Registro guardado en Gestiones_Realizadas.csv
+✓ Archivo process.csv actualizado, eliminadas 1 líneas procesadas
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_C1,3120000002,956281301,1207,ACC22002,BOGOTA,ADICION DE BUNDLE AUXILIAR,WIN SPORT ONLINE,No navega en páginas https,Verificar puertos y firewall,
+Procesando Canal: 'VENTAS'
+✓ Seleccionado Canal: 'VENTAS'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro procesado exitosamente: VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_C1,3120000002,956281301,1207,ACC22002,BOGOTA,ADICION DE BUNDLE AUXILIAR,WIN SPORT ONLINE,No navega en páginas https,Verificar puertos y firewall,
+✓ Registro guardado en Gestiones_Realizadas.csv
+✓ Archivo process.csv actualizado, eliminadas 1 líneas procesadas
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_C1,3120000002,956281301,1207,ACC22002,BOGOTA,ADICION DE BUNDLE AUXILIAR,WIN SPORT ONLINE,No navega en páginas https,Verificar puertos y firewall,
+Procesando Canal: 'VENTAS'
+✓ Seleccionado Canal: 'VENTAS'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro procesado exitosamente: VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_C1,3120000002,956281301,1207,ACC22002,BOGOTA,ADICION DE BUNDLE AUXILIAR,WIN SPORT ONLINE,No navega en páginas https,Verificar puertos y firewall,
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): ASEGURAMIENTO,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123467,PRUEBA_C2,3120000012,956281301,1209,ACC22012,BOGOTA,RETIRO DE BUNDLE AUXILIAR,PARAMOUNT +,No navega en páginas https,Verificar puertos y firewall,
+Procesando Canal: 'ASEGURAMIENTO'
+✓ Seleccionado Canal: 'ASEGURAMIENTO'
+Procesando Sistema: 'SIEBEL SOMOS Y CONVERGENTE'
+✓ Seleccionado Sistema: 'SIEBEL SOMOS Y CONVERGENTE'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro procesado exitosamente: ASEGURAMIENTO,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123467,PRUEBA_C2,3120000012,956281301,1209,ACC22012,BOGOTA,RETIRO DE BUNDLE AUXILIAR,PARAMOUNT +,No navega en páginas https,Verificar puertos y firewall,
+✓ Registro guardado en Gestiones_Realizadas.csv
+✓ Archivo process.csv actualizado, eliminadas 2 líneas procesadas

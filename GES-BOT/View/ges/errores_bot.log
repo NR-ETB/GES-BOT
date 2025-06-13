@@ -1,0 +1,19 @@
+valor_2 recibido: 'WIN SPORT ONLINE'
+Procesamiento completado exitosamente
+Procesamiento completado exitosamente
+valor_2 recibido: 'WIN SPORT ONLINE'
+Procesamiento completado exitosamente
+Procesamiento completado exitosamente
+Error general en registro (intento 1): ASEGURAMIENTO,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123467,PRUEBA_C2,3120000012,956281301,1209,ACC22012,BOGOTA,RETIRO DE BUNDLE AUXILIAR,PARAMOUNT,No navega en páginas https,Verificar puertos y firewall, - Error: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=137.0.7151.104)
+No se pudo seleccionar checkbox con label: WIN SPORT ONLINE — no such element: Unable to locate element: {"method":"xpath","selector":"//label[contains(normalize-space(text()), "WIN SPORT ONLINE")]/preceding-sibling::input[@type='checkbox']"}
+  (Session info: chrome=137.0.7151.104)
+Procesamiento completado exitosamente
+valor_2 procesado: [WIN SPORT ONLINE]
+No se pudo seleccionar checkbox para: 'WIN SPORT ONLINE' — no such element: Unable to locate element: {"method":"xpath","selector":"//label[translate(normalize-space(), 'abcdefghijklmnopqrstuvwxyzáéíóúñ', 'ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÑ') = "WIN SPORT ONLINE"]/preceding-sibling::input[@type='checkbox']"}
+  (Session info: chrome=137.0.7151.104)
+Procesamiento completado exitosamente
+Procesamiento completado exitosamente
+Procesamiento completado exitosamente
+Procesamiento completado exitosamente
