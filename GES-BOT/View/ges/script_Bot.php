@@ -310,40 +310,95 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                 } else if ($valor === "ADICION DE BUNDLE AUXILIAR") {
 
                                     $valor_2 = trim($datos[13]);
-
+                                    
                                     // Escapar valor para XPath seguro
                                     $valorEscapado = json_encode($valor);
                                     $xpath = "//li/a[contains(text(), $valorEscapado)]";
-
+                                    
                                     $enlace = $driver->wait(8)->until(
                                         WebDriverExpectedCondition::elementToBeClickable(
                                             WebDriverBy::xpath($xpath)
                                         )
                                     );
-
+                                    
                                     $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$enlace]);
                                     usleep(300000); // 300ms
                                     $enlace->click();
-                                    usleep(500000);
+                                    
+                                    usleep(500000); 
 
-                                    try {
-                                        $valorCheckbox = trim($valor_2);
-                                        $valorEscapado = json_encode($valorCheckbox);
-                                        $xpath = "//input[@type='checkbox' and @value=$valorEscapado]";
+                                    if ($valor_2 === "DIRECTV GO") {
+                                        // Seleccionar checkbox DIRECTV GO
+                                        $checkbox = $driver->wait(8)->until(
+                                            WebDriverExpectedCondition::elementToBeClickable(
+                                                WebDriverBy::id("customCheckBox1")
+                                            )
+                                        );
+                                        if (!$checkbox->isSelected()) {
+                                            $checkbox->click();
+                                        }
+                                        
+                                    } else if ($valor_2 === "PARAMOUNT +") {
+                                        // Seleccionar checkbox PARAMOUNT
+                                        $checkbox = $driver->wait(8)->until(
+                                            WebDriverExpectedCondition::elementToBeClickable(
+                                                WebDriverBy::id("customCheckBox1")
+                                            )
+                                        );
+                                        if (!$checkbox->isSelected()) {
+                                            $checkbox->click();
+                                        }
+                                        
+                                    } else if ($valor_2 === "UNIVERSAL +") {
+                                        // Seleccionar checkbox UNIVERSAL
+                                        $checkbox = $driver->wait(8)->until(
+                                            WebDriverExpectedCondition::elementToBeClickable(
+                                                WebDriverBy::id("customCheckBox1")
+                                            )
+                                        );
+                                        if (!$checkbox->isSelected()) {
+                                            $checkbox->click();
+                                        }
+                                        
+                                    } else if ($valor_2 === "WIN SPORT ONLINE") {
+                                        // Seleccionar checkbox WIN SPORT ONLINE
+                                        $checkbox = $driver->wait(8)->until(
+                                            WebDriverExpectedCondition::elementToBeClickable(
+                                                WebDriverBy::id("customCheckBox1")
+                                            )
+                                        );
+                                        if (!$checkbox->isSelected()) {
+                                            $checkbox->click();
+                                        }
+                                        
+                                    } else if ($valor_2 === "HBO MAX") {
+                                        // Seleccionar checkbox HBO MAX
+                                        $checkbox = $driver->wait(8)->until(
+                                            WebDriverExpectedCondition::elementToBeClickable(
+                                                WebDriverBy::id("customCheckBox5")
+                                            )
+                                    );
 
+                                    if (!$checkbox->isSelected()) {
+                                        $checkbox->click();
+                                    }
+                                    
+                                    } else {
+                                        // Si no coincide con ninguna opción específica, buscar por texto del label
+                                        $valorEscapado = json_encode($valor_2);
+                                        $xpath = "//label[contains(text(), $valorEscapado)]/preceding-sibling::input[@type='checkbox']";
+                                        
                                         $checkbox = $driver->wait(8)->until(
                                             WebDriverExpectedCondition::elementToBeClickable(
                                                 WebDriverBy::xpath($xpath)
                                             )
                                         );
-
+                                        
                                         if (!$checkbox->isSelected()) {
                                             $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$checkbox]);
                                             usleep(300000); // 300ms
                                             $checkbox->click();
                                         }
-                                    } catch (Exception $e) {
-                                        error_log("No se pudo seleccionar checkbox con value='$valor_2': " . $e->getMessage() . "\n", 3, 'errores_bot.log');
                                     }
 
                                     $camposTextarea = [
@@ -355,31 +410,31 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                         if (!isset($datos[$campo['index']]) || empty(trim($datos[$campo['index']]))) {
                                             continue;
                                         }
-
+                                        
                                         try {
                                             $textarea = $driver->wait(6)->until(
                                                 WebDriverExpectedCondition::presenceOfElementLocated(
                                                     WebDriverBy::xpath("//textarea[@name='{$campo['name']}']")
                                                 )
                                             );
-
+                                            
                                             $textarea->clear();
                                             $texto = trim($datos[$campo['index']]);
                                             $textarea->sendKeys($texto);
-
+                                            
                                             // Verificar que el texto se escribió correctamente
                                             $textoActual = $textarea->getAttribute('value');
                                             if ($textoActual !== $texto) {
                                                 error_log("Advertencia: El texto en {$campo['name']} no coincide\n", 3, 'errores_bot.log');
                                             }
-
+                                            
                                         } catch (Exception $e) {
                                             $procesamientoExitoso = false;
                                             error_log("Error llenando textarea {$campo['name']}: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
                                         }
                                     }
 
-                                    sleep(3); 
+                                    sleep(3);
                                     
                                 } else if ($valor === "ADICION DE SVAS") {
 
@@ -530,8 +585,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                     }
 
                                     $camposTextarea = [
-                                        ['name' => 'ErrorPresentado', 'index' => 13],
-                                        ['name' => 'SolucionRequerida', 'index' => 14],
+                                        ['name' => 'ErrorPresentado', 'index' => 14],
+                                        ['name' => 'SolucionRequerida', 'index' => 15],
                                     ];
 
                                     foreach ($camposTextarea as $campo) {
@@ -567,131 +622,141 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                 } else if ($valor === "CAMBIO DE BUNDLE AUXILIAR") {
 
                                     $valor_2 = trim($datos[13]);
-                                    
-                                    // Escapar valor para XPath seguro
+
+                                    // Escapar valor para XPath seguroMore actions
                                     $valorEscapado = json_encode($valor);
                                     $xpath = "//li/a[contains(text(), $valorEscapado)]";
-                                    
+
                                     $enlace = $driver->wait(8)->until(
                                         WebDriverExpectedCondition::elementToBeClickable(
                                             WebDriverBy::xpath($xpath)
                                         )
                                     );
-                                    
+
                                     $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$enlace]);
-                                    usleep(300000); // 300ms
+                                    usleep(300000);
                                     $enlace->click();
-                                    
                                     usleep(500000); 
 
-                                    if ($valor_2 === "DIRECTV GO") {
-                                        // Seleccionar checkbox DIRECTV GO
-                                        $checkbox = $driver->wait(8)->until(
-                                            WebDriverExpectedCondition::elementToBeClickable(
-                                                WebDriverBy::id("customCheckBox1")
-                                            )
-                                        );
-                                        if (!$checkbox->isSelected()) {
-                                            $checkbox->click();
-                                        }
-                                        
-                                    } else if ($valor_2 === "PARAMOUNT +") {
-                                        // Seleccionar checkbox PARAMOUNT
-                                        $checkbox = $driver->wait(8)->until(
-                                            WebDriverExpectedCondition::elementToBeClickable(
-                                                WebDriverBy::id("customCheckBox1")
-                                            )
-                                        );
-                                        if (!$checkbox->isSelected()) {
-                                            $checkbox->click();
-                                        }
-                                        
-                                    } else if ($valor_2 === "UNIVERSAL +") {
-                                        // Seleccionar checkbox UNIVERSAL
-                                        $checkbox = $driver->wait(8)->until(
-                                            WebDriverExpectedCondition::elementToBeClickable(
-                                                WebDriverBy::id("customCheckBox1")
-                                            )
-                                        );
-                                        if (!$checkbox->isSelected()) {
-                                            $checkbox->click();
-                                        }
-                                        
-                                    } else if ($valor_2 === "WIN SPORT ONLINE") {
-                                        // Seleccionar checkbox WIN SPORT ONLINE
-                                        $checkbox = $driver->wait(8)->until(
-                                            WebDriverExpectedCondition::elementToBeClickable(
-                                                WebDriverBy::id("customCheckBox1")
-                                            )
-                                        );
-                                        if (!$checkbox->isSelected()) {
-                                            $checkbox->click();
-                                        }
-                                        
-                                    } else if ($valor_2 === "HBO MAX") {
-                                        // Seleccionar checkbox HBO MAX
-                                        $checkbox = $driver->wait(8)->until(
-                                            WebDriverExpectedCondition::elementToBeClickable(
-                                                WebDriverBy::id("customCheckBox5")
-                                            )
-                                    );
+                                    // PASO CRÍTICO: Abrir el dropdown primero
+                                    try {
+                                        // Buscar el botón del dropdown (puede tener diferentes selectores)
+                                        $dropdownButton = null;
+                                        $selectoresDropdown = [
+                                            "//button[contains(@class, 'dropdown-toggle')]",
+                                            "//div[contains(@class, 'dropdown')]//button",
+                                            "//select[contains(@name, 'bundle') or contains(@name, 'Bundle')]",
+                                            "//div[@role='button' and contains(@class, 'select')]"
+                                        ];
 
-                                    if (!$checkbox->isSelected()) {
-                                        $checkbox->click();
+                                        foreach ($selectoresDropdown as $selector) {
+                                            try {
+                                                $dropdownButton = $driver->wait(3)->until(
+                                                    WebDriverExpectedCondition::elementToBeClickable(
+                                                        WebDriverBy::xpath($selector)
+                                                    )
+                                                );
+                                                error_log("Dropdown encontrado con selector: $selector\n", 3, 'errores_bot.log');
+                                                break;
+                                            } catch (Exception $e) {
+                                                continue;
+                                            }
+                                        }
+
+                                        if ($dropdownButton) {
+                                            $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$dropdownButton]);
+                                            usleep(300000);
+                                            $dropdownButton->click();
+                                            usleep(800000); // Esperar a que se abra el dropdown
+                                            error_log("Dropdown abierto exitosamente\n", 3, 'errores_bot.log');
+                                        } else {
+                                            error_log("No se pudo encontrar el botón del dropdown\n", 3, 'errores_bot.log');
+                                        }
+
+                                    } catch (Exception $e) {
+                                        error_log("Error abriendo dropdown: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
                                     }
-                                    
+
+                                    // Ahora seleccionar la opción específica
+                                    if ($valor_2 === "NUEVO DIRECTV FULL") {
+                                        $opcion = $driver->wait(8)->until(
+                                            WebDriverExpectedCondition::elementToBeClickable(
+                                                WebDriverBy::xpath("//a[@role='option' and contains(.,'NUEVO DIRECTV FULL')]")
+                                            )
+                                        );
+                                        $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$opcion]);
+                                        usleep(300000);
+                                        $opcion->click();
+
+                                    } else if ($valor_2 === "NUEVO DIRECTV FLEX") {
+                                        $opcion = $driver->wait(8)->until(
+                                            WebDriverExpectedCondition::elementToBeClickable(
+                                                WebDriverBy::xpath("//a[@role='option' and contains(.,'NUEVO DIRECTV FLEX')]")
+                                            )
+                                        );
+                                        $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$opcion]);
+                                        usleep(300000);
+                                        $opcion->click();
+
+                                    } else if ($valor_2 === "NUEVO DIRECTV BASICO") {
+                                        $opcion = $driver->wait(8)->until(
+                                            WebDriverExpectedCondition::elementToBeClickable(
+                                                WebDriverBy::xpath("//a[@role='option' and contains(.,'NUEVO DIRECTV BASICO')]")
+                                            )
+                                        );
+                                        $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$opcion]);
+                                        usleep(300000);
+                                        $opcion->click();
+
                                     } else {
-                                        // Si no coincide con ninguna opción específica, buscar por texto del label
+                                        // Si no coincide con ninguna opción específica, buscar por texto
                                         $valorEscapado = json_encode($valor_2);
-                                        $xpath = "//label[contains(text(), $valorEscapado)]/preceding-sibling::input[@type='checkbox']";
-                                        
-                                        $checkbox = $driver->wait(8)->until(
+                                        $xpath = "//a[@role='option' and contains(text(), $valorEscapado)]";
+
+                                        $opcion = $driver->wait(8)->until(
                                             WebDriverExpectedCondition::elementToBeClickable(
                                                 WebDriverBy::xpath($xpath)
                                             )
                                         );
-                                        
-                                        if (!$checkbox->isSelected()) {
-                                            $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$checkbox]);
-                                            usleep(300000); // 300ms
-                                            $checkbox->click();
-                                        }
+
+                                        $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$opcion]);
+                                        usleep(300000);
+                                        $opcion->click();
                                     }
 
                                     $camposTextarea = [
-                                        ['name' => 'ErrorPresentado', 'index' => 14],
-                                        ['name' => 'SolucionRequerida', 'index' => 15],
+                                        ['name' => 'ErrorPresentado', 'index' => 15],
+                                        ['name' => 'SolucionRequerida', 'index' => 16],
                                     ];
 
                                     foreach ($camposTextarea as $campo) {
                                         if (!isset($datos[$campo['index']]) || empty(trim($datos[$campo['index']]))) {
                                             continue;
                                         }
-                                        
+
                                         try {
                                             $textarea = $driver->wait(6)->until(
                                                 WebDriverExpectedCondition::presenceOfElementLocated(
                                                     WebDriverBy::xpath("//textarea[@name='{$campo['name']}']")
                                                 )
                                             );
-                                            
+
                                             $textarea->clear();
                                             $texto = trim($datos[$campo['index']]);
                                             $textarea->sendKeys($texto);
-                                            
-                                            // Verificar que el texto se escribió correctamente
+
                                             $textoActual = $textarea->getAttribute('value');
                                             if ($textoActual !== $texto) {
                                                 error_log("Advertencia: El texto en {$campo['name']} no coincide\n", 3, 'errores_bot.log');
                                             }
-                                            
+
                                         } catch (Exception $e) {
                                             $procesamientoExitoso = false;
                                             error_log("Error llenando textarea {$campo['name']}: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
                                         }
                                     }
 
-                                    sleep(3); 
+                                    sleep(3);
                                     
                                 } else if ($valor === "CAMBIO DE ESTRATO") {
 
@@ -858,8 +923,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                     // SEGUNDO: Ahora llenar los campos de input (que ya están disponibles)
                                     $camposInput = [
-                                        ['name' => 'DireccionDestino', 'index' => 19],
-                                        ['name' => 'PlanOfrecido', 'index' => 20],
+                                        ['name' => 'DireccionDestino', 'index' => 14],
+                                        ['name' => 'PlanOfrecido', 'index' => 15],
                                     ];
 
                                     foreach ($camposInput as $campo) {
@@ -897,8 +962,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                     // TERCERO: Llenar los textareas
                                     $camposTextarea = [
-                                        ['name' => 'ErrorPresentado', 'index' => 13],
-                                        ['name' => 'SolucionRequerida', 'index' => 14],
+                                        ['name' => 'ErrorPresentado', 'index' => 17],
+                                        ['name' => 'SolucionRequerida', 'index' => 18],
                                     ];
 
                                     foreach ($camposTextarea as $campo) {
@@ -950,9 +1015,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                     // AHORA procesar los campos de input (después del clic)
                                     $camposInput = [
-                                        ['name' => 'DireccionActual', 'index' => 18],
-                                        ['name' => 'DireccionDestino', 'index' => 19],
-                                        ['name' => 'PlanOfrecido', 'index' => 20],
+                                        ['name' => 'DireccionActual', 'index' => 13],
+                                        ['name' => 'DireccionDestino', 'index' => 14],
+                                        ['name' => 'PlanOfrecido', 'index' => 15],
                                     ];
 
                                     foreach ($camposInput as $campo) {
@@ -994,8 +1059,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                     // Procesar los campos textarea
                                     $camposTextarea = [
-                                        ['name' => 'ErrorPresentado', 'index' => 13],
-                                        ['name' => 'SolucionRequerida', 'index' => 14],
+                                        ['name' => 'ErrorPresentado', 'index' => 16],
+                                        ['name' => 'SolucionRequerida', 'index' => 17],
                                     ];
 
                                     foreach ($camposTextarea as $campo) {
@@ -1048,7 +1113,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                     // PASO 3: AHORA procesar los campos de input (después del clic)
                                     $camposInput = [
-                                        ['name' => 'DireccionDestino', 'index' => 19],
+                                        ['name' => 'DireccionDestino', 'index' => 14],
                                     ];
 
                                     foreach ($camposInput as $campo) {
@@ -1095,8 +1160,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                     // PASO 4: Procesar los campos textarea
                                     $camposTextarea = [
-                                        ['name' => 'ErrorPresentado', 'index' => 13],
-                                        ['name' => 'SolucionRequerida', 'index' => 14],
+                                        ['name' => 'ErrorPresentado', 'index' => 16],
+                                        ['name' => 'SolucionRequerida', 'index' => 17],
                                     ];
 
                                     foreach ($camposTextarea as $campo) {
@@ -1138,120 +1203,241 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                     
                                 } else if ($valor === "CANCELACION VOLUNTARIA") {
 
-                                    $valor = trim($datos[12]);
+                                    
                                     $valor_2 = trim($datos[13]);
-
-                                    if ($valor_2 === "MOTIVO ECONOMICO") {
-                                        $opcion = $driver->wait(8)->until(
+    
+                                    // PASO 1: Hacer click en "CANCELACION VOLUNTARIA"
+                                    $valorEscapado = json_encode($valor);
+                                    $xpath = "//li/a[contains(text(), $valorEscapado)]";
+                                    
+                                    $enlace = $driver->wait(8)->until(
+                                        WebDriverExpectedCondition::elementToBeClickable(
+                                            WebDriverBy::xpath($xpath)
+                                        )
+                                    );
+                                    
+                                    $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$enlace]);
+                                    usleep(300000); // 300ms
+                                    $enlace->click();
+                                    
+                                    usleep(1000000); // Esperar 1 segundo para que se abra el submenu
+                                    
+                                    // PASO 2: Hacer clic en el menú desplegable para abrirlo
+                                    try {
+                                        $menuDropdown = $driver->wait(8)->until(
                                             WebDriverExpectedCondition::elementToBeClickable(
-                                                WebDriverBy::xpath("//a[@role='option' and contains(.,'MOTIVO ECONOMICO')]")
+                                                WebDriverBy::cssSelector("button.dropdown-toggle, .bootstrap-select button, [data-toggle='dropdown']")
                                             )
                                         );
-                                        $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$opcion]);
+                                        $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$menuDropdown]);
                                         usleep(300000);
-                                        $opcion->click();
+                                        $menuDropdown->click();
+                                        usleep(500000); // Esperar que se abra el menú
+                                        error_log("Menú desplegable abierto\n", 3, 'proceso_bot.log');
+                                    } catch (Exception $e) {
+                                        error_log("Error abriendo menú desplegable: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
+                                    }
+                                    
+                                    // PASO 3: Seleccionar la opción del submenu
+                                    error_log("Intentando seleccionar opción del submenu: '$valor_2'\n", 3, 'proceso_bot.log');
+                                    
+                                    $opcionSeleccionada = false;
+                                    
+                                    if ($valor_2 === "MOTIVO ECONOMICO") {
+                                        try {
+                                            $checkbox = $driver->wait(8)->until(
+                                                WebDriverExpectedCondition::elementToBeClickable(
+                                                    WebDriverBy::id("bs-select-1-0")
+                                                )
+                                            );
+                                            $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$checkbox]);
+                                            usleep(300000);
+                                            if (!$checkbox->isSelected()) {
+                                                $checkbox->click();
+                                                error_log("Opición 'MOTIVO ECONOMICO' seleccionada\n", 3, 'proceso_bot.log');
+                                            }
+                                            $opcionSeleccionada = true;
+                                        } catch (Exception $e) {
+                                            error_log("Error seleccionando MOTIVO ECONOMICO: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
+                                        }
                                         
                                     } else if ($valor_2 === "FALLA DEL SERVICIO") {
-                                        $opcion = $driver->wait(8)->until(
-                                            WebDriverExpectedCondition::elementToBeClickable(
-                                                WebDriverBy::xpath("//a[@role='option' and contains(.,'FALLA DEL SERVICIO')]")
-                                            )
-                                        );
-                                        $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$opcion]);
-                                        usleep(300000);
-                                        $opcion->click();
+                                        try {
+                                            $checkbox = $driver->wait(8)->until(
+                                                WebDriverExpectedCondition::elementToBeClickable(
+                                                    WebDriverBy::id("bs-select-1-1")
+                                                )
+                                            );
+                                            $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$checkbox]);
+                                            usleep(300000);
+                                            if (!$checkbox->isSelected()) {
+                                                $checkbox->click();
+                                                error_log("Opción 'FALLA DEL SERVICIO' seleccionada\n", 3, 'proceso_bot.log');
+                                            }
+                                            $opcionSeleccionada = true;
+                                        } catch (Exception $e) {
+                                            error_log("Error seleccionando FALLA DEL SERVICIO: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
+                                        }
                                         
                                     } else if ($valor_2 === "MEJOR OFERTA DE LA COMPETENCIA") {
-                                        $opcion = $driver->wait(8)->until(
-                                            WebDriverExpectedCondition::elementToBeClickable(
-                                                WebDriverBy::xpath("//a[@role='option' and contains(.,'MEJOR OFERTA DE LA COMPETENCIA')]")
-                                            )
-                                        );
-                                        $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$opcion]);
-                                        usleep(300000);
-                                        $opcion->click();
+                                        try {
+                                            $checkbox = $driver->wait(8)->until(
+                                                WebDriverExpectedCondition::elementToBeClickable(
+                                                    WebDriverBy::id("bs-select-1-2")
+                                                )
+                                            );
+                                            $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$checkbox]);
+                                            usleep(300000);
+                                            if (!$checkbox->isSelected()) {
+                                                $checkbox->click();
+                                                error_log("Opción 'MEJOR OFERTA DE LA COMPETENCIA' seleccionada\n", 3, 'proceso_bot.log');
+                                            }
+                                            $opcionSeleccionada = true;
+                                        } catch (Exception $e) {
+                                            error_log("Error seleccionando MEJOR OFERTA DE LA COMPETENCIA: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
+                                        }
                                         
                                     } else if ($valor_2 === "TRASLADO SIN COBERTURA") {
-                                        $opcion = $driver->wait(8)->until(
-                                            WebDriverExpectedCondition::elementToBeClickable(
-                                                WebDriverBy::xpath("//a[@role='option' and contains(.,'TRASLADO SIN COBERTURA')]")
-                                            )
-                                        );
-                                        $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$opcion]);
-                                        usleep(300000);
-                                        $opcion->click();
+                                        try {
+                                            $checkbox = $driver->wait(8)->until(
+                                                WebDriverExpectedCondition::elementToBeClickable(
+                                                    WebDriverBy::id("bs-select-1-3")
+                                                )
+                                            );
+                                            $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$checkbox]);
+                                            usleep(300000);
+                                            if (!$checkbox->isSelected()) {
+                                                $checkbox->click();
+                                                error_log("Opción 'TRASLADO SIN COBERTURA' seleccionada\n", 3, 'proceso_bot.log');
+                                            }
+                                            $opcionSeleccionada = true;
+                                        } catch (Exception $e) {
+                                            error_log("Error seleccionando TRASLADO SIN COBERTURA: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
+                                        }
                                         
                                     } else if ($valor_2 === "VIAJE FUERA DE LA CIUDAD") {
-                                        $opcion = $driver->wait(8)->until(
-                                            WebDriverExpectedCondition::elementToBeClickable(
-                                                WebDriverBy::xpath("//a[@role='option' and contains(.,'VIAJE FUERA DE LA CIUDAD')]")
-                                            )
-                                        );
-                                        $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$opcion]);
-                                        usleep(300000);
-                                        $opcion->click();
+                                        try {
+                                            $checkbox = $driver->wait(8)->until(
+                                                WebDriverExpectedCondition::elementToBeClickable(
+                                                    WebDriverBy::id("bs-select-1-4")
+                                                )
+                                            );
+                                            $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$checkbox]);
+                                            usleep(300000);
+                                            if (!$checkbox->isSelected()) {
+                                                $checkbox->click();
+                                                error_log("Opción 'VIAJE FUERA DE LA CIUDAD' seleccionada\n", 3, 'proceso_bot.log');
+                                            }
+                                            $opcionSeleccionada = true;
+                                        } catch (Exception $e) {
+                                            error_log("Error seleccionando VIAJE FUERA DE LA CIUDAD: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
+                                        }
                                         
                                     } else if ($valor_2 === "INCONFORMIDAD CON LA FACTURA") {
-                                        $opcion = $driver->wait(8)->until(
-                                            WebDriverExpectedCondition::elementToBeClickable(
-                                                WebDriverBy::xpath("//a[@role='option' and contains(.,'INCONFORMIDAD CON LA FACTURA')]")
-                                            )
-                                        );
-                                        $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$opcion]);
-                                        usleep(300000);
-                                        $opcion->click();
+                                        try {
+                                            $checkbox = $driver->wait(8)->until(
+                                                WebDriverExpectedCondition::elementToBeClickable(
+                                                    WebDriverBy::id("bs-select-1-5")
+                                                )
+                                            );
+                                            $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$checkbox]);
+                                            usleep(300000);
+                                            if (!$checkbox->isSelected()) {
+                                                $checkbox->click();
+                                                error_log("Opción 'INCONFORMIDAD CON LA FACTURA' seleccionada\n", 3, 'proceso_bot.log');
+                                            }
+                                            $opcionSeleccionada = true;
+                                        } catch (Exception $e) {
+                                            error_log("Error seleccionando INCONFORMIDAD CON LA FACTURA: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
+                                        }
                                         
                                     } else if ($valor_2 === "MOTIVOS PERSONALES") {
-                                        $opcion = $driver->wait(8)->until(
-                                            WebDriverExpectedCondition::elementToBeClickable(
-                                                WebDriverBy::xpath("//a[@role='option' and contains(.,'MOTIVOS PERSONALES')]")
-                                            )
-                                        );
-                                        $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$opcion]);
-                                        usleep(300000);
-                                        $opcion->click();
+                                        try {
+                                            $checkbox = $driver->wait(8)->until(
+                                                WebDriverExpectedCondition::elementToBeClickable(
+                                                    WebDriverBy::id("bs-select-1-6")
+                                                )
+                                            );
+                                            $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$checkbox]);
+                                            usleep(300000);
+                                            if (!$checkbox->isSelected()) {
+                                                $checkbox->click();
+                                                error_log("Opción 'MOTIVOS PERSONALES' seleccionada\n", 3, 'proceso_bot.log');
+                                            }
+                                            $opcionSeleccionada = true;
+                                        } catch (Exception $e) {
+                                            error_log("Error seleccionando MOTIVOS PERSONALES: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
+                                        }
                                         
                                     } else if ($valor_2 === "INCONFORMIDAD CON EL SERVICIO") {
-                                        $opcion = $driver->wait(8)->until(
-                                            WebDriverExpectedCondition::elementToBeClickable(
-                                                WebDriverBy::xpath("//a[@role='option' and contains(.,'INCONFORMIDAD CON EL SERVICIO')]")
-                                            )
-                                        );
-                                        $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$opcion]);
-                                        usleep(300000);
-                                        $opcion->click();
+                                        try {
+                                            $checkbox = $driver->wait(8)->until(
+                                                WebDriverExpectedCondition::elementToBeClickable(
+                                                    WebDriverBy::id("bs-select-1-7")
+                                                )
+                                            );
+                                            $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$checkbox]);
+                                            usleep(300000);
+                                            if (!$checkbox->isSelected()) {
+                                                $checkbox->click();
+                                                error_log("Opción 'INCONFORMIDAD CON EL SERVICIO' seleccionada\n", 3, 'proceso_bot.log');
+                                            }
+                                            $opcionSeleccionada = true;
+                                        } catch (Exception $e) {
+                                            error_log("Error seleccionando INCONFORMIDAD CON EL SERVICIO: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
+                                        }
                                         
                                     } else if ($valor_2 === "TITULAR FALLECIDO") {
-                                        $opcion = $driver->wait(8)->until(
-                                            WebDriverExpectedCondition::elementToBeClickable(
-                                                WebDriverBy::xpath("//a[@role='option' and contains(.,'TITULAR FALLECIDO')]")
-                                            )
-                                        );
-                                        $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$opcion]);
-                                        usleep(300000);
-                                        $opcion->click();
+                                        try {
+                                            $checkbox = $driver->wait(8)->until(
+                                                WebDriverExpectedCondition::elementToBeClickable(
+                                                    WebDriverBy::id("bs-select-1-8")
+                                                )
+                                            );
+                                            $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$checkbox]);
+                                            usleep(300000);
+                                            if (!$checkbox->isSelected()) {
+                                                $checkbox->click();
+                                                error_log("Opción 'TITULAR FALLECIDO' seleccionada\n", 3, 'proceso_bot.log');
+                                            }
+                                            $opcionSeleccionada = true;
+                                        } catch (Exception $e) {
+                                            error_log("Error seleccionando TITULAR FALLECIDO: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
+                                        }
                                         
                                     } else {
                                         // Fallback para opciones no listadas
-                                        $valorEscapado = json_encode($valor_2);
-                                        $xpath = "//a[@role='option' and contains(text(), $valorEscapado)]";
-                                        
-                                        $opcion = $driver->wait(8)->until(
-                                            WebDriverExpectedCondition::elementToBeClickable(
-                                                WebDriverBy::xpath($xpath)
-                                            )
-                                        );
-                                        $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$opcion]);
-                                        usleep(300000);
-                                        $opcion->click();
+                                        try {
+                                            error_log("Usando fallback para opción: '$valor_2'\n", 3, 'proceso_bot.log');
+                                            $valorEscapado = json_encode($valor_2);
+                                            $xpath = "//a[@role='option' and contains(text(), $valorEscapado)]";
+                                            
+                                            $opcion = $driver->wait(8)->until(
+                                                WebDriverExpectedCondition::elementToBeClickable(
+                                                    WebDriverBy::xpath($xpath)
+                                                )
+                                            );
+                                            $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$opcion]);
+                                            usleep(300000);
+                                            $opcion->click();
+                                            error_log("Opción '$valor_2' seleccionada con fallback\n", 3, 'proceso_bot.log');
+                                            $opcionSeleccionada = true;
+                                        } catch (Exception $e) {
+                                            error_log("Error en fallback para '$valor_2': " . $e->getMessage() . "\n", 3, 'errores_bot.log');
+                                        }
+                                    }
+                                    
+                                    if (!$opcionSeleccionada) {
+                                        error_log("ADVERTENCIA: No se pudo seleccionar ninguna opción para '$valor_2'\n", 3, 'errores_bot.log');
+                                        $procesamientoExitoso = false;
                                     }
 
-                                    usleep(500000); // Esperar que se procese la selección
-
-                                    // PASO 2: PROCESAR CAMPOS INPUT CON VALIDACIÓN MEJORADA
+                                    usleep(1000000); // Esperar que se procese la selección
+                                    
+                                    // PASO 3: PROCESAR CAMPOS INPUT CON VALIDACIÓN MEJORADA
                                     $camposInput = [
-                                        ['name' => 'SoportePQR', 'index' => 20],         
-                                        ['name' => 'DireccionDestino', 'index' => 21],   
+                                        ['name' => 'SoportePQR', 'index' => 15],   
+                                        ['name' => 'DireccionDestino', 'index' => 14],         
                                     ];
 
                                     foreach ($camposInput as $campo) {
@@ -1314,25 +1500,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                     // Esperar adicional para asegurar que los campos se procesen
                                     usleep(800000);
 
-                                    // Escapar valor para XPath seguro
-                                    $valorEscapado = json_encode($valor);
-                                    $xpath = "//li/a[contains(text(), $valorEscapado)]";
-
-                                    $enlace = $driver->wait(8)->until(
-                                        WebDriverExpectedCondition::elementToBeClickable(
-                                            WebDriverBy::xpath($xpath)
-                                        )
-                                    );
-
-                                    $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$enlace]);
-                                    usleep(300000); // 300ms
-                                    $enlace->click();
-
-                                    usleep(500000); 
-
+                                    // PASO 4: PROCESAR CAMPOS TEXTAREA
                                     $camposTextarea = [
-                                        ['name' => 'ErrorPresentado', 'index' => 19],
-                                        ['name' => 'SolucionRequerida', 'index' => 18],
+                                        ['name' => 'ErrorPresentado', 'index' => 21],
+                                        ['name' => 'SolucionRequerida', 'index' => 22],
                                     ];
 
                                     foreach ($camposTextarea as $campo) {
@@ -1346,6 +1517,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                     WebDriverBy::xpath("//textarea[@name='{$campo['name']}']")
                                                 )
                                             );
+                                            
+                                            $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$textarea]);
+                                            usleep(300000);
                                             
                                             $textarea->clear();
                                             $texto = trim($datos[$campo['index']]);
@@ -1646,34 +1820,119 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                     sleep(3);
                                 } else if ($valor === "CONTROL FRAUDE") {
 
-                                    $valor_2 = trim($datos[16]);
-
-                                    // Variable para controlar si el procesamiento fue exitoso
-                                    $procesamientoExitoso = true;
+                                    $valor_2 = trim($datos[14]);
 
                                     try {
-                                        // PASO 1: PROCESAR ENLACE CON VALOR
+                                        // PASO 1: PROCESAR ENLACE CON VALOR usando los 3 MÉTODOS
                                         $valorEscapado = json_encode($valor);
                                         $xpath = "//li/a[contains(text(), $valorEscapado)]";
-                                        
-                                        $enlace = $driver->wait(8)->until(
-                                            WebDriverExpectedCondition::elementToBeClickable(
-                                                WebDriverBy::xpath($xpath)
-                                            )
-                                        );
-                                        
-                                        $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$enlace]);
-                                        usleep(300000); // 300ms
-                                        $enlace->click();
-                                        
-                                        usleep(500000);
-                                        
+
+                                        // MÉTODO 1
+                                        try {
+                                            $driver->executeScript("
+                                                document.body.style.overflowY = 'auto';
+                                                window.scrollBy(0, 300);
+                                            ");
+                                            usleep(800000);
+
+                                            $enlace = $driver->wait(8)->until(
+                                                WebDriverExpectedCondition::presenceOfElementLocated(
+                                                    WebDriverBy::xpath($xpath)
+                                                )
+                                            );
+
+                                            $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$enlace]);
+                                            usleep(500000);
+                                            $driver->executeScript("document.body.style.overflowY = 'hidden';");
+
+                                            $driver->wait(5)->until(
+                                                WebDriverExpectedCondition::elementToBeClickable(
+                                                    WebDriverBy::xpath($xpath)
+                                                )
+                                            );
+
+                                            $enlace->click();
+                                            usleep(500000);
+
+                                        } catch (Exception $e1) {
+                                            error_log("Método 1 falló: " . $e1->getMessage() . "\n", 3, 'errores_bot.log');
+
+                                            // MÉTODO 2
+                                            try {
+                                                $driver->executeScript("
+                                                    document.body.style.overflowY = 'visible';
+                                                    document.documentElement.style.overflowY = 'visible';
+                                                ");
+                                                usleep(500000);
+
+                                                $enlace = $driver->wait(8)->until(
+                                                    WebDriverExpectedCondition::presenceOfElementLocated(
+                                                        WebDriverBy::xpath($xpath)
+                                                    )
+                                                );
+
+                                                $driver->executeScript("arguments[0].click();", [$enlace]);
+
+                                                $driver->executeScript("
+                                                    document.body.style.overflowY = 'hidden';
+                                                    document.documentElement.style.overflowY = '';
+                                                ");
+                                                usleep(500000);
+
+                                            } catch (Exception $e2) {
+                                                error_log("Método 2 falló: " . $e2->getMessage() . "\n", 3, 'errores_bot.log');
+
+                                                // MÉTODO 3
+                                                try {
+                                                    for ($i = 0; $i < 3; $i++) {
+                                                        $driver->executeScript("window.scrollBy(0, 200);");
+                                                        usleep(300000);
+                                                    }
+
+                                                    $enlace = $driver->wait(8)->until(
+                                                        WebDriverExpectedCondition::presenceOfElementLocated(
+                                                            WebDriverBy::xpath($xpath)
+                                                        )
+                                                    );
+
+                                                    $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$enlace]);
+                                                    usleep(500000);
+                                                    $enlace->click();
+                                                    usleep(500000);
+
+                                                } catch (Exception $e3) {
+                                                    $procesamientoExitoso = false;
+                                                    error_log("Todos los métodos fallaron para enlace: " . $e3->getMessage() . "\n", 3, 'errores_bot.log');
+                                                    return;
+                                                }
+                                            }
+                                        }
+
                                         error_log("Enlace '$valor' clickeado exitosamente\n", 3, 'proceso_bot.log');
 
                                     } catch (Exception $e) {
                                         $procesamientoExitoso = false;
                                         error_log("Error procesando enlace: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
                                     }
+                                   
+                                    try {
+                                        $menuDropdown = $driver->wait(8)->until(
+                                            WebDriverExpectedCondition::elementToBeClickable(
+                                                WebDriverBy::cssSelector("button.dropdown-toggle, .bootstrap-select button, [data-toggle='dropdown']")
+                                            )
+                                        );
+                                        $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$menuDropdown]);
+                                        usleep(300000);
+                                        $menuDropdown->click();
+                                        usleep(500000); // Esperar que se abra el menú
+                                        error_log("Menú desplegable abierto\n", 3, 'proceso_bot.log');
+                                    } catch (Exception $e) {
+                                        error_log("Error abriendo menú desplegable: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
+                                    }
+                                    
+                                    error_log("Intentando seleccionar opción del submenu: '$valor_2'\n", 3, 'proceso_bot.log');
+                                    
+                                    $opcionSeleccionada = false;
 
                                     try {
                                         // PASO 2: PROCESAR CHECKBOXES SEGÚN VALOR_2 (IDs corregidas)
@@ -1687,7 +1946,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 $checkbox->click();
                                                 error_log("Checkbox DESBLOQUEO ADMINISTRATIVO seleccionado\n", 3, 'proceso_bot.log');
                                             }
-                                            
+
                                         } else if ($valor_2 === "LEVANTAR RESTRICCION EN RECMA") {
                                             $checkbox = $driver->wait(8)->until(
                                                 WebDriverExpectedCondition::elementToBeClickable(
@@ -1698,7 +1957,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 $checkbox->click();
                                                 error_log("Checkbox LEVANTAR RESTRICCION EN RECMA seleccionado\n", 3, 'proceso_bot.log');
                                             }
-                                            
+
                                         } else if ($valor_2 === "LEVANTAR BLOQUEO DOCUMENTO SUPLANTACION") {
                                             $checkbox = $driver->wait(8)->until(
                                                 WebDriverExpectedCondition::elementToBeClickable(
@@ -1709,7 +1968,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 $checkbox->click();
                                                 error_log("Checkbox LEVANTAR BLOQUEO DOCUMENTO SUPLANTACION seleccionado\n", 3, 'proceso_bot.log');
                                             }
-                                            
+
                                         } else if ($valor_2 === "SUSPENSION CONTROL PREVENTIVO") {
                                             $checkbox = $driver->wait(8)->until(
                                                 WebDriverExpectedCondition::elementToBeClickable(
@@ -1720,7 +1979,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 $checkbox->click();
                                                 error_log("Checkbox SUSPENSION CONTROL PREVENTIVO seleccionado\n", 3, 'proceso_bot.log');
                                             }
-                                            
+
                                         } else if ($valor_2 === "RECONEXION CONTROL PREVENTIVA") {
                                             $checkbox = $driver->wait(8)->until(
                                                 WebDriverExpectedCondition::elementToBeClickable(
@@ -1731,7 +1990,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 $checkbox->click();
                                                 error_log("Checkbox RECONEXION CONTROL PREVENTIVA seleccionado\n", 3, 'proceso_bot.log');
                                             }
-                                            
+
                                         } else if ($valor_2 === "OTRO") {
                                             $checkbox = $driver->wait(8)->until(
                                                 WebDriverExpectedCondition::elementToBeClickable(
@@ -1742,18 +2001,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 $checkbox->click();
                                                 error_log("Checkbox OTRO seleccionado\n", 3, 'proceso_bot.log');
                                             }
-                                            
+
                                         } else {
-                                            // Si no coincide con ninguna opción específica, buscar por texto del label
                                             $valorEscapado = json_encode($valor_2);
                                             $xpath = "//span[contains(@class, 'text') and contains(text(), $valorEscapado)]/parent::a";
-                                            
+
                                             $checkbox = $driver->wait(8)->until(
                                                 WebDriverExpectedCondition::elementToBeClickable(
                                                     WebDriverBy::xpath($xpath)
                                                 )
                                             );
-                                            
+
                                             $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$checkbox]);
                                             usleep(300000); // 300ms
                                             $checkbox->click();
@@ -1763,8 +2021,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                     } catch (Exception $e) {
                                         $procesamientoExitoso = false;
                                         error_log("Error procesando checkboxes: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
-                                        
-                                        // Tomar screenshot para debugging
+
                                         try {
                                             $driver->takeScreenshot('error_checkbox_' . date('Y-m-d_H-i-s') . '.png');
                                         } catch (Exception $screenshotError) {
@@ -1774,41 +2031,39 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                     // PASO 3: PROCESAR CAMPOS TEXTAREA
                                     $camposTextarea = [
-                                        ['name' => 'ErrorPresentado', 'index' => 13],
-                                        ['name' => 'SolucionRequerida', 'index' => 14],
+                                        ['name' => 'ErrorPresentado', 'index' => 15],
+                                        ['name' => 'SolucionRequerida', 'index' => 16],
                                     ];
 
                                     foreach ($camposTextarea as $campo) {
                                         if (!isset($datos[$campo['index']]) || empty(trim($datos[$campo['index']]))) {
                                             continue;
                                         }
-                                        
+
                                         try {
                                             $textarea = $driver->wait(6)->until(
                                                 WebDriverExpectedCondition::presenceOfElementLocated(
                                                     WebDriverBy::xpath("//textarea[@name='{$campo['name']}']")
                                                 )
                                             );
-                                            
+
                                             $textarea->clear();
                                             $texto = trim($datos[$campo['index']]);
                                             $textarea->sendKeys($texto);
-                                            
-                                            // Verificar que el texto se escribió correctamente
+
                                             $textoActual = $textarea->getAttribute('value');
                                             if ($textoActual !== $texto) {
                                                 error_log("Advertencia: El texto en {$campo['name']} no coincide\n", 3, 'errores_bot.log');
                                             }
-                                            
+
                                             error_log("Campo {$campo['name']} completado exitosamente\n", 3, 'proceso_bot.log');
-                                            
+
                                         } catch (Exception $e) {
                                             $procesamientoExitoso = false;
                                             error_log("Error llenando textarea {$campo['name']}: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
                                         }
                                     }
 
-                                    // Verificar el resultado del procesamiento final
                                     if ($procesamientoExitoso) {
                                         error_log("Formulario procesado exitosamente - Enlace: '$valor', Checkbox: '$valor_2'\n", 3, 'proceso_bot.log');
                                     } else {
@@ -1823,45 +2078,106 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                     $valorEscapado = json_encode($valor);
                                     $xpath = "//li/a[contains(text(), $valorEscapado)]";
 
-                                    error_log("=== HACIENDO CLIC EN ENLACE ===\n", 3, 'proceso_bot.log');
-                                    error_log("Buscando enlace con valor: '$valor'\n", 3, 'proceso_bot.log');
-
                                     try {
-                                        $enlace = $driver->wait(8)->until(
-                                            WebDriverExpectedCondition::elementToBeClickable(
-                                                WebDriverBy::xpath($xpath)
-                                            )
-                                        );
-                                        
-                                        $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$enlace]);
-                                        usleep(300000); // 300ms
-                                        $enlace->click();
-                                        
-                                        error_log("Enlace clickeado exitosamente\n", 3, 'proceso_bot.log');
-                                        usleep(500000); // Esperar a que cargue la nueva página
-                                        
-                                    } catch (Exception $e) {
-                                        error_log("Error haciendo clic en enlace: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
-                                        throw $e; // Re-lanzar la excepción si no se puede hacer clic
-                                    }
+                                        // MÉTODO 1
+                                        try {
+                                            $driver->executeScript("
+                                                document.body.style.overflowY = 'auto';
+                                                window.scrollBy(0, 300);
+                                            ");
+                                            usleep(800000);
 
-                                    // PASO 2: Ahora llenar los campos del PRIMER formulario (después del clic)
-                                    error_log("=== LLENANDO PRIMER FORMULARIO ===\n", 3, 'proceso_bot.log');
+                                            $enlace = $driver->wait(8)->until(
+                                                WebDriverExpectedCondition::presenceOfElementLocated(
+                                                    WebDriverBy::xpath($xpath)
+                                                )
+                                            );
+
+                                            $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$enlace]);
+                                            usleep(500000);
+                                            $driver->executeScript("document.body.style.overflowY = 'hidden';");
+
+                                            $driver->wait(5)->until(
+                                                WebDriverExpectedCondition::elementToBeClickable(
+                                                    WebDriverBy::xpath($xpath)
+                                                )
+                                            );
+
+                                            $enlace->click();
+                                            usleep(500000);
+
+                                        } catch (Exception $e1) {
+                                            error_log("Método 1 falló: " . $e1->getMessage() . "\n", 3, 'errores_bot.log');
+
+                                            // MÉTODO 2
+                                            try {
+                                                $driver->executeScript("
+                                                    document.body.style.overflowY = 'visible';
+                                                    document.documentElement.style.overflowY = 'visible';
+                                                ");
+                                                usleep(500000);
+
+                                                $enlace = $driver->wait(8)->until(
+                                                    WebDriverExpectedCondition::presenceOfElementLocated(
+                                                        WebDriverBy::xpath($xpath)
+                                                    )
+                                                );
+
+                                                $driver->executeScript("arguments[0].click();", [$enlace]);
+
+                                                $driver->executeScript("
+                                                    document.body.style.overflowY = 'hidden';
+                                                    document.documentElement.style.overflowY = '';
+                                                ");
+                                                usleep(500000);
+
+                                            } catch (Exception $e2) {
+                                                error_log("Método 2 falló: " . $e2->getMessage() . "\n", 3, 'errores_bot.log');
+
+                                                // MÉTODO 3
+                                                try {
+                                                    for ($i = 0; $i < 3; $i++) {
+                                                        $driver->executeScript("window.scrollBy(0, 200);");
+                                                        usleep(300000);
+                                                    }
+
+                                                    $enlace = $driver->wait(8)->until(
+                                                        WebDriverExpectedCondition::presenceOfElementLocated(
+                                                            WebDriverBy::xpath($xpath)
+                                                        )
+                                                    );
+
+                                                    $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$enlace]);
+                                                    usleep(500000);
+                                                    $enlace->click();
+                                                    usleep(500000);
+
+                                                } catch (Exception $e3) {
+                                                    $procesamientoExitoso = false;
+                                                    error_log("Todos los métodos fallaron para enlace: " . $e3->getMessage() . "\n", 3, 'errores_bot.log');
+                                                    return;
+                                                }
+                                            }
+                                        }
+                                    } catch (Exception $e) {
+                                        $procesamientoExitoso = false;
+                                        error_log("Error haciendo clic en el enlace: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
+                                    }
 
                                     $camposFormulario = [
                                         // Campos de fecha
-                                        ['name' => 'FechaInicio', 'type' => 'date', 'index' => '15'],
-                                        ['name' => 'FechaFin', 'type' => 'date', 'index' => '16'],
+                                        ['name' => 'FechaInicio', 'type' => 'date', 'index' => '16'],
+                                        ['name' => 'FechaFin', 'type' => 'date', 'index' => '17'],
                                         
                                         // Campos de input de texto
-                                        ['name' => 'PlanoPredio', 'type' => 'input', 'index' => '17'],
-                                        ['name' => 'SoportePQR', 'type' => 'input', 'index' => '14'],
+                                        ['name' => 'PlanoPredio', 'type' => 'input', 'index' => '18'],
+                                        ['name' => 'SoportePQR', 'type' => 'input', 'index' => '15'],
                                         
                                         // Campo de textarea
-                                        ['name' => 'MesesAplicarDescuentoManual', 'type' => 'textarea', 'index' => '18'],
+                                        ['name' => 'MesesAplicarDescuentoManual', 'type' => 'textarea', 'index' => '19'],
                                         
                                         // Campo numérico con restricciones específicas
-                                        ['name' => 'Porcentaje', 'type' => 'number', 'index' => '19', 'min' => 0, 'max' => 100],
+                                        ['name' => 'Porcentaje', 'type' => 'number', 'index' => '20', 'min' => 0, 'max' => 100],
                                     ];
 
                                     // Variable para controlar si el procesamiento fue exitoso
@@ -2090,8 +2406,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                     error_log("=== LLENANDO SEGUNDO FORMULARIO (TEXTAREAS) ===\n", 3, 'proceso_bot.log');
 
                                     $camposTextarea = [
-                                        ['name' => 'ErrorPresentado', 'index' => 20],
-                                        ['name' => 'SolucionRequerida', 'index' => 21],
+                                        ['name' => 'ErrorPresentado', 'index' => 21],
+                                        ['name' => 'SolucionRequerida', 'index' => 22],
                                     ];
 
                                     foreach ($camposTextarea as $campo) {
@@ -2423,16 +2739,91 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                     $valorEscapado = json_encode($valor);
                                     $xpath = "//li/a[contains(text(), $valorEscapado)]";
 
-                                    $enlace = $driver->wait(8)->until(
-                                        WebDriverExpectedCondition::elementToBeClickable(
-                                            WebDriverBy::xpath($xpath)
-                                        )
-                                    );
+                                    try {
+                                        // MÉTODO 1
+                                        try {
+                                            $driver->executeScript("
+                                                document.body.style.overflowY = 'auto';
+                                                window.scrollBy(0, 300);
+                                            ");
+                                            usleep(800000);
 
-                                    $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$enlace]);
-                                    usleep(300000);
-                                    $enlace->click();
-                                    usleep(500000); 
+                                            $enlace = $driver->wait(8)->until(
+                                                WebDriverExpectedCondition::presenceOfElementLocated(
+                                                    WebDriverBy::xpath($xpath)
+                                                )
+                                            );
+
+                                            $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$enlace]);
+                                            usleep(500000);
+                                            $driver->executeScript("document.body.style.overflowY = 'hidden';");
+
+                                            $driver->wait(5)->until(
+                                                WebDriverExpectedCondition::elementToBeClickable(
+                                                    WebDriverBy::xpath($xpath)
+                                                )
+                                            );
+
+                                            $enlace->click();
+                                            usleep(500000);
+
+                                        } catch (Exception $e1) {
+                                            error_log("Método 1 falló: " . $e1->getMessage() . "\n", 3, 'errores_bot.log');
+
+                                            // MÉTODO 2
+                                            try {
+                                                $driver->executeScript("
+                                                    document.body.style.overflowY = 'visible';
+                                                    document.documentElement.style.overflowY = 'visible';
+                                                ");
+                                                usleep(500000);
+
+                                                $enlace = $driver->wait(8)->until(
+                                                    WebDriverExpectedCondition::presenceOfElementLocated(
+                                                        WebDriverBy::xpath($xpath)
+                                                    )
+                                                );
+
+                                                $driver->executeScript("arguments[0].click();", [$enlace]);
+
+                                                $driver->executeScript("
+                                                    document.body.style.overflowY = 'hidden';
+                                                    document.documentElement.style.overflowY = '';
+                                                ");
+                                                usleep(500000);
+
+                                            } catch (Exception $e2) {
+                                                error_log("Método 2 falló: " . $e2->getMessage() . "\n", 3, 'errores_bot.log');
+
+                                                // MÉTODO 3
+                                                try {
+                                                    for ($i = 0; $i < 3; $i++) {
+                                                        $driver->executeScript("window.scrollBy(0, 200);");
+                                                        usleep(300000);
+                                                    }
+
+                                                    $enlace = $driver->wait(8)->until(
+                                                        WebDriverExpectedCondition::presenceOfElementLocated(
+                                                            WebDriverBy::xpath($xpath)
+                                                        )
+                                                    );
+
+                                                    $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$enlace]);
+                                                    usleep(500000);
+                                                    $enlace->click();
+                                                    usleep(500000);
+
+                                                } catch (Exception $e3) {
+                                                    $procesamientoExitoso = false;
+                                                    error_log("Todos los métodos fallaron para enlace: " . $e3->getMessage() . "\n", 3, 'errores_bot.log');
+                                                    return;
+                                                }
+                                            }
+                                        }
+                                    } catch (Exception $e) {
+                                        $procesamientoExitoso = false;
+                                        error_log("Error haciendo clic en el enlace: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
+                                    }
 
                                     // PASO CRÍTICO: Abrir el dropdown primero
                                     try {
@@ -2588,31 +2979,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                             error_log("Error en selección alternativa: " . $e2->getMessage() . "\n", 3, 'errores_bot.log');
                                         }
                                     }
-
-                                    // Cerrar dropdown si queda abierto
-                                    try {
-                                        $driver->executeScript("
-                                            var dropdowns = document.querySelectorAll('.dropdown-menu.show');
-                                            dropdowns.forEach(function(dropdown) {
-                                                dropdown.classList.remove('show');
-                                            });
-                                        ");
-                                    } catch (Exception $e) {
-                                        // Ignorar errores al cerrar dropdown
-                                    }
-
-                                    $valorEscapado = json_encode($valor);
-                                    $xpath = "//li/a[contains(text(), $valorEscapado)]";
-                                    
-                                    $enlace = $driver->wait(8)->until(
-                                        WebDriverExpectedCondition::elementToBeClickable(
-                                            WebDriverBy::xpath($xpath)
-                                        )
-                                    );
-                                    
-                                    $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$enlace]);
-                                    usleep(300000); // 300ms
-                                    $enlace->click();
                                     
                                     usleep(500000); 
 
@@ -3055,65 +3421,133 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                     
                                 } else if ($valor === "RETENCION") {
 
-                                    $planOfrecido = trim($datos[15]);
+                                   $planOfrecido = trim($datos[15]);
 
-                                    // PASO 1: Primero hacer clic en el enlace para cargar todos los campos
+                                    // PASO 1: Primero hacer clic en el enlace para cargar todos los campos (con los 3 MÉTODOS)
                                     $valorEscapado = json_encode($valor);
                                     $xpath = "//li/a[contains(text(), $valorEscapado)]";
 
-                                    $enlace = $driver->wait(8)->until(
-                                        WebDriverExpectedCondition::elementToBeClickable(
-                                            WebDriverBy::xpath($xpath)
-                                        )
-                                    );
+                                    try {
+                                        // MÉTODO 1
+                                        try {
+                                            $driver->executeScript("
+                                                document.body.style.overflowY = 'auto';
+                                                window.scrollBy(0, 300);
+                                            ");
+                                            usleep(800000);
 
-                                    $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$enlace]);
-                                    usleep(300000); // 300ms
-                                    $enlace->click();
+                                            $enlace = $driver->wait(8)->until(
+                                                WebDriverExpectedCondition::presenceOfElementLocated(
+                                                    WebDriverBy::xpath($xpath)
+                                                )
+                                            );
 
-                                    // PASO 2: Esperar a que la página se actualice completamente
-                                    usleep(1000000); // 1 segundo para asegurar que todos los campos se carguen
+                                            $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$enlace]);
+                                            usleep(500000);
+                                            $driver->executeScript("document.body.style.overflowY = 'hidden';");
+
+                                            $driver->wait(5)->until(
+                                                WebDriverExpectedCondition::elementToBeClickable(
+                                                    WebDriverBy::xpath($xpath)
+                                                )
+                                            );
+
+                                            $enlace->click();
+                                            usleep(500000);
+
+                                        } catch (Exception $e1) {
+                                            error_log("Método 1 falló: " . $e1->getMessage() . "\n", 3, 'errores_bot.log');
+
+                                            // MÉTODO 2
+                                            try {
+                                                $driver->executeScript("
+                                                    document.body.style.overflowY = 'visible';
+                                                    document.documentElement.style.overflowY = 'visible';
+                                                ");
+                                                usleep(500000);
+
+                                                $enlace = $driver->wait(8)->until(
+                                                    WebDriverExpectedCondition::presenceOfElementLocated(
+                                                        WebDriverBy::xpath($xpath)
+                                                    )
+                                                );
+
+                                                $driver->executeScript("arguments[0].click();", [$enlace]);
+
+                                                $driver->executeScript("
+                                                    document.body.style.overflowY = 'hidden';
+                                                    document.documentElement.style.overflowY = '';
+                                                ");
+                                                usleep(500000);
+
+                                            } catch (Exception $e2) {
+                                                error_log("Método 2 falló: " . $e2->getMessage() . "\n", 3, 'errores_bot.log');
+
+                                                // MÉTODO 3
+                                                try {
+                                                    for ($i = 0; $i < 3; $i++) {
+                                                        $driver->executeScript("window.scrollBy(0, 200);");
+                                                        usleep(300000);
+                                                    }
+
+                                                    $enlace = $driver->wait(8)->until(
+                                                        WebDriverExpectedCondition::presenceOfElementLocated(
+                                                            WebDriverBy::xpath($xpath)
+                                                        )
+                                                    );
+
+                                                    $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$enlace]);
+                                                    usleep(500000);
+                                                    $enlace->click();
+                                                    usleep(500000);
+
+                                                } catch (Exception $e3) {
+                                                    $procesamientoExitoso = false;
+                                                    error_log("Todos los métodos fallaron para enlace: " . $e3->getMessage() . "\n", 3, 'errores_bot.log');
+                                                    return;
+                                                }
+                                            }
+                                        }
+                                    } catch (Exception $e) {
+                                        $procesamientoExitoso = false;
+                                        error_log("Error haciendo clic en el enlace: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
+                                    }
 
                                     // PASO 3: AHORA llenar el campo PlanOfrecido (después del clic)
                                     if (!empty($planOfrecido)) {
                                         try {
-                                            // Esperar a que el campo PlanOfrecido esté disponible
                                             $campo = $driver->wait(10)->until(
                                                 WebDriverExpectedCondition::presenceOfElementLocated(
                                                     WebDriverBy::xpath("//input[@name='PlanOfrecido']")
                                                 )
                                             );
-                                            
-                                            // Verificar que sea clickeable
+
                                             $driver->wait(5)->until(
                                                 WebDriverExpectedCondition::elementToBeClickable(
                                                     WebDriverBy::xpath("//input[@name='PlanOfrecido']")
                                                 )
                                             );
-                                            
+
                                             $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$campo]);
-                                            usleep(300000); // Esperar después del scroll
-                                            
+                                            usleep(300000);
+
                                             $campo->clear();
-                                            usleep(200000); // Pausa después de limpiar
+                                            usleep(200000);
                                             $campo->sendKeys($planOfrecido);
-                                            
-                                            // Disparar eventos JavaScript
+
                                             $driver->executeScript("arguments[0].dispatchEvent(new Event('input', { bubbles: true }));", [$campo]);
                                             $driver->executeScript("arguments[0].dispatchEvent(new Event('change', { bubbles: true }));", [$campo]);
-                                            
-                                            // Verificar que se escribió correctamente
+
                                             $valorActual = $campo->getAttribute('value');
                                             if ($valorActual === $planOfrecido) {
                                                 error_log("Campo PlanOfrecido completado correctamente: $planOfrecido\n", 3, 'errores_bot.log');
                                             } else {
                                                 error_log("Advertencia: PlanOfrecido no coincide. Esperado: '$planOfrecido', Actual: '$valorActual'\n", 3, 'errores_bot.log');
                                             }
-                                            
+
                                         } catch (Exception $e) {
                                             error_log("Error en campo PlanOfrecido: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
-                                            
-                                            // Método alternativo usando JavaScript como respaldo
+
                                             try {
                                                 $driver->executeScript("
                                                     var campo = document.querySelector('input[name=\"PlanOfrecido\"]');
@@ -3121,9 +3555,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                         campo.value = arguments[0];
                                                         campo.dispatchEvent(new Event('input', { bubbles: true }));
                                                         campo.dispatchEvent(new Event('change', { bubbles: true }));
-                                                        console.log('PlanOfrecido completado con JavaScript: ' + arguments[0]);
-                                                    } else {
-                                                        console.log('Campo PlanOfrecido no encontrado');
                                                     }
                                                 ", [$planOfrecido]);
                                                 error_log("PlanOfrecido completado usando JavaScript como respaldo\n", 3, 'errores_bot.log');
@@ -3135,41 +3566,40 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                     // PASO 4: Procesar los campos textarea
                                     $camposTextarea = [
-                                        ['name' => 'ErrorPresentado', 'index' => 13],
-                                        ['name' => 'SolucionRequerida', 'index' => 14],
+                                        ['name' => 'ErrorPresentado', 'index' => 16],
+                                        ['name' => 'SolucionRequerida', 'index' => 17],
                                     ];
 
                                     foreach ($camposTextarea as $campo) {
                                         if (!isset($datos[$campo['index']]) || empty(trim($datos[$campo['index']]))) {
                                             continue;
                                         }
-                                        
+
                                         try {
                                             $textarea = $driver->wait(8)->until(
                                                 WebDriverExpectedCondition::presenceOfElementLocated(
                                                     WebDriverBy::xpath("//textarea[@name='{$campo['name']}']")
                                                 )
                                             );
-                                            
+
                                             $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$textarea]);
                                             usleep(300000);
-                                            
+
                                             $textarea->clear();
-                                            usleep(200000); // Pausa después de limpiar
-                                            
+                                            usleep(200000);
+
                                             $texto = trim($datos[$campo['index']]);
                                             $textarea->sendKeys($texto);
-                                            
-                                            // Verificar que el texto se escribió correctamente
+
                                             $textoActual = $textarea->getAttribute('value');
                                             if ($textoActual === $texto) {
                                                 error_log("Campo {$campo['name']} completado correctamente\n", 3, 'errores_bot.log');
                                             } else {
                                                 error_log("Advertencia: El texto en {$campo['name']} no coincide. Esperado: '$texto', Actual: '$textoActual'\n", 3, 'errores_bot.log');
                                             }
-                                            
-                                            usleep(300000); // Pausa entre campos
-                                            
+
+                                            usleep(300000);
+
                                         } catch (Exception $e) {
                                             $procesamientoExitoso = false;
                                             error_log("Error llenando textarea {$campo['name']}: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
@@ -3458,25 +3888,94 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                 } else if ($valor === "RETIRO DE SVAS") {
 
                                     $valor_2 = trim($datos[13]);
-                                    
+
                                     // Escapar valor para XPath seguro
                                     $valorEscapado = json_encode($valor);
                                     $xpath = "//li/a[contains(text(), $valorEscapado)]";
-                                    
-                                    $enlace = $driver->wait(8)->until(
-                                        WebDriverExpectedCondition::elementToBeClickable(
-                                            WebDriverBy::xpath($xpath)
-                                        )
-                                    );
-                                    
-                                    $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$enlace]);
-                                    usleep(300000); // 300ms
-                                    $enlace->click();
-                                    
-                                    usleep(500000); 
 
+                                    // MÉTODO 1: Scroll y clic normal
+                                    try {
+                                        $driver->executeScript("
+                                            document.body.style.overflowY = 'auto';
+                                            window.scrollBy(0, 300);
+                                        ");
+                                        usleep(800000);
+
+                                        $enlace = $driver->wait(8)->until(
+                                            WebDriverExpectedCondition::presenceOfElementLocated(
+                                                WebDriverBy::xpath($xpath)
+                                            )
+                                        );
+
+                                        $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$enlace]);
+                                        usleep(500000);
+                                        $driver->executeScript("document.body.style.overflowY = 'hidden';");
+
+                                        $driver->wait(5)->until(
+                                            WebDriverExpectedCondition::elementToBeClickable(
+                                                WebDriverBy::xpath($xpath)
+                                            )
+                                        );
+
+                                        $enlace->click();
+                                        usleep(500000);
+
+                                    } catch (Exception $e) {
+                                        error_log("Método 1 falló: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
+
+                                        // MÉTODO 2: Forzar visibilidad
+                                        try {
+                                            $driver->executeScript("
+                                                document.body.style.overflowY = 'visible';
+                                                document.documentElement.style.overflowY = 'visible';
+                                            ");
+                                            usleep(500000);
+
+                                            $enlace = $driver->wait(8)->until(
+                                                WebDriverExpectedCondition::presenceOfElementLocated(
+                                                    WebDriverBy::xpath($xpath)
+                                                )
+                                            );
+
+                                            $driver->executeScript("arguments[0].click();", [$enlace]);
+
+                                            $driver->executeScript("
+                                                document.body.style.overflowY = 'hidden';
+                                                document.documentElement.style.overflowY = '';
+                                            ");
+                                            usleep(500000);
+
+                                        } catch (Exception $e) {
+                                            error_log("Método 2 falló: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
+
+                                            // MÉTODO 3: Scroll repetido
+                                            try {
+                                                for ($i = 0; $i < 3; $i++) {
+                                                    $driver->executeScript("window.scrollBy(0, 200);");
+                                                    usleep(300000);
+                                                }
+
+                                                $enlace = $driver->wait(8)->until(
+                                                    WebDriverExpectedCondition::presenceOfElementLocated(
+                                                        WebDriverBy::xpath($xpath)
+                                                    )
+                                                );
+
+                                                $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$enlace]);
+                                                usleep(500000);
+                                                $enlace->click();
+                                                usleep(500000);
+
+                                            } catch (Exception $e) {
+                                                $procesamientoExitoso = false;
+                                                error_log("Todos los métodos fallaron para enlace '$valor': " . $e->getMessage() . "\n", 3, 'errores_bot.log');
+                                                return;
+                                            }
+                                        }
+                                    }
+
+                                    // El resto del script permanece exactamente igual
                                     if ($valor_2 === "DECO") {
-                                        // Seleccionar checkbox DECO
                                         $checkbox = $driver->wait(8)->until(
                                             WebDriverExpectedCondition::elementToBeClickable(
                                                 WebDriverBy::xpath("//input[@value='DECO']")
@@ -3485,9 +3984,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                         if (!$checkbox->isSelected()) {
                                             $checkbox->click();
                                         }
-                                        
+
                                     } else if ($valor_2 === "WIFI PLUS") {
-                                        // Seleccionar checkbox WIFI PLUS
                                         $checkbox = $driver->wait(8)->until(
                                             WebDriverExpectedCondition::elementToBeClickable(
                                                 WebDriverBy::xpath("//input[@value='WIFI PLUS']")
@@ -3496,9 +3994,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                         if (!$checkbox->isSelected()) {
                                             $checkbox->click();
                                         }
-                                        
+
                                     } else if ($valor_2 === "SOLUCION AP MESH 2") {
-                                        // Seleccionar checkbox SOLUCION AP MESH 2
                                         $checkbox = $driver->wait(8)->until(
                                             WebDriverExpectedCondition::elementToBeClickable(
                                                 WebDriverBy::xpath("//input[@value='SOLUCION AP MESH 2']")
@@ -3507,9 +4004,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                         if (!$checkbox->isSelected()) {
                                             $checkbox->click();
                                         }
-                                        
+
                                     } else if ($valor_2 === "SOLUCION AP MESH 3") {
-                                        // Seleccionar checkbox SOLUCION AP MESH 3
                                         $checkbox = $driver->wait(8)->until(
                                             WebDriverExpectedCondition::elementToBeClickable(
                                                 WebDriverBy::xpath("//input[@value='SOLUCION AP MESH 3']")
@@ -3518,9 +4014,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                         if (!$checkbox->isSelected()) {
                                             $checkbox->click();
                                         }
-                                        
+
                                     } else if ($valor_2 === "AP MESH ADICIONAL") {
-                                        // Seleccionar checkbox AP MESH ADICIONAL
                                         $checkbox = $driver->wait(8)->until(
                                             WebDriverExpectedCondition::elementToBeClickable(
                                                 WebDriverBy::xpath("//input[@value='AP MESH ADICIONAL']")
@@ -3529,9 +4024,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                         if (!$checkbox->isSelected()) {
                                             $checkbox->click();
                                         }
-                                        
+
                                     } else if ($valor_2 === "HOTPACK") {
-                                        // Seleccionar checkbox HOTPACK
                                         $checkbox = $driver->wait(8)->until(
                                             WebDriverExpectedCondition::elementToBeClickable(
                                                 WebDriverBy::xpath("//input[@value='HOTPACK']")
@@ -3540,9 +4034,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                         if (!$checkbox->isSelected()) {
                                             $checkbox->click();
                                         }
-                                        
+
                                     } else if ($valor_2 === "PUNTO CABLEADO") {
-                                        // Seleccionar checkbox PUNTO CABLEADO
                                         $checkbox = $driver->wait(8)->until(
                                             WebDriverExpectedCondition::elementToBeClickable(
                                                 WebDriverBy::xpath("//input[@value='PUNTO CABLEADO']")
@@ -3551,9 +4044,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                         if (!$checkbox->isSelected()) {
                                             $checkbox->click();
                                         }
-                                        
+
                                     } else if ($valor_2 === "SVA MAS VELOCIDAD") {
-                                        // Seleccionar checkbox SVA MAS VELOCIDAD
                                         $checkbox = $driver->wait(8)->until(
                                             WebDriverExpectedCondition::elementToBeClickable(
                                                 WebDriverBy::xpath("//input[@value='SVA MAS VELOCIDAD']")
@@ -3562,9 +4054,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                         if (!$checkbox->isSelected()) {
                                             $checkbox->click();
                                         }
-                                        
+
                                     } else if ($valor_2 === "HBO PACK") {
-                                        // Seleccionar checkbox HBO PACK
                                         $checkbox = $driver->wait(8)->until(
                                             WebDriverExpectedCondition::elementToBeClickable(
                                                 WebDriverBy::xpath("//input[@value='HBO PACK']")
@@ -3573,9 +4064,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                         if (!$checkbox->isSelected()) {
                                             $checkbox->click();
                                         }
-                                        
+
                                     } else if ($valor_2 === "WIN SPORT SD/HD/DTV") {
-                                        // Seleccionar checkbox WIN SPORT SD/HD/DTV
                                         $checkbox = $driver->wait(8)->until(
                                             WebDriverExpectedCondition::elementToBeClickable(
                                                 WebDriverBy::xpath("//input[@value='WIN SPORT SD/HD/DTV']")
@@ -3584,18 +4074,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                         if (!$checkbox->isSelected()) {
                                             $checkbox->click();
                                         }
-                                        
+
                                     } else {
-                                        // Si no coincide con ninguna opción específica, buscar por valor_2
                                         $valorEscapado = json_encode($valor_2);
                                         $xpath = "//input[@type='checkbox' and @value=$valorEscapado]";
-                                        
+
                                         $checkbox = $driver->wait(8)->until(
                                             WebDriverExpectedCondition::elementToBeClickable(
                                                 WebDriverBy::xpath($xpath)
                                             )
                                         );
-                                        
+
                                         if (!$checkbox->isSelected()) {
                                             $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$checkbox]);
                                             usleep(300000); // 300ms
@@ -3604,32 +4093,32 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                     }
 
                                     $camposTextarea = [
-                                        ['name' => 'ErrorPresentado', 'index' => 13],
-                                        ['name' => 'SolucionRequerida', 'index' => 14],
+                                        ['name' => 'SerialDeco', 'index' => 14],
+                                        ['name' => 'ErrorPresentado', 'index' => 15],
+                                        ['name' => 'SolucionRequerida', 'index' => 16],
                                     ];
 
                                     foreach ($camposTextarea as $campo) {
                                         if (!isset($datos[$campo['index']]) || empty(trim($datos[$campo['index']]))) {
                                             continue;
                                         }
-                                        
+
                                         try {
                                             $textarea = $driver->wait(6)->until(
                                                 WebDriverExpectedCondition::presenceOfElementLocated(
                                                     WebDriverBy::xpath("//textarea[@name='{$campo['name']}']")
                                                 )
                                             );
-                                            
+
                                             $textarea->clear();
                                             $texto = trim($datos[$campo['index']]);
                                             $textarea->sendKeys($texto);
-                                            
-                                            // Verificar que el texto se escribió correctamente
+
                                             $textoActual = $textarea->getAttribute('value');
                                             if ($textoActual !== $texto) {
                                                 error_log("Advertencia: El texto en {$campo['name']} no coincide\n", 3, 'errores_bot.log');
                                             }
-                                            
+
                                         } catch (Exception $e) {
                                             $procesamientoExitoso = false;
                                             error_log("Error llenando textarea {$campo['name']}: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
@@ -3642,23 +4131,94 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                     $serviciosSuplemantarios = trim($datos[14]);
 
-                                    // Hacer clic en el enlace antes de interactuar con los campos
+                                    // Escapar valor para XPath seguro
+                                    $valorEscapado = json_encode($valor);
+                                    $xpath = "//li/a[contains(text(), $valorEscapado)]";
+
                                     try {
-                                        $valorEscapado = json_encode($valor);
-                                        $xpath = "//li/a[contains(text(), $valorEscapado)]";
+                                        // MÉTODO 1
+                                        try {
+                                            $driver->executeScript("
+                                                document.body.style.overflowY = 'auto';
+                                                window.scrollBy(0, 300);
+                                            ");
+                                            usleep(800000);
 
-                                        $enlace = $driver->wait(8)->until(
-                                            WebDriverExpectedCondition::elementToBeClickable(
-                                                WebDriverBy::xpath($xpath)
-                                            )
-                                        );
+                                            $enlace = $driver->wait(8)->until(
+                                                WebDriverExpectedCondition::presenceOfElementLocated(
+                                                    WebDriverBy::xpath($xpath)
+                                                )
+                                            );
 
-                                        $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$enlace]);
-                                        usleep(300000); // 300ms
-                                        $enlace->click();
-                                        usleep(500000); // Esperar a que cargue el contenido del formulario
+                                            $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$enlace]);
+                                            usleep(500000);
+                                            $driver->executeScript("document.body.style.overflowY = 'hidden';");
+
+                                            $driver->wait(5)->until(
+                                                WebDriverExpectedCondition::elementToBeClickable(
+                                                    WebDriverBy::xpath($xpath)
+                                                )
+                                            );
+
+                                            $enlace->click();
+                                            usleep(500000);
+
+                                        } catch (Exception $e1) {
+                                            error_log("Método 1 falló: " . $e1->getMessage() . "\n", 3, 'errores_bot.log');
+
+                                            // MÉTODO 2
+                                            try {
+                                                $driver->executeScript("
+                                                    document.body.style.overflowY = 'visible';
+                                                    document.documentElement.style.overflowY = 'visible';
+                                                ");
+                                                usleep(500000);
+
+                                                $enlace = $driver->wait(8)->until(
+                                                    WebDriverExpectedCondition::presenceOfElementLocated(
+                                                        WebDriverBy::xpath($xpath)
+                                                    )
+                                                );
+
+                                                $driver->executeScript("arguments[0].click();", [$enlace]);
+
+                                                $driver->executeScript("
+                                                    document.body.style.overflowY = 'hidden';
+                                                    document.documentElement.style.overflowY = '';
+                                                ");
+                                                usleep(500000);
+
+                                            } catch (Exception $e2) {
+                                                error_log("Método 2 falló: " . $e2->getMessage() . "\n", 3, 'errores_bot.log');
+
+                                                // MÉTODO 3
+                                                try {
+                                                    for ($i = 0; $i < 3; $i++) {
+                                                        $driver->executeScript("window.scrollBy(0, 200);");
+                                                        usleep(300000);
+                                                    }
+
+                                                    $enlace = $driver->wait(8)->until(
+                                                        WebDriverExpectedCondition::presenceOfElementLocated(
+                                                            WebDriverBy::xpath($xpath)
+                                                        )
+                                                    );
+
+                                                    $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$enlace]);
+                                                    usleep(500000);
+                                                    $enlace->click();
+                                                    usleep(500000);
+
+                                                } catch (Exception $e3) {
+                                                    $procesamientoExitoso = false;
+                                                    error_log("Todos los métodos fallaron para enlace: " . $e3->getMessage() . "\n", 3, 'errores_bot.log');
+                                                    return;
+                                                }
+                                            }
+                                        }
                                     } catch (Exception $e) {
-                                        error_log("Error al hacer clic en el enlace: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
+                                        $procesamientoExitoso = false;
+                                        error_log("Error haciendo clic en el enlace: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
                                     }
 
                                     // Ahora llenar el campo ServiciosSuplemantarios
@@ -3727,192 +4287,172 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                     sleep(3);
                                     
                                 } else if ($valor === "SINCRONIZAR ACTIVOS") {
-                                    
-                                    $planOfrecido = trim($fila[15]);
-                                    $direccionActual = trim($fila[13]);  
-                                    $direccionDestino = trim($fila[14]);
 
-                                    // PASO 1: Primero hacer clic en el enlace para que aparezcan todos los campos
                                     $valorEscapado = json_encode($valor);
                                     $xpath = "//li/a[contains(text(), $valorEscapado)]";
 
-                                    $enlace = $driver->wait(8)->until(
-                                        WebDriverExpectedCondition::elementToBeClickable(
-                                            WebDriverBy::xpath($xpath)
-                                        )
-                                    );
-
-                                    $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$enlace]);
-                                    usleep(300000); // 300ms
-                                    $enlace->click();
-
-                                    // PASO 2: Esperar a que la página se actualice y todos los campos aparezcan
-                                    usleep(1000000); // 1 segundo para asegurar que todos los campos se carguen
-
-                                    // PASO 3: AHORA llenar todos los campos de input (después del clic)
-
-                                    // Campo PlanOfrecido
-                                    if (!empty($planOfrecido)) {
+                                    try {
+                                        // MÉTODO 1
                                         try {
-                                            $campo = $driver->wait(10)->until(
+                                            $driver->executeScript("
+                                                document.body.style.overflowY = 'auto';
+                                                window.scrollBy(0, 300);
+                                            ");
+                                            usleep(800000);
+
+                                            $enlace = $driver->wait(8)->until(
                                                 WebDriverExpectedCondition::presenceOfElementLocated(
-                                                    WebDriverBy::xpath("//input[@name='PlanOfrecido']")
+                                                    WebDriverBy::xpath($xpath)
                                                 )
                                             );
-                                            
-                                            // Esperar a que sea clickeable
+
+                                            $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$enlace]);
+                                            usleep(500000);
+                                            $driver->executeScript("document.body.style.overflowY = 'hidden';");
+
                                             $driver->wait(5)->until(
                                                 WebDriverExpectedCondition::elementToBeClickable(
-                                                    WebDriverBy::xpath("//input[@name='PlanOfrecido']")
+                                                    WebDriverBy::xpath($xpath)
+                                                )
+                                            );
+
+                                            $enlace->click();
+                                            usleep(500000);
+
+                                        } catch (Exception $e1) {
+                                            error_log("Método 1 falló: " . $e1->getMessage() . "\n", 3, 'errores_bot.log');
+
+                                            // MÉTODO 2
+                                            try {
+                                                $driver->executeScript("
+                                                    document.body.style.overflowY = 'visible';
+                                                    document.documentElement.style.overflowY = 'visible';
+                                                ");
+                                                usleep(500000);
+
+                                                $enlace = $driver->wait(8)->until(
+                                                    WebDriverExpectedCondition::presenceOfElementLocated(
+                                                        WebDriverBy::xpath($xpath)
+                                                    )
+                                                );
+
+                                                $driver->executeScript("arguments[0].click();", [$enlace]);
+
+                                                $driver->executeScript("
+                                                    document.body.style.overflowY = 'hidden';
+                                                    document.documentElement.style.overflowY = '';
+                                                ");
+                                                usleep(500000);
+
+                                            } catch (Exception $e2) {
+                                                error_log("Método 2 falló: " . $e2->getMessage() . "\n", 3, 'errores_bot.log');
+
+                                                // MÉTODO 3
+                                                try {
+                                                    for ($i = 0; $i < 3; $i++) {
+                                                        $driver->executeScript("window.scrollBy(0, 200);");
+                                                        usleep(300000);
+                                                    }
+
+                                                    $enlace = $driver->wait(8)->until(
+                                                        WebDriverExpectedCondition::presenceOfElementLocated(
+                                                            WebDriverBy::xpath($xpath)
+                                                        )
+                                                    );
+
+                                                    $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$enlace]);
+                                                    usleep(500000);
+                                                    $enlace->click();
+                                                    usleep(500000);
+
+                                                } catch (Exception $e3) {
+                                                    $procesamientoExitoso = false;
+                                                    error_log("Todos los métodos fallaron para enlace: " . $e3->getMessage() . "\n", 3, 'errores_bot.log');
+                                                    return;
+                                                }
+                                            }
+                                        }
+                                    } catch (Exception $e) {
+                                        $procesamientoExitoso = false;
+                                        error_log("Error haciendo clic en el enlace: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
+                                    }
+
+                                    usleep(1000000);
+
+                                    $camposInput = [
+                                        ['name' => 'PlanOfrecido', 'index' => 15],
+                                        ['name' => 'DireccionActual', 'index' => 13],
+                                        ['name' => 'DireccionDestino', 'index' => 14],
+                                    ];
+
+                                    foreach ($camposInput as $campo) {
+                                        if (!isset($datos[$campo['index']]) || empty(trim($datos[$campo['index']]))) {
+                                            continue;
+                                        }
+                                        
+                                        try {
+                                            $input = $driver->wait(10)->until(
+                                                WebDriverExpectedCondition::presenceOfElementLocated(
+                                                    WebDriverBy::xpath("//input[@name='{$campo['name']}']")
                                                 )
                                             );
                                             
-                                            $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$campo]);
-                                            usleep(300000);
-                                            
-                                            $campo->clear();
+                                            $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$input]);
                                             usleep(200000);
-                                            $campo->sendKeys($planOfrecido);
                                             
-                                            // Disparar eventos
-                                            $driver->executeScript("arguments[0].dispatchEvent(new Event('input', { bubbles: true }));", [$campo]);
-                                            $driver->executeScript("arguments[0].dispatchEvent(new Event('change', { bubbles: true }));", [$campo]);
+                                            $input->clear();
+                                            $texto = trim($datos[$campo['index']]);
+                                            $input->sendKeys($texto);
                                             
-                                            error_log("Campo PlanOfrecido completado: $planOfrecido\n", 3, 'errores_bot.log');
+                                            $textoActual = $input->getAttribute('value');
+                                            if ($textoActual !== $texto) {
+                                                error_log("Advertencia: El texto en {$campo['name']} no coincide. Esperado: '$texto', Actual: '$textoActual'\n", 3, 'errores_bot.log');
+                                            }
+                                            
+                                            $driver->executeScript("arguments[0].dispatchEvent(new Event('input', { bubbles: true }));", [$input]);
+                                            $driver->executeScript("arguments[0].dispatchEvent(new Event('change', { bubbles: true }));", [$input]);
                                             
                                         } catch (Exception $e) {
-                                            error_log("Error en campo PlanOfrecido: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
-                                            
-                                            // Método alternativo con JavaScript
-                                            $driver->executeScript("
-                                                var campo = document.querySelector('input[name=\"PlanOfrecido\"]');
-                                                if (campo) {
-                                                    campo.value = arguments[0];
-                                                    campo.dispatchEvent(new Event('input', { bubbles: true }));
-                                                    campo.dispatchEvent(new Event('change', { bubbles: true }));
-                                                }
-                                            ", [$planOfrecido]);
+                                            $procesamientoExitoso = false;
+                                            error_log("Error llenando input {$campo['name']}: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
                                         }
                                     }
 
-                                    // Campo DireccionActual
-                                    if (!empty($direccionActual)) {
-                                        try {
-                                            $campo = $driver->wait(10)->until(
-                                                WebDriverExpectedCondition::presenceOfElementLocated(
-                                                    WebDriverBy::xpath("//input[@name='DireccionActual']")
-                                                )
-                                            );
-                                            
-                                            $driver->wait(5)->until(
-                                                WebDriverExpectedCondition::elementToBeClickable(
-                                                    WebDriverBy::xpath("//input[@name='DireccionActual']")
-                                                )
-                                            );
-                                            
-                                            $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$campo]);
-                                            usleep(300000);
-                                            
-                                            $campo->clear();
-                                            usleep(200000);
-                                            $campo->sendKeys($direccionActual);
-                                            
-                                            $driver->executeScript("arguments[0].dispatchEvent(new Event('input', { bubbles: true }));", [$campo]);
-                                            $driver->executeScript("arguments[0].dispatchEvent(new Event('change', { bubbles: true }));", [$campo]);
-                                            
-                                            error_log("Campo DireccionActual completado: $direccionActual\n", 3, 'errores_bot.log');
-                                            
-                                        } catch (Exception $e) {
-                                            error_log("Error en campo DireccionActual: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
-                                            
-                                            $driver->executeScript("
-                                                var campo = document.querySelector('input[name=\"DireccionActual\"]');
-                                                if (campo) {
-                                                    campo.value = arguments[0];
-                                                    campo.dispatchEvent(new Event('input', { bubbles: true }));
-                                                    campo.dispatchEvent(new Event('change', { bubbles: true }));
-                                                }
-                                            ", [$direccionActual]);
-                                        }
-                                    }
-
-                                    // Campo DireccionDestino
-                                    if (!empty($direccionDestino)) {
-                                        try {
-                                            $campo = $driver->wait(10)->until(
-                                                WebDriverExpectedCondition::presenceOfElementLocated(
-                                                    WebDriverBy::xpath("//input[@name='DireccionDestino']")
-                                                )
-                                            );
-                                            
-                                            $driver->wait(5)->until(
-                                                WebDriverExpectedCondition::elementToBeClickable(
-                                                    WebDriverBy::xpath("//input[@name='DireccionDestino']")
-                                                )
-                                            );
-                                            
-                                            $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$campo]);
-                                            usleep(300000);
-                                            
-                                            $campo->clear();
-                                            usleep(200000);
-                                            $campo->sendKeys($direccionDestino);
-                                            
-                                            $driver->executeScript("arguments[0].dispatchEvent(new Event('input', { bubbles: true }));", [$campo]);
-                                            $driver->executeScript("arguments[0].dispatchEvent(new Event('change', { bubbles: true }));", [$campo]);
-                                            
-                                            error_log("Campo DireccionDestino completado: $direccionDestino\n", 3, 'errores_bot.log');
-                                            
-                                        } catch (Exception $e) {
-                                            error_log("Error en campo DireccionDestino: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
-                                            
-                                            $driver->executeScript("
-                                                var campo = document.querySelector('input[name=\"DireccionDestino\"]');
-                                                if (campo) {
-                                                    campo.value = arguments[0];
-                                                    campo.dispatchEvent(new Event('input', { bubbles: true }));
-                                                    campo.dispatchEvent(new Event('change', { bubbles: true }));
-                                                }
-                                            ", [$direccionDestino]);
-                                        }
-                                    }
-
-                                    // PASO 4: Procesar los campos textarea
                                     $camposTextarea = [
-                                        ['name' => 'ErrorPresentado', 'index' => 13],
-                                        ['name' => 'SolucionRequerida', 'index' => 14],
+                                        ['name' => 'ErrorPresentado', 'index' => 16],
+                                        ['name' => 'SolucionRequerida', 'index' => 17],
                                     ];
 
                                     foreach ($camposTextarea as $campo) {
                                         if (!isset($datos[$campo['index']]) || empty(trim($datos[$campo['index']]))) {
                                             continue;
                                         }
-                                        
+
                                         try {
                                             $textarea = $driver->wait(8)->until(
                                                 WebDriverExpectedCondition::presenceOfElementLocated(
                                                     WebDriverBy::xpath("//textarea[@name='{$campo['name']}']")
                                                 )
                                             );
-                                            
+
                                             $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$textarea]);
                                             usleep(300000);
-                                            
+
                                             $textarea->clear();
                                             usleep(200000);
+
                                             $texto = trim($datos[$campo['index']]);
                                             $textarea->sendKeys($texto);
-                                            
-                                            // Verificar que el texto se escribió correctamente
+
                                             $textoActual = $textarea->getAttribute('value');
                                             if ($textoActual === $texto) {
                                                 error_log("Campo {$campo['name']} completado correctamente\n", 3, 'errores_bot.log');
                                             } else {
                                                 error_log("Advertencia: El texto en {$campo['name']} no coincide. Esperado: '$texto', Actual: '$textoActual'\n", 3, 'errores_bot.log');
                                             }
-                                            
-                                            usleep(300000); // Pausa entre campos
-                                            
+
+                                            usleep(300000);
+
                                         } catch (Exception $e) {
                                             $procesamientoExitoso = false;
                                             error_log("Error llenando textarea {$campo['name']}: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
@@ -3923,165 +4463,171 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                     
                                 } else if ($valor === "SINCRONIZAR DIRECCION") {
 
-                                    $direccionActual = trim($fila[13]);
-                                    $direccionDestino = trim($fila[14]);
-
-                                    // PASO 1: PRIMERO hacer clic en el enlace para que aparezcan todos los campos
+                                    // PASO 1: Primero hacer clic en el enlace para cargar todos los campos (con los 3 MÉTODOS)
                                     $valorEscapado = json_encode($valor);
                                     $xpath = "//li/a[contains(text(), $valorEscapado)]";
 
-                                    $enlace = $driver->wait(8)->until(
-                                        WebDriverExpectedCondition::elementToBeClickable(
-                                            WebDriverBy::xpath($xpath)
-                                        )
-                                    );
-
-                                    $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$enlace]);
-                                    usleep(300000); // 300ms
-                                    $enlace->click();
-
-                                    // PASO 2: Esperar a que la página se actualice y aparezcan todos los campos
-                                    usleep(1000000); // 1 segundo completo para asegurar que todo se cargue
-
-                                    // PASO 3: AHORA llenar los campos de input (después del clic)
-
-                                    // Campo DireccionActual
-                                    if (!empty($direccionActual)) {
+                                    try {
+                                        // MÉTODO 1
                                         try {
-                                            $campo = $driver->wait(10)->until(
+                                            $driver->executeScript("
+                                                document.body.style.overflowY = 'auto';
+                                                window.scrollBy(0, 300);
+                                            ");
+                                            usleep(800000);
+
+                                            $enlace = $driver->wait(8)->until(
                                                 WebDriverExpectedCondition::presenceOfElementLocated(
-                                                    WebDriverBy::xpath("//input[@name='DireccionActual']")
+                                                    WebDriverBy::xpath($xpath)
                                                 )
                                             );
-                                            
-                                            // Esperar a que sea clickeable
+
+                                            $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$enlace]);
+                                            usleep(500000);
+                                            $driver->executeScript("document.body.style.overflowY = 'hidden';");
+
                                             $driver->wait(5)->until(
                                                 WebDriverExpectedCondition::elementToBeClickable(
-                                                    WebDriverBy::xpath("//input[@name='DireccionActual']")
+                                                    WebDriverBy::xpath($xpath)
                                                 )
                                             );
-                                            
-                                            $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$campo]);
-                                            usleep(300000);
-                                            
-                                            $campo->clear();
-                                            usleep(200000); // Pausa después de limpiar
-                                            $campo->sendKeys($direccionActual);
-                                            
-                                            // Disparar eventos JavaScript
-                                            $driver->executeScript("arguments[0].dispatchEvent(new Event('input', { bubbles: true }));", [$campo]);
-                                            $driver->executeScript("arguments[0].dispatchEvent(new Event('change', { bubbles: true }));", [$campo]);
-                                            
-                                            error_log("Campo DireccionActual completado: $direccionActual\n", 3, 'errores_bot.log');
-                                            
-                                        } catch (Exception $e) {
-                                            error_log("Error en campo DireccionActual: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
-                                            
-                                            // Método alternativo con JavaScript
+
+                                            $enlace->click();
+                                            usleep(500000);
+
+                                        } catch (Exception $e1) {
+                                            error_log("Método 1 falló: " . $e1->getMessage() . "\n", 3, 'errores_bot.log');
+
+                                            // MÉTODO 2
                                             try {
                                                 $driver->executeScript("
-                                                    var campo = document.querySelector('input[name=\"DireccionActual\"]');
-                                                    if (campo) {
-                                                        campo.value = arguments[0];
-                                                        campo.dispatchEvent(new Event('input', { bubbles: true }));
-                                                        campo.dispatchEvent(new Event('change', { bubbles: true }));
-                                                        console.log('DireccionActual completado con JS: ' + arguments[0]);
-                                                    } else {
-                                                        console.log('Campo DireccionActual no encontrado');
+                                                    document.body.style.overflowY = 'visible';
+                                                    document.documentElement.style.overflowY = 'visible';
+                                                ");
+                                                usleep(500000);
+
+                                                $enlace = $driver->wait(8)->until(
+                                                    WebDriverExpectedCondition::presenceOfElementLocated(
+                                                        WebDriverBy::xpath($xpath)
+                                                    )
+                                                );
+
+                                                $driver->executeScript("arguments[0].click();", [$enlace]);
+
+                                                $driver->executeScript("
+                                                    document.body.style.overflowY = 'hidden';
+                                                    document.documentElement.style.overflowY = '';
+                                                ");
+                                                usleep(500000);
+
+                                            } catch (Exception $e2) {
+                                                error_log("Método 2 falló: " . $e2->getMessage() . "\n", 3, 'errores_bot.log');
+
+                                                // MÉTODO 3
+                                                try {
+                                                    for ($i = 0; $i < 3; $i++) {
+                                                        $driver->executeScript("window.scrollBy(0, 200);");
+                                                        usleep(300000);
                                                     }
-                                                ", [$direccionActual]);
-                                                error_log("DireccionActual completado usando JavaScript como respaldo\n", 3, 'errores_bot.log');
-                                            } catch (Exception $jsError) {
-                                                error_log("Error también en método JavaScript para DireccionActual: " . $jsError->getMessage() . "\n", 3, 'errores_bot.log');
+
+                                                    $enlace = $driver->wait(8)->until(
+                                                        WebDriverExpectedCondition::presenceOfElementLocated(
+                                                            WebDriverBy::xpath($xpath)
+                                                        )
+                                                    );
+
+                                                    $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$enlace]);
+                                                    usleep(500000);
+                                                    $enlace->click();
+                                                    usleep(500000);
+
+                                                } catch (Exception $e3) {
+                                                    $procesamientoExitoso = false;
+                                                    error_log("Todos los métodos fallaron para enlace: " . $e3->getMessage() . "\n", 3, 'errores_bot.log');
+                                                    return;
+                                                }
                                             }
                                         }
+                                    } catch (Exception $e) {
+                                        $procesamientoExitoso = false;
+                                        error_log("Error haciendo clic en el enlace: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
                                     }
 
-                                    // Campo DireccionDestino
-                                    if (!empty($direccionDestino)) {
+                                    usleep(1000000);
+
+                                    $camposInput = [
+                                        ['name' => 'DireccionActual', 'index' => 13],
+                                        ['name' => 'DireccionDestino', 'index' => 14],
+                                    ];
+
+                                    foreach ($camposInput as $campo) {
+                                        if (!isset($datos[$campo['index']]) || empty(trim($datos[$campo['index']]))) {
+                                            continue;
+                                        }
+                                        
                                         try {
-                                            $campo = $driver->wait(10)->until(
+                                            $input = $driver->wait(10)->until(
                                                 WebDriverExpectedCondition::presenceOfElementLocated(
-                                                    WebDriverBy::xpath("//input[@name='DireccionDestino']")
+                                                    WebDriverBy::xpath("//input[@name='{$campo['name']}']")
                                                 )
                                             );
                                             
-                                            $driver->wait(5)->until(
-                                                WebDriverExpectedCondition::elementToBeClickable(
-                                                    WebDriverBy::xpath("//input[@name='DireccionDestino']")
-                                                )
-                                            );
-                                            
-                                            $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$campo]);
-                                            usleep(300000);
-                                            
-                                            $campo->clear();
+                                            $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$input]);
                                             usleep(200000);
-                                            $campo->sendKeys($direccionDestino);
                                             
-                                            $driver->executeScript("arguments[0].dispatchEvent(new Event('input', { bubbles: true }));", [$campo]);
-                                            $driver->executeScript("arguments[0].dispatchEvent(new Event('change', { bubbles: true }));", [$campo]);
+                                            $input->clear();
+                                            $texto = trim($datos[$campo['index']]);
+                                            $input->sendKeys($texto);
                                             
-                                            error_log("Campo DireccionDestino completado: $direccionDestino\n", 3, 'errores_bot.log');
+                                            $textoActual = $input->getAttribute('value');
+                                            if ($textoActual !== $texto) {
+                                                error_log("Advertencia: El texto en {$campo['name']} no coincide. Esperado: '$texto', Actual: '$textoActual'\n", 3, 'errores_bot.log');
+                                            }
+                                            
+                                            $driver->executeScript("arguments[0].dispatchEvent(new Event('input', { bubbles: true }));", [$input]);
+                                            $driver->executeScript("arguments[0].dispatchEvent(new Event('change', { bubbles: true }));", [$input]);
                                             
                                         } catch (Exception $e) {
-                                            error_log("Error en campo DireccionDestino: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
-                                            
-                                            try {
-                                                $driver->executeScript("
-                                                    var campo = document.querySelector('input[name=\"DireccionDestino\"]');
-                                                    if (campo) {
-                                                        campo.value = arguments[0];
-                                                        campo.dispatchEvent(new Event('input', { bubbles: true }));
-                                                        campo.dispatchEvent(new Event('change', { bubbles: true }));
-                                                        console.log('DireccionDestino completado con JS: ' + arguments[0]);
-                                                    } else {
-                                                        console.log('Campo DireccionDestino no encontrado');
-                                                    }
-                                                ", [$direccionDestino]);
-                                                error_log("DireccionDestino completado usando JavaScript como respaldo\n", 3, 'errores_bot.log');
-                                            } catch (Exception $jsError) {
-                                                error_log("Error también en método JavaScript para DireccionDestino: " . $jsError->getMessage() . "\n", 3, 'errores_bot.log');
-                                            }
+                                            $procesamientoExitoso = false;
+                                            error_log("Error llenando input {$campo['name']}: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
                                         }
                                     }
 
-                                    // PASO 4: Procesar los campos textarea
                                     $camposTextarea = [
-                                        ['name' => 'ErrorPresentado', 'index' => 13],
-                                        ['name' => 'SolucionRequerida', 'index' => 14],
+                                        ['name' => 'ErrorPresentado', 'index' => 16],
+                                        ['name' => 'SolucionRequerida', 'index' => 17],
                                     ];
 
                                     foreach ($camposTextarea as $campo) {
                                         if (!isset($datos[$campo['index']]) || empty(trim($datos[$campo['index']]))) {
                                             continue;
                                         }
-                                        
+
                                         try {
                                             $textarea = $driver->wait(8)->until(
                                                 WebDriverExpectedCondition::presenceOfElementLocated(
                                                     WebDriverBy::xpath("//textarea[@name='{$campo['name']}']")
                                                 )
                                             );
-                                            
+
                                             $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$textarea]);
                                             usleep(300000);
-                                            
+
                                             $textarea->clear();
                                             usleep(200000);
+
                                             $texto = trim($datos[$campo['index']]);
                                             $textarea->sendKeys($texto);
-                                            
-                                            // Verificar que el texto se escribió correctamente
+
                                             $textoActual = $textarea->getAttribute('value');
                                             if ($textoActual === $texto) {
                                                 error_log("Campo {$campo['name']} completado correctamente\n", 3, 'errores_bot.log');
                                             } else {
                                                 error_log("Advertencia: El texto en {$campo['name']} no coincide. Esperado: '$texto', Actual: '$textoActual'\n", 3, 'errores_bot.log');
                                             }
-                                            
-                                            usleep(300000); // Pausa entre campos
-                                            
+
+                                            usleep(300000);
+
                                         } catch (Exception $e) {
                                             $procesamientoExitoso = false;
                                             error_log("Error llenando textarea {$campo['name']}: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
@@ -4092,10 +4638,97 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                     
                                 } else if ($valor === "SUSPENSION VOLUNTARIA") {
                                     
-                                    $fechaInicio = trim($datos[15]);
-                                    $fechaFin = trim($datos[16]);
+                                    $fechaInicio = trim($datos[16]);
+                                    $fechaFin = trim($datos[17]);
 
-                                    $procesamientoExitoso = true;
+                                    $valorEscapado = json_encode($valor);
+                                    $xpath = "//li/a[contains(text(), $valorEscapado)]";
+
+                                    try {
+                                        // MÉTODO 1
+                                        try {
+                                            $driver->executeScript("
+                                                document.body.style.overflowY = 'auto';
+                                                window.scrollBy(0, 300);
+                                            ");
+                                            usleep(800000);
+
+                                            $enlace = $driver->wait(8)->until(
+                                                WebDriverExpectedCondition::presenceOfElementLocated(
+                                                    WebDriverBy::xpath($xpath)
+                                                )
+                                            );
+
+                                            $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$enlace]);
+                                            usleep(500000);
+                                            $driver->executeScript("document.body.style.overflowY = 'hidden';");
+
+                                            $driver->wait(5)->until(
+                                                WebDriverExpectedCondition::elementToBeClickable(
+                                                    WebDriverBy::xpath($xpath)
+                                                )
+                                            );
+
+                                            $enlace->click();
+                                            usleep(500000);
+
+                                        } catch (Exception $e1) {
+                                            error_log("Método 1 falló: " . $e1->getMessage() . "\n", 3, 'errores_bot.log');
+
+                                            // MÉTODO 2
+                                            try {
+                                                $driver->executeScript("
+                                                    document.body.style.overflowY = 'visible';
+                                                    document.documentElement.style.overflowY = 'visible';
+                                                ");
+                                                usleep(500000);
+
+                                                $enlace = $driver->wait(8)->until(
+                                                    WebDriverExpectedCondition::presenceOfElementLocated(
+                                                        WebDriverBy::xpath($xpath)
+                                                    )
+                                                );
+
+                                                $driver->executeScript("arguments[0].click();", [$enlace]);
+
+                                                $driver->executeScript("
+                                                    document.body.style.overflowY = 'hidden';
+                                                    document.documentElement.style.overflowY = '';
+                                                ");
+                                                usleep(500000);
+
+                                            } catch (Exception $e2) {
+                                                error_log("Método 2 falló: " . $e2->getMessage() . "\n", 3, 'errores_bot.log');
+
+                                                // MÉTODO 3
+                                                try {
+                                                    for ($i = 0; $i < 3; $i++) {
+                                                        $driver->executeScript("window.scrollBy(0, 200);");
+                                                        usleep(300000);
+                                                    }
+
+                                                    $enlace = $driver->wait(8)->until(
+                                                        WebDriverExpectedCondition::presenceOfElementLocated(
+                                                            WebDriverBy::xpath($xpath)
+                                                        )
+                                                    );
+
+                                                    $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$enlace]);
+                                                    usleep(500000);
+                                                    $enlace->click();
+                                                    usleep(500000);
+
+                                                } catch (Exception $e3) {
+                                                    $procesamientoExitoso = false;
+                                                    error_log("Todos los métodos fallaron para enlace: " . $e3->getMessage() . "\n", 3, 'errores_bot.log');
+                                                    return;
+                                                }
+                                            }
+                                        }
+                                    } catch (Exception $e) {
+                                        $procesamientoExitoso = false;
+                                        error_log("Error haciendo clic en el enlace: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
+                                    }
 
                                     try {
                                         // PRIMERO: hacer clic en el enlace
@@ -4178,8 +4811,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                         // FINALMENTE: procesar textareas
                                         $camposTextarea = [
-                                            ['name' => 'ErrorPresentado', 'index' => 20],
-                                            ['name' => 'SolucionRequerida', 'index' => 21],
+                                            ['name' => 'ErrorPresentado', 'index' => 21],
+                                            ['name' => 'SolucionRequerida', 'index' => 22],
                                         ];
 
                                         foreach ($camposTextarea as $campo) {
@@ -4240,191 +4873,171 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                     
                                 } else if ($valor === "TRASLADO") {
                                     
-                                    $planOfrecido = trim($fila[15]);
-                                    $direccionActual = trim($fila[13]);  
-                                    $direccionDestino = trim($fila[14]);
-
-                                    // PASO 1: Primero hacer clic en el enlace para que aparezcan todos los campos
                                     $valorEscapado = json_encode($valor);
                                     $xpath = "//li/a[contains(text(), $valorEscapado)]";
 
-                                    $enlace = $driver->wait(8)->until(
-                                        WebDriverExpectedCondition::elementToBeClickable(
-                                            WebDriverBy::xpath($xpath)
-                                        )
-                                    );
-
-                                    $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$enlace]);
-                                    usleep(300000); // 300ms
-                                    $enlace->click();
-
-                                    // PASO 2: Esperar a que la página se actualice y todos los campos aparezcan
-                                    usleep(1000000); // 1 segundo para asegurar que todos los campos se carguen
-
-                                    // PASO 3: AHORA llenar todos los campos de input (después del clic)
-
-                                    // Campo PlanOfrecido
-                                    if (!empty($planOfrecido)) {
+                                    try {
+                                        // MÉTODO 1
                                         try {
-                                            $campo = $driver->wait(10)->until(
+                                            $driver->executeScript("
+                                                document.body.style.overflowY = 'auto';
+                                                window.scrollBy(0, 300);
+                                            ");
+                                            usleep(800000);
+
+                                            $enlace = $driver->wait(8)->until(
                                                 WebDriverExpectedCondition::presenceOfElementLocated(
-                                                    WebDriverBy::xpath("//input[@name='PlanOfrecido']")
+                                                    WebDriverBy::xpath($xpath)
                                                 )
                                             );
-                                            
-                                            // Esperar a que sea clickeable
+
+                                            $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$enlace]);
+                                            usleep(500000);
+                                            $driver->executeScript("document.body.style.overflowY = 'hidden';");
+
                                             $driver->wait(5)->until(
                                                 WebDriverExpectedCondition::elementToBeClickable(
-                                                    WebDriverBy::xpath("//input[@name='PlanOfrecido']")
+                                                    WebDriverBy::xpath($xpath)
+                                                )
+                                            );
+
+                                            $enlace->click();
+                                            usleep(500000);
+
+                                        } catch (Exception $e1) {
+                                            error_log("Método 1 falló: " . $e1->getMessage() . "\n", 3, 'errores_bot.log');
+
+                                            // MÉTODO 2
+                                            try {
+                                                $driver->executeScript("
+                                                    document.body.style.overflowY = 'visible';
+                                                    document.documentElement.style.overflowY = 'visible';
+                                                ");
+                                                usleep(500000);
+
+                                                $enlace = $driver->wait(8)->until(
+                                                    WebDriverExpectedCondition::presenceOfElementLocated(
+                                                        WebDriverBy::xpath($xpath)
+                                                    )
+                                                );
+
+                                                $driver->executeScript("arguments[0].click();", [$enlace]);
+
+                                                $driver->executeScript("
+                                                    document.body.style.overflowY = 'hidden';
+                                                    document.documentElement.style.overflowY = '';
+                                                ");
+                                                usleep(500000);
+
+                                            } catch (Exception $e2) {
+                                                error_log("Método 2 falló: " . $e2->getMessage() . "\n", 3, 'errores_bot.log');
+
+                                                // MÉTODO 3
+                                                try {
+                                                    for ($i = 0; $i < 3; $i++) {
+                                                        $driver->executeScript("window.scrollBy(0, 200);");
+                                                        usleep(300000);
+                                                    }
+
+                                                    $enlace = $driver->wait(8)->until(
+                                                        WebDriverExpectedCondition::presenceOfElementLocated(
+                                                            WebDriverBy::xpath($xpath)
+                                                        )
+                                                    );
+
+                                                    $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$enlace]);
+                                                    usleep(500000);
+                                                    $enlace->click();
+                                                    usleep(500000);
+
+                                                } catch (Exception $e3) {
+                                                    $procesamientoExitoso = false;
+                                                    error_log("Todos los métodos fallaron para enlace: " . $e3->getMessage() . "\n", 3, 'errores_bot.log');
+                                                    return;
+                                                }
+                                            }
+                                        }
+                                    } catch (Exception $e) {
+                                        $procesamientoExitoso = false;
+                                        error_log("Error haciendo clic en el enlace: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
+                                    }
+
+                                    usleep(1000000);
+
+                                    $camposInput = [
+                                        ['name' => 'PlanOfrecido', 'index' => 15],
+                                        ['name' => 'DireccionActual', 'index' => 13],
+                                        ['name' => 'DireccionDestino', 'index' => 14],
+                                    ];
+
+                                    foreach ($camposInput as $campo) {
+                                        if (!isset($datos[$campo['index']]) || empty(trim($datos[$campo['index']]))) {
+                                            continue;
+                                        }
+                                        
+                                        try {
+                                            $input = $driver->wait(10)->until(
+                                                WebDriverExpectedCondition::presenceOfElementLocated(
+                                                    WebDriverBy::xpath("//input[@name='{$campo['name']}']")
                                                 )
                                             );
                                             
-                                            $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$campo]);
-                                            usleep(300000);
-                                            
-                                            $campo->clear();
+                                            $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$input]);
                                             usleep(200000);
-                                            $campo->sendKeys($planOfrecido);
                                             
-                                            // Disparar eventos
-                                            $driver->executeScript("arguments[0].dispatchEvent(new Event('input', { bubbles: true }));", [$campo]);
-                                            $driver->executeScript("arguments[0].dispatchEvent(new Event('change', { bubbles: true }));", [$campo]);
+                                            $input->clear();
+                                            $texto = trim($datos[$campo['index']]);
+                                            $input->sendKeys($texto);
                                             
-                                            error_log("Campo PlanOfrecido completado: $planOfrecido\n", 3, 'errores_bot.log');
+                                            $textoActual = $input->getAttribute('value');
+                                            if ($textoActual !== $texto) {
+                                                error_log("Advertencia: El texto en {$campo['name']} no coincide. Esperado: '$texto', Actual: '$textoActual'\n", 3, 'errores_bot.log');
+                                            }
+                                            
+                                            $driver->executeScript("arguments[0].dispatchEvent(new Event('input', { bubbles: true }));", [$input]);
+                                            $driver->executeScript("arguments[0].dispatchEvent(new Event('change', { bubbles: true }));", [$input]);
                                             
                                         } catch (Exception $e) {
-                                            error_log("Error en campo PlanOfrecido: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
-                                            
-                                            // Método alternativo con JavaScript
-                                            $driver->executeScript("
-                                                var campo = document.querySelector('input[name=\"PlanOfrecido\"]');
-                                                if (campo) {
-                                                    campo.value = arguments[0];
-                                                    campo.dispatchEvent(new Event('input', { bubbles: true }));
-                                                    campo.dispatchEvent(new Event('change', { bubbles: true }));
-                                                }
-                                            ", [$planOfrecido]);
+                                            $procesamientoExitoso = false;
+                                            error_log("Error llenando input {$campo['name']}: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
                                         }
                                     }
 
-                                    // Campo DireccionActual
-                                    if (!empty($direccionActual)) {
-                                        try {
-                                            $campo = $driver->wait(10)->until(
-                                                WebDriverExpectedCondition::presenceOfElementLocated(
-                                                    WebDriverBy::xpath("//input[@name='DireccionActual']")
-                                                )
-                                            );
-                                            
-                                            $driver->wait(5)->until(
-                                                WebDriverExpectedCondition::elementToBeClickable(
-                                                    WebDriverBy::xpath("//input[@name='DireccionActual']")
-                                                )
-                                            );
-                                            
-                                            $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$campo]);
-                                            usleep(300000);
-                                            
-                                            $campo->clear();
-                                            usleep(200000);
-                                            $campo->sendKeys($direccionActual);
-                                            
-                                            $driver->executeScript("arguments[0].dispatchEvent(new Event('input', { bubbles: true }));", [$campo]);
-                                            $driver->executeScript("arguments[0].dispatchEvent(new Event('change', { bubbles: true }));", [$campo]);
-                                            
-                                            error_log("Campo DireccionActual completado: $direccionActual\n", 3, 'errores_bot.log');
-                                            
-                                        } catch (Exception $e) {
-                                            error_log("Error en campo DireccionActual: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
-                                            
-                                            $driver->executeScript("
-                                                var campo = document.querySelector('input[name=\"DireccionActual\"]');
-                                                if (campo) {
-                                                    campo.value = arguments[0];
-                                                    campo.dispatchEvent(new Event('input', { bubbles: true }));
-                                                    campo.dispatchEvent(new Event('change', { bubbles: true }));
-                                                }
-                                            ", [$direccionActual]);
-                                        }
-                                    }
-
-                                    // Campo DireccionDestino
-                                    if (!empty($direccionDestino)) {
-                                        try {
-                                            $campo = $driver->wait(10)->until(
-                                                WebDriverExpectedCondition::presenceOfElementLocated(
-                                                    WebDriverBy::xpath("//input[@name='DireccionDestino']")
-                                                )
-                                            );
-                                            
-                                            $driver->wait(5)->until(
-                                                WebDriverExpectedCondition::elementToBeClickable(
-                                                    WebDriverBy::xpath("//input[@name='DireccionDestino']")
-                                                )
-                                            );
-                                            
-                                            $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$campo]);
-                                            usleep(300000);
-                                            
-                                            $campo->clear();
-                                            usleep(200000);
-                                            $campo->sendKeys($direccionDestino);
-                                            
-                                            $driver->executeScript("arguments[0].dispatchEvent(new Event('input', { bubbles: true }));", [$campo]);
-                                            $driver->executeScript("arguments[0].dispatchEvent(new Event('change', { bubbles: true }));", [$campo]);
-                                            
-                                            error_log("Campo DireccionDestino completado: $direccionDestino\n", 3, 'errores_bot.log');
-                                            
-                                        } catch (Exception $e) {
-                                            error_log("Error en campo DireccionDestino: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
-                                            
-                                            $driver->executeScript("
-                                                var campo = document.querySelector('input[name=\"DireccionDestino\"]');
-                                                if (campo) {
-                                                    campo.value = arguments[0];
-                                                    campo.dispatchEvent(new Event('input', { bubbles: true }));
-                                                    campo.dispatchEvent(new Event('change', { bubbles: true }));
-                                                }
-                                            ", [$direccionDestino]);
-                                        }
-                                    }
-
-                                    // PASO 4: Procesar los campos textarea
                                     $camposTextarea = [
-                                        ['name' => 'ErrorPresentado', 'index' => 13],
-                                        ['name' => 'SolucionRequerida', 'index' => 14],
+                                        ['name' => 'ErrorPresentado', 'index' => 16],
+                                        ['name' => 'SolucionRequerida', 'index' => 17],
                                     ];
 
                                     foreach ($camposTextarea as $campo) {
                                         if (!isset($datos[$campo['index']]) || empty(trim($datos[$campo['index']]))) {
                                             continue;
                                         }
-                                        
+
                                         try {
                                             $textarea = $driver->wait(8)->until(
                                                 WebDriverExpectedCondition::presenceOfElementLocated(
                                                     WebDriverBy::xpath("//textarea[@name='{$campo['name']}']")
                                                 )
                                             );
-                                            
+
                                             $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$textarea]);
                                             usleep(300000);
-                                            
+
                                             $textarea->clear();
                                             usleep(200000);
+
                                             $texto = trim($datos[$campo['index']]);
                                             $textarea->sendKeys($texto);
-                                            
-                                            // Verificar que el texto se escribió correctamente
+
                                             $textoActual = $textarea->getAttribute('value');
                                             if ($textoActual === $texto) {
                                                 error_log("Campo {$campo['name']} completado correctamente\n", 3, 'errores_bot.log');
                                             } else {
                                                 error_log("Advertencia: El texto en {$campo['name']} no coincide. Esperado: '$texto', Actual: '$textoActual'\n", 3, 'errores_bot.log');
                                             }
-                                            
-                                            usleep(300000); // Pausa entre campos
-                                            
+
+                                            usleep(300000);
+
                                         } catch (Exception $e) {
                                             $procesamientoExitoso = false;
                                             error_log("Error llenando textarea {$campo['name']}: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
@@ -4434,13 +5047,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                     sleep(3);
                                     
                                 } else {
-                                    $procesamientoExitoso = false;
-                                    error_log("Error procesando trámite '$valor': " . $e->getMessage() . "\n", 3, 'errores_bot.log');
                                 }
                                 
                             } catch (Exception $e) {
-                                $procesamientoExitoso = false;
-                                error_log("Error procesando trámite '$valor': " . $e->getMessage() . "\n", 3, 'errores_bot.log');
                             }
                         }
 
