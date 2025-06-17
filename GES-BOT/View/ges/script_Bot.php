@@ -585,8 +585,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                     }
 
                                     $camposTextarea = [
-                                        ['name' => 'ErrorPresentado', 'index' => 14],
-                                        ['name' => 'SolucionRequerida', 'index' => 15],
+                                        ['name' => 'ErrorPresentado', 'index' => 15],
+                                        ['name' => 'SolucionRequerida', 'index' => 16],
                                     ];
 
                                     foreach ($camposTextarea as $campo) {
@@ -2420,7 +2420,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                         
                                         // Opcional: Validar que todos los campos requeridos tienen valores
                                         try {
-                                            $camposRequeridos = ['FechaInicio', 'FechaFin', 'PlanoPredio', 'SoportePQR', 'Porcentaje'];
+                                            $camposRequeridos = ['FechaInicio', 'FechaFin', 'PlanOfrecido', 'SoportePQR', 'Porcentaje'];
                                             foreach ($camposRequeridos as $campoRequerido) {
                                                 $elemento = $driver->findElement(WebDriverBy::xpath("//input[@name='$campoRequerido'] | //textarea[@name='$campoRequerido']"));
                                                 $valor = $elemento->getAttribute('value');
@@ -5167,6 +5167,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     
                     error_log("✓ Archivo process.csv actualizado, eliminadas " . count($lineasProcesadas) . " líneas procesadas\n", 3, 'debug_bot.log');
                 }
+
+                fclose($gestor);
+
+                if (file_exists($archivo)) {
+                    if (unlink($archivo)) {
+                        echo "Archivo eliminado correctamente.\n";
+                    } else {
+                        echo "No se pudo eliminar el archivo.\n";
+                    }
+                } else {
+                    echo "El archivo no existe o ya fue eliminado.\n";
+                }
                 
                 // Cerrar recursos
                 if (isset($driver)) {
@@ -5176,65 +5188,67 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     fclose($file);
                 }
                 
-                header("Location: again.php");
-                
             } 
 
             catch (Exception $e) {
 
-                if (!empty($lineasProcesadas)) {
-                    fclose($gestor);
-                    $gestor = fopen($archivo, 'r');
-                    $todasLasLineas = [];
-                    while (($linea = fgetcsv($gestor)) !== false) {
-                        if (strcasecmp(trim($linea[0]), 'Canal') === 0 || !in_array($linea, $lineasProcesadas)) {
-                            $todasLasLineas[] = $linea;
-                        }
+                fclose($gestor);
+
+                if (file_exists($archivo)) {
+                    if (unlink($archivo)) {
+                        echo "Archivo eliminado correctamente.\n";
+                    } else {
+                        echo "No se pudo eliminar el archivo.\n";
                     }
-                    fclose($gestor);
-                    
-                    file_put_contents($archivo, '');
-                    $gestor = fopen($archivo, 'w');
-                    foreach ($todasLasLineas as $linea) {
-                        fputcsv($gestor, $linea);
-                    }
-                    fclose($gestor);
-                    
-                    error_log("✓ Archivo process.csv actualizado, eliminadas " . count($lineasProcesadas) . " líneas procesadas\n", 3, 'debug_bot.log');
+                } else {
+                    echo "El archivo no existe o ya fue eliminado.\n";
                 }
 
                 error_log("Error final procesando archivos: " . $e->getMessage() . "\n", 3, 'errores_bot.log');
                 $driver->quit();
+                header("Location: ./script_Bot.php");
+
             }
 
             } catch (TimeoutException | NoSuchElementException $e) {
+                
+                fclose($gestor);
 
-                if (!empty($lineasProcesadas)) {
-                    fclose($gestor);
-                    $gestor = fopen($archivo, 'r');
-                    $todasLasLineas = [];
-                    while (($linea = fgetcsv($gestor)) !== false) {
-                        if (strcasecmp(trim($linea[0]), 'Canal') === 0 || !in_array($linea, $lineasProcesadas)) {
-                            $todasLasLineas[] = $linea;
-                        }
+                if (file_exists($archivo)) {
+                    if (unlink($archivo)) {
+                        echo "Archivo eliminado correctamente.\n";
+                    } else {
+                        echo "No se pudo eliminar el archivo.\n";
                     }
-                    fclose($gestor);
-                    
-                    file_put_contents($archivo, '');
-                    $gestor = fopen($archivo, 'w');
-                    foreach ($todasLasLineas as $linea) {
-                        fputcsv($gestor, $linea);
-                    }
-                    fclose($gestor);
-                    
-                    error_log("✓ Archivo process.csv actualizado, eliminadas " . count($lineasProcesadas) . " líneas procesadas\n", 3, 'debug_bot.log');
+                } else {
+                    echo "El archivo no existe o ya fue eliminado.\n";
                 }
 
-                    echo "<script>alert('Error: {$e->getMessage()}');</script>";
-                    $driver->quit();
-                    header("Location: View/ges/script_Bot.php");
+                echo "<script>alert('Error: {$e->getMessage()}');</script>";
+                $driver->quit();
+                header("Location: View/ges/script_Bot.php");
+                
+            }finally {
+
+                if (is_resource($gestor)) {
+                    fclose($gestor);
                 }
-            }
+
+                if (file_exists($archivo)) {
+                    if (!unlink($archivo)) {
+                        error_log("No se pudo eliminar el archivo '$archivo'\n", 3, 'errores_bot.log');
+                    } else {
+                        error_log("Archivo '$archivo' eliminado correctamente\n", 3, 'proceso_bot.log');
+                    }
+                }
+
+                $driver->quit();
+                header("Location: again.php");
+
+            }    
+
+    } 
+    
 }
 ?>
 

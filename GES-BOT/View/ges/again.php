@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES['csvFile'])) {
                     fclose($outputHandle);
                     echo "<script type='text/javascript'>
                         alert('Base Exitosamente Anexada');
-                        window.location.href = 'View/ges/script_Bot.php';
+                        window.location.href = './script_Bot.php';
                     </script>";
                 } else {
                     echo "<script type='text/javascript'>
