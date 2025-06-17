@@ -962,8 +962,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                     // TERCERO: Llenar los textareas
                                     $camposTextarea = [
-                                        ['name' => 'ErrorPresentado', 'index' => 17],
-                                        ['name' => 'SolucionRequerida', 'index' => 18],
+                                        ['name' => 'ErrorPresentado', 'index' => 16],
+                                        ['name' => 'SolucionRequerida', 'index' => 17],
                                     ];
 
                                     foreach ($camposTextarea as $campo) {
@@ -5268,7 +5268,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div class="inic" id="star3">
 
             <div class="help">
-                <a href="../../Model/Documents/manReto-Suma.pdf" target="_blank"><span>?</span></a>
+                <a href="../../Model/Documents/ManGes-Bot.pdf" target="_blank"><span>?</span></a>
             </div>
 
             <div class="tittle">
@@ -5308,8 +5308,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </div>
             </form>
 
-            <div class="version">
-                <span>1.0.0</span>
+            <div class="version_2">
+                <span>1.0.1</span>
             </div>
 
         </div>

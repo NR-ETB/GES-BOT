@@ -1,0 +1,167 @@
+✗ Valor NO encontrado en Canal: '﻿Canal'
+✗ Valor NO encontrado en Sistema: 'Sistema'
+✗ Valor NO encontrado en UEN: 'UEN'
+✗ Valor NO encontrado en Tecnologia: 'Tecnologia'
+✗ Valor NO encontrado en Tipo_Documento_Campo4: 'Tipo_de_Documento'
+✗ Valor NO encontrado en Ciudad: 'Ciudad'
+Procesamiento completado exitosamente
+Error general en registro (intento 1): ﻿Canal,Sistema,UEN,Tecnologia,Tipo_de_Documento,Numero_de_Documento,Cliente,Contacto,Línea del servicio | Single,Pedido | Orden,Cuenta de Facturacion,Ciudad,Tramite,Direccion Actual,Direccion Destino,Plan Ofrecido,Error,Solucion,Adjunto - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[normalize-space()='Guardar']"}
+  (Session info: chrome=137.0.7151.104)
+Error general en registro (intento 1): ASEGURAMIENTO,SUMA,HOGARES,FTTH ,CC,1023899823,MARY LUZ RUBIANO PACHON  PRUEBA,3208961056,6017183964,MDM-FIBRA-018011247,6017183964,BOGOTA,CAMBIO DE PLAN,CL 74A SUR 92 71 TO 15 AP 401,CL 74A SUR 92 71 TO 15 AP 401,SINGLE INTERNET 300M HOG V2,ERROR FACTURACIÓN,COMPLETAR TRAMITE DE CAMBIO DE PLAN , - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.104)
+Error general en registro (intento 2): ASEGURAMIENTO,SUMA,HOGARES,FTTH ,CC,1023899823,MARY LUZ RUBIANO PACHON  PRUEBA,3208961056,6017183964,MDM-FIBRA-018011247,6017183964,BOGOTA,CAMBIO DE PLAN,CL 74A SUR 92 71 TO 15 AP 401,CL 74A SUR 92 71 TO 15 AP 401,SINGLE INTERNET 300M HOG V2,ERROR FACTURACIÓN,COMPLETAR TRAMITE DE CAMBIO DE PLAN , - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.104)
+✗ Registro falló después de 2 intentos por error general
+✗ Valor NO encontrado en Canal: '﻿Canal;Sistema;UEN;Tecnologia;Tipo_de_Documento;Numero_de_Documento;Cliente;Contacto;Línea del servicio | Single;Pedido | Orden;Cuenta de Facturacion;Ciudad;Tramite;Direccion Actual;Direccion Destino;Plan Ofrecido;Error;Solucion;Adjunto'
+Procesamiento completado exitosamente
+Error general en registro (intento 1): ﻿Canal;Sistema;UEN;Tecnologia;Tipo_de_Documento;Numero_de_Documento;Cliente;Contacto;Línea del servicio | Single;Pedido | Orden;Cuenta de Facturacion;Ciudad;Tramite;Direccion Actual;Direccion Destino;Plan Ofrecido;Error;Solucion;Adjunto - Error: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=137.0.7151.104)
+Error general en registro (intento 1): ASEGURAMIENTO;SUMA;HOGARES;FTTH ;CC;1023899823;MARY LUZ RUBIANO PACHON  PRUEBA;3208961056;6017183964;MDM-FIBRA-018011247;12054098991;Bogota D.C.;CAMBIO DE PLAN;CL 74A SUR 92 71 TO 15 AP 401;CL 74A SUR 92 71 TO 15 AP 401;SINGLE INTERNET 300M HOG V2;ERROR FACTURACIÓN;COMPLETAR TRAMITE DE CAMBIO DE PLAN ; - Error: invalid session id
+Error general en registro (intento 2): ASEGURAMIENTO;SUMA;HOGARES;FTTH ;CC;1023899823;MARY LUZ RUBIANO PACHON  PRUEBA;3208961056;6017183964;MDM-FIBRA-018011247;12054098991;Bogota D.C.;CAMBIO DE PLAN;CL 74A SUR 92 71 TO 15 AP 401;CL 74A SUR 92 71 TO 15 AP 401;SINGLE INTERNET 300M HOG V2;ERROR FACTURACIÓN;COMPLETAR TRAMITE DE CAMBIO DE PLAN ; - Error: invalid session id
+✗ Registro falló después de 2 intentos por error general
+Procesamiento completado exitosamente
+✗ Valor NO encontrado en Canal: 'REDES SOCIALES'
+Error llenando campo NumeroDocumento: invalid session id
+Error llenando campo Cliente: invalid session id
+Error llenando campo Contacto: invalid session id
+Error llenando campo LineaServicio: invalid session id
+Error llenando campo PedidoOrden: invalid session id
+Error llenando campo CuentaFacturacion: invalid session id
+Error general en registro (intento 1): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_F1,3120000005,956281304,1210,ACC22005,BOGOTA,CAMBIO DE ESTRATO,CALLE 2 44 A 22,CALLE 4D 49 A 39,,Problemas con la cobertura,Recomendaarle unaa mejor zona para residir, - Error: invalid session id
+Error general en registro (intento 2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_F1,3120000005,956281304,1210,ACC22005,BOGOTA,CAMBIO DE ESTRATO,CALLE 2 44 A 22,CALLE 4D 49 A 39,,Problemas con la cobertura,Recomendaarle unaa mejor zona para residir, - Error: invalid session id
+✗ Registro falló después de 2 intentos por error general
+Error general en registro (intento 1): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_F2,3120000007,956281306,1205,ACC22007,SOACHA,CAMBIO DE PLAN,CALLE 45 21 A 23,CALLE 52 78 B 21, SUPERMEGA PRO PLAN MAX 500G,Sin respuesta en router,Reemplazo de router, - Error: invalid session id
+Error general en registro (intento 2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_F2,3120000007,956281306,1205,ACC22007,SOACHA,CAMBIO DE PLAN,CALLE 45 21 A 23,CALLE 52 78 B 21, SUPERMEGA PRO PLAN MAX 500G,Sin respuesta en router,Reemplazo de router, - Error: invalid session id
+✗ Registro falló después de 2 intentos por error general
+Error general en registro (intento 1): CALL CENTER,SUMA,HOGARES,FTTH,CC,2000123462,PRUEBA_F3,3120000008,956281307,1211,ACC22010,BOGOTA,CAMBIO DE TECNOLOGIA,CALLE 54 22 A 12,CALLE 63 57 A 11, SUPERMEGA PRO PLAN MAX 700G,Falta de Cobertura,Recomendar otro tipo de tecnologia, - Error: invalid session id
+Error general en registro (intento 2): CALL CENTER,SUMA,HOGARES,FTTH,CC,2000123462,PRUEBA_F3,3120000008,956281307,1211,ACC22010,BOGOTA,CAMBIO DE TECNOLOGIA,CALLE 54 22 A 12,CALLE 63 57 A 11, SUPERMEGA PRO PLAN MAX 700G,Falta de Cobertura,Recomendar otro tipo de tecnologia, - Error: invalid session id
+✗ Registro falló después de 2 intentos por error general
+Error general en registro (intento 1): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123433,PRUEBA_F4,3120000111,956281707,1217,ACC22017,SOACHA,CANCELACION INMEDIATA,,CALLE 4 16 D 72,,Ninguna,Ninguna, - Error: invalid session id
+Error general en registro (intento 2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123433,PRUEBA_F4,3120000111,956281707,1217,ACC22017,SOACHA,CANCELACION INMEDIATA,,CALLE 4 16 D 72,,Ninguna,Ninguna, - Error: invalid session id
+✗ Registro falló después de 2 intentos por error general
+Error general en registro (intento 1): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123433,PRUEBA_F5,3120000211,956281709,1219,ACC22019,BOGOTA,RETENCION,,,SUPERMEGA PRO PLAN MAX 400G,Ninguna,Ninguna, - Error: invalid session id
+Error general en registro (intento 2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123433,PRUEBA_F5,3120000211,956281709,1219,ACC22019,BOGOTA,RETENCION,,,SUPERMEGA PRO PLAN MAX 400G,Ninguna,Ninguna, - Error: invalid session id
+✗ Registro falló después de 2 intentos por error general
+Error general en registro (intento 1): VENTAS,SUMA,HOGARES,FTTH,CC,2000123433,PRUEBA_F6,3120000111,956281707,1217,ACC22017,SOACHA,SINCRONIZAR ACTIVOS,CALLE 106 42 C 32,CALLE 127 45 A 21, SUPERMEGA PRO PLAN MAX 700G,Ninguna,Ninguna, - Error: invalid session id
+Error general en registro (intento 2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123433,PRUEBA_F6,3120000111,956281707,1217,ACC22017,SOACHA,SINCRONIZAR ACTIVOS,CALLE 106 42 C 32,CALLE 127 45 A 21, SUPERMEGA PRO PLAN MAX 700G,Ninguna,Ninguna, - Error: invalid session id
+✗ Registro falló después de 2 intentos por error general
+Error general en registro (intento 1): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123464,PRUEBA_F7",3120000105,956256304,1220,ACC22005,BOGOTA,SINCRONIZAR DIRECCION,CALLE 108 49 A 20,CALLE 92 79 D 79,,Problemas con la cobertura,Recomendaarle unaa mejor zona para residir, - Error: invalid session id
+Error general en registro (intento 2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123464,PRUEBA_F7",3120000105,956256304,1220,ACC22005,BOGOTA,SINCRONIZAR DIRECCION,CALLE 108 49 A 20,CALLE 92 79 D 79,,Problemas con la cobertura,Recomendaarle unaa mejor zona para residir, - Error: invalid session id
+✗ Registro falló después de 2 intentos por error general
+Error general en registro (intento 1): VENTAS,SUMA,HOGARES,FTTH,CC,2000123465,PRUEBA_F8",3120000105,956256309,1222,ACC22008,BOGOTA,TRASLADO,CALLE 178 99 A 10,CALLE 200 49 D 99,SUPERMEGA PRO PLAN MAX 700G,Problemas con la cobertura,Recomendaarle unaa mejor zona para residir, - Error: invalid session id
+Error general en registro (intento 2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123465,PRUEBA_F8",3120000105,956256309,1222,ACC22008,BOGOTA,TRASLADO,CALLE 178 99 A 10,CALLE 200 49 D 99,SUPERMEGA PRO PLAN MAX 700G,Problemas con la cobertura,Recomendaarle unaa mejor zona para residir, - Error: invalid session id
+✗ Registro falló después de 2 intentos por error general
+Procesamiento completado exitosamente
+Error general en registro (intento 1): ASEGURAMIENTO,SUMA,HOGARES,FTTH ,CC,1023899823,MARY LUZ RUBIANO PACHON PRUEBA_2,3208961056,6017183964,MDM-FIBRA-018011247,6017183964,BOGOTA,CAMBIO DE PLAN,CL 74A SUR 92 71 TO 15 AP 401,CL 74A SUR 92 71 TO 15 AP 401,SINGLE INTERNET 300M HOG V2,ERROR FACTURACIÓN,COMPLETAR TRAMITE DE CAMBIO DE PLAN, - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[normalize-space()='Guardar']"}
+  (Session info: chrome=137.0.7151.104)
+Error general en registro (intento 1): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_F1,3120000005,956281304,1210,ACC22005,BOGOTA,CAMBIO DE ESTRATO,CALLE 2 44 A 22,CALLE 4D 49 A 39,,Problemas con la cobertura,Recomendaarle unaa mejor zona para residir, - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.104)
+Error general en registro (intento 2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_F1,3120000005,956281304,1210,ACC22005,BOGOTA,CAMBIO DE ESTRATO,CALLE 2 44 A 22,CALLE 4D 49 A 39,,Problemas con la cobertura,Recomendaarle unaa mejor zona para residir, - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.104)
+✗ Registro falló después de 2 intentos por error general
+Error general en registro (intento 1): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_F2,3120000007,956281306,1205,ACC22007,SOACHA,CAMBIO DE PLAN,CALLE 45 21 A 23,CALLE 52 78 B 21, SUPERMEGA PRO PLAN MAX 500G,Sin respuesta en router,Reemplazo de router, - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.104)
+Error general en registro (intento 2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_F2,3120000007,956281306,1205,ACC22007,SOACHA,CAMBIO DE PLAN,CALLE 45 21 A 23,CALLE 52 78 B 21, SUPERMEGA PRO PLAN MAX 500G,Sin respuesta en router,Reemplazo de router, - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.104)
+✗ Registro falló después de 2 intentos por error general
+Error general en registro (intento 1): CALL CENTER,SUMA,HOGARES,FTTH,CC,2000123462,PRUEBA_F3,3120000008,956281307,1211,ACC22010,BOGOTA,CAMBIO DE TECNOLOGIA,CALLE 54 22 A 12,CALLE 63 57 A 11, SUPERMEGA PRO PLAN MAX 700G,Falta de Cobertura,Recomendar otro tipo de tecnologia, - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.104)
+Error general en registro (intento 2): CALL CENTER,SUMA,HOGARES,FTTH,CC,2000123462,PRUEBA_F3,3120000008,956281307,1211,ACC22010,BOGOTA,CAMBIO DE TECNOLOGIA,CALLE 54 22 A 12,CALLE 63 57 A 11, SUPERMEGA PRO PLAN MAX 700G,Falta de Cobertura,Recomendar otro tipo de tecnologia, - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.104)
+✗ Registro falló después de 2 intentos por error general
+Error general en registro (intento 1): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123433,PRUEBA_F4,3120000111,956281707,1217,ACC22017,SOACHA,CANCELACION INMEDIATA,,CALLE 4 16 D 72,,Ninguna,Ninguna, - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.104)
+Error general en registro (intento 2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123433,PRUEBA_F4,3120000111,956281707,1217,ACC22017,SOACHA,CANCELACION INMEDIATA,,CALLE 4 16 D 72,,Ninguna,Ninguna, - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.104)
+✗ Registro falló después de 2 intentos por error general
+Error general en registro (intento 1): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123433,PRUEBA_F5,3120000211,956281709,1219,ACC22019,BOGOTA,RETENCION,,,SUPERMEGA PRO PLAN MAX 400G,Ninguna,Ninguna, - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.104)
+Error general en registro (intento 2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123433,PRUEBA_F5,3120000211,956281709,1219,ACC22019,BOGOTA,RETENCION,,,SUPERMEGA PRO PLAN MAX 400G,Ninguna,Ninguna, - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.104)
+✗ Registro falló después de 2 intentos por error general
+Error general en registro (intento 1): VENTAS,SUMA,HOGARES,FTTH,CC,2000123433,PRUEBA_F6,3120000111,956281707,1217,ACC22017,SOACHA,SINCRONIZAR ACTIVOS,CALLE 106 42 C 32,CALLE 127 45 A 21, SUPERMEGA PRO PLAN MAX 700G,Ninguna,Ninguna, - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.104)
+Error general en registro (intento 2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123433,PRUEBA_F6,3120000111,956281707,1217,ACC22017,SOACHA,SINCRONIZAR ACTIVOS,CALLE 106 42 C 32,CALLE 127 45 A 21, SUPERMEGA PRO PLAN MAX 700G,Ninguna,Ninguna, - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.104)
+✗ Registro falló después de 2 intentos por error general
+Error general en registro (intento 1): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123464,PRUEBA_F7",3120000105,956256304,1220,ACC22005,BOGOTA,SINCRONIZAR DIRECCION,CALLE 108 49 A 20,CALLE 92 79 D 79,,Problemas con la cobertura,Recomendaarle unaa mejor zona para residir, - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.104)
+Error general en registro (intento 2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123464,PRUEBA_F7",3120000105,956256304,1220,ACC22005,BOGOTA,SINCRONIZAR DIRECCION,CALLE 108 49 A 20,CALLE 92 79 D 79,,Problemas con la cobertura,Recomendaarle unaa mejor zona para residir, - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.104)
+✗ Registro falló después de 2 intentos por error general
+Error general en registro (intento 1): VENTAS,SUMA,HOGARES,FTTH,CC,2000123465,PRUEBA_F8",3120000105,956256309,1222,ACC22008,BOGOTA,TRASLADO,CALLE 178 99 A 10,CALLE 200 49 D 99,SUPERMEGA PRO PLAN MAX 700G,Problemas con la cobertura,Recomendaarle unaa mejor zona para residir, - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.104)
+Error general en registro (intento 2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123465,PRUEBA_F8",3120000105,956256309,1222,ACC22008,BOGOTA,TRASLADO,CALLE 178 99 A 10,CALLE 200 49 D 99,SUPERMEGA PRO PLAN MAX 700G,Problemas con la cobertura,Recomendaarle unaa mejor zona para residir, - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.104)
+✗ Registro falló después de 2 intentos por error general
+Procesamiento completado exitosamente
+Error general en registro (intento 1): ASEGURAMIENTO,SUMA,HOGARES,FTTH ,CC,1023899823,MARY LUZ RUBIANO PACHON PRUEBA_2,3208961056,6017183964,MDM-FIBRA-018011247,6017183964,BOGOTA,CAMBIO DE PLAN,CL 74A SUR 92 71 TO 15 AP 401,CL 74A SUR 92 71 TO 15 AP 401,SINGLE INTERNET 300M HOG V2,ERROR FACTURACIÓN,COMPLETAR TRAMITE DE CAMBIO DE PLAN, - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[normalize-space()='Guardar']"}
+  (Session info: chrome=137.0.7151.104)
+Error general en registro (intento 1): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_F1,3120000005,956281304,1210,ACC22005,BOGOTA,CAMBIO DE ESTRATO,CALLE 2 44 A 22,CALLE 4D 49 A 39,,Problemas con la cobertura,Recomendaarle unaa mejor zona para residir, - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.104)
+Error general en registro (intento 2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_F1,3120000005,956281304,1210,ACC22005,BOGOTA,CAMBIO DE ESTRATO,CALLE 2 44 A 22,CALLE 4D 49 A 39,,Problemas con la cobertura,Recomendaarle unaa mejor zona para residir, - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.104)
+✗ Registro falló después de 2 intentos por error general
+Error general en registro (intento 1): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_F2,3120000007,956281306,1205,ACC22007,SOACHA,CAMBIO DE PLAN,CALLE 45 21 A 23,CALLE 52 78 B 21, SUPERMEGA PRO PLAN MAX 500G,Sin respuesta en router,Reemplazo de router, - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.104)
+Error general en registro (intento 2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_F2,3120000007,956281306,1205,ACC22007,SOACHA,CAMBIO DE PLAN,CALLE 45 21 A 23,CALLE 52 78 B 21, SUPERMEGA PRO PLAN MAX 500G,Sin respuesta en router,Reemplazo de router, - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.104)
+✗ Registro falló después de 2 intentos por error general
+Error general en registro (intento 1): CALL CENTER,SUMA,HOGARES,FTTH,CC,2000123462,PRUEBA_F3,3120000008,956281307,1211,ACC22010,BOGOTA,CAMBIO DE TECNOLOGIA,CALLE 54 22 A 12,CALLE 63 57 A 11, SUPERMEGA PRO PLAN MAX 700G,Falta de Cobertura,Recomendar otro tipo de tecnologia, - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.104)
+Error general en registro (intento 2): CALL CENTER,SUMA,HOGARES,FTTH,CC,2000123462,PRUEBA_F3,3120000008,956281307,1211,ACC22010,BOGOTA,CAMBIO DE TECNOLOGIA,CALLE 54 22 A 12,CALLE 63 57 A 11, SUPERMEGA PRO PLAN MAX 700G,Falta de Cobertura,Recomendar otro tipo de tecnologia, - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.104)
+✗ Registro falló después de 2 intentos por error general
+Error general en registro (intento 1): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123433,PRUEBA_F4,3120000111,956281707,1217,ACC22017,SOACHA,CANCELACION INMEDIATA,,CALLE 4 16 D 72,,Ninguna,Ninguna, - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.104)
+Error general en registro (intento 2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123433,PRUEBA_F4,3120000111,956281707,1217,ACC22017,SOACHA,CANCELACION INMEDIATA,,CALLE 4 16 D 72,,Ninguna,Ninguna, - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.104)
+✗ Registro falló después de 2 intentos por error general
+Error general en registro (intento 1): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123433,PRUEBA_F5,3120000211,956281709,1219,ACC22019,BOGOTA,RETENCION,,,SUPERMEGA PRO PLAN MAX 400G,Ninguna,Ninguna, - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.104)
+Error general en registro (intento 2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123433,PRUEBA_F5,3120000211,956281709,1219,ACC22019,BOGOTA,RETENCION,,,SUPERMEGA PRO PLAN MAX 400G,Ninguna,Ninguna, - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.104)
+✗ Registro falló después de 2 intentos por error general
+Error general en registro (intento 1): VENTAS,SUMA,HOGARES,FTTH,CC,2000123433,PRUEBA_F6,3120000111,956281707,1217,ACC22017,SOACHA,SINCRONIZAR ACTIVOS,CALLE 106 42 C 32,CALLE 127 45 A 21, SUPERMEGA PRO PLAN MAX 700G,Ninguna,Ninguna, - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.104)
+Error general en registro (intento 2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123433,PRUEBA_F6,3120000111,956281707,1217,ACC22017,SOACHA,SINCRONIZAR ACTIVOS,CALLE 106 42 C 32,CALLE 127 45 A 21, SUPERMEGA PRO PLAN MAX 700G,Ninguna,Ninguna, - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.104)
+✗ Registro falló después de 2 intentos por error general
+Error general en registro (intento 1): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123464,PRUEBA_F7",3120000105,956256304,1220,ACC22005,BOGOTA,SINCRONIZAR DIRECCION,CALLE 108 49 A 20,CALLE 92 79 D 79,,Problemas con la cobertura,Recomendaarle unaa mejor zona para residir, - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.104)
+Error general en registro (intento 2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123464,PRUEBA_F7",3120000105,956256304,1220,ACC22005,BOGOTA,SINCRONIZAR DIRECCION,CALLE 108 49 A 20,CALLE 92 79 D 79,,Problemas con la cobertura,Recomendaarle unaa mejor zona para residir, - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.104)
+✗ Registro falló después de 2 intentos por error general
+Error general en registro (intento 1): VENTAS,SUMA,HOGARES,FTTH,CC,2000123465,PRUEBA_F8",3120000105,956256309,1222,ACC22008,BOGOTA,TRASLADO,CALLE 178 99 A 10,CALLE 200 49 D 99,SUPERMEGA PRO PLAN MAX 700G,Problemas con la cobertura,Recomendaarle unaa mejor zona para residir, - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.104)
+Error general en registro (intento 2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123465,PRUEBA_F8",3120000105,956256309,1222,ACC22008,BOGOTA,TRASLADO,CALLE 178 99 A 10,CALLE 200 49 D 99,SUPERMEGA PRO PLAN MAX 700G,Problemas con la cobertura,Recomendaarle unaa mejor zona para residir, - Error: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Siguiente']"}
+  (Session info: chrome=137.0.7151.104)
+✗ Registro falló después de 2 intentos por error general
+Procesamiento completado exitosamente
+Error general en registro (intento 1): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_F1,3120000005,956281304,1210,ACC22005,BOGOTA,CAMBIO DE ESTRATO,CALLE 2 44 A 22,CALLE 4D 49 A 39,,Problemas con la cobertura,Recomendaarle unaa mejor zona para residir, - Error: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=137.0.7151.104)
+Error general en registro (intento 2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_F1,3120000005,956281304,1210,ACC22005,BOGOTA,CAMBIO DE ESTRATO,CALLE 2 44 A 22,CALLE 4D 49 A 39,,Problemas con la cobertura,Recomendaarle unaa mejor zona para residir, - Error: invalid session id
+✗ Registro falló después de 2 intentos por error general
+Error general en registro (intento 1): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_F2,3120000007,956281306,1205,ACC22007,SOACHA,CAMBIO DE PLAN,CALLE 45 21 A 23,CALLE 52 78 B 21, SUPERMEGA PRO PLAN MAX 500G,Sin respuesta en router,Reemplazo de router, - Error: invalid session id
+Error general en registro (intento 2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_F2,3120000007,956281306,1205,ACC22007,SOACHA,CAMBIO DE PLAN,CALLE 45 21 A 23,CALLE 52 78 B 21, SUPERMEGA PRO PLAN MAX 500G,Sin respuesta en router,Reemplazo de router, - Error: invalid session id
+✗ Registro falló después de 2 intentos por error general
+Error general en registro (intento 1): CALL CENTER,SUMA,HOGARES,FTTH,CC,2000123462,PRUEBA_F3,3120000008,956281307,1211,ACC22010,BOGOTA,CAMBIO DE TECNOLOGIA,CALLE 54 22 A 12,CALLE 63 57 A 11, SUPERMEGA PRO PLAN MAX 700G,Falta de Cobertura,Recomendar otro tipo de tecnologia, - Error: invalid session id
+Error general en registro (intento 2): CALL CENTER,SUMA,HOGARES,FTTH,CC,2000123462,PRUEBA_F3,3120000008,956281307,1211,ACC22010,BOGOTA,CAMBIO DE TECNOLOGIA,CALLE 54 22 A 12,CALLE 63 57 A 11, SUPERMEGA PRO PLAN MAX 700G,Falta de Cobertura,Recomendar otro tipo de tecnologia, - Error: invalid session id
+✗ Registro falló después de 2 intentos por error general
+Error general en registro (intento 1): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123433,PRUEBA_F4,3120000111,956281707,1217,ACC22017,SOACHA,CANCELACION INMEDIATA,,CALLE 4 16 D 72,,Ninguna,Ninguna, - Error: invalid session id
+Error general en registro (intento 2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123433,PRUEBA_F4,3120000111,956281707,1217,ACC22017,SOACHA,CANCELACION INMEDIATA,,CALLE 4 16 D 72,,Ninguna,Ninguna, - Error: invalid session id
+✗ Registro falló después de 2 intentos por error general
+Error general en registro (intento 1): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123433,PRUEBA_F5,3120000211,956281709,1219,ACC22019,BOGOTA,RETENCION,,,SUPERMEGA PRO PLAN MAX 400G,Ninguna,Ninguna, - Error: invalid session id
+Error general en registro (intento 2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123433,PRUEBA_F5,3120000211,956281709,1219,ACC22019,BOGOTA,RETENCION,,,SUPERMEGA PRO PLAN MAX 400G,Ninguna,Ninguna, - Error: invalid session id
+✗ Registro falló después de 2 intentos por error general
+Error general en registro (intento 1): VENTAS,SUMA,HOGARES,FTTH,CC,2000123433,PRUEBA_F6,3120000111,956281707,1217,ACC22017,SOACHA,SINCRONIZAR ACTIVOS,CALLE 106 42 C 32,CALLE 127 45 A 21, SUPERMEGA PRO PLAN MAX 700G,Ninguna,Ninguna, - Error: invalid session id
+Error general en registro (intento 2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123433,PRUEBA_F6,3120000111,956281707,1217,ACC22017,SOACHA,SINCRONIZAR ACTIVOS,CALLE 106 42 C 32,CALLE 127 45 A 21, SUPERMEGA PRO PLAN MAX 700G,Ninguna,Ninguna, - Error: invalid session id
+✗ Registro falló después de 2 intentos por error general
+Error general en registro (intento 1): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123464,PRUEBA_F7",3120000105,956256304,1220,ACC22005,BOGOTA,SINCRONIZAR DIRECCION,CALLE 108 49 A 20,CALLE 92 79 D 79,,Problemas con la cobertura,Recomendaarle unaa mejor zona para residir, - Error: invalid session id
+Error general en registro (intento 2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123464,PRUEBA_F7",3120000105,956256304,1220,ACC22005,BOGOTA,SINCRONIZAR DIRECCION,CALLE 108 49 A 20,CALLE 92 79 D 79,,Problemas con la cobertura,Recomendaarle unaa mejor zona para residir, - Error: invalid session id
+✗ Registro falló después de 2 intentos por error general
+Error general en registro (intento 1): VENTAS,SUMA,HOGARES,FTTH,CC,2000123465,PRUEBA_F8",3120000105,956256309,1222,ACC22008,BOGOTA,TRASLADO,CALLE 178 99 A 10,CALLE 200 49 D 99,SUPERMEGA PRO PLAN MAX 700G,Problemas con la cobertura,Recomendaarle unaa mejor zona para residir, - Error: invalid session id
+Error general en registro (intento 2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123465,PRUEBA_F8",3120000105,956256309,1222,ACC22008,BOGOTA,TRASLADO,CALLE 178 99 A 10,CALLE 200 49 D 99,SUPERMEGA PRO PLAN MAX 700G,Problemas con la cobertura,Recomendaarle unaa mejor zona para residir, - Error: invalid session id
+✗ Registro falló después de 2 intentos por error general

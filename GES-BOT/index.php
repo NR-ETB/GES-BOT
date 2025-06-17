@@ -106,7 +106,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES['csvFile'])) {
             </div>
 
             <div class="version">
-                <span>1.0.0</span>
+                <span>1.0.1</span>
             </div>
 
         </div>
