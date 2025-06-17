@@ -76,7 +76,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES['csvFile'])) {
         <div class="inic" id="star1">
 
             <div class="help">
-                <a href="Model/Documents/manReto-Suma.pdf" target="_blank"><span>?</span></a>
+                <a href="Model/Documents/ManGes-Bot.pdf" target="_blank"><span>?</span></a>
             </div>
 
             <div class="tittle">
@@ -103,6 +103,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES['csvFile'])) {
 
             <div class="buttons-act">
                 <button class="act" style="position: relative; left: 550px; top: 200px;" onclick="location.href='View/ges/script_Bot.php';">Gestionar</button>
+            </div>
+
+            <div class="version">
+                <span>1.0.0</span>
             </div>
 
         </div>

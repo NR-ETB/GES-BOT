@@ -218,6 +218,15 @@ a{
     margin-bottom: 20px;
 }
 
+.version span{
+    position: absolute;
+    right: 0;
+    margin: 325px 15px 0 0;
+    color: var(--fblue-etb);
+    font-size: 24px;
+    font-weight: 900;
+}
+
 .backdrop {
     position: fixed; /* Se mantiene fijo en pantalla */
     top: 0;

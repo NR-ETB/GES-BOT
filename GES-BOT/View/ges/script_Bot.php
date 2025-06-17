@@ -1563,11 +1563,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                                     // Ahora sí procesamos los campos del formulario
                                     $camposFormulario = [
-                                        ['name' => 'NuevoTitularNombresApellidos', 'type' => 'input', 'index' => '7'],
+                                        ['name' => 'NuevoTitularNombresApellidos', 'type' => 'input', 'index' => '6'],
+                                        ['name' => 'Error_Suma', 'type' => 'select', 'index' => '4'],
                                         ['name' => 'NuevoTitularCorreoElectronico', 'type' => 'input', 'index' => '13'],
                                         ['name' => 'NuevoTitularNumeroDocumento', 'type' => 'number', 'index' => '5'],
                                         ['name' => 'NuevoTitularCelular', 'type' => 'number', 'index' => '8'],
-                                        ['name' => 'NuevoTitularTipoDocumento', 'type' => 'select', 'index' => '4'],
                                     ];
 
                                     $procesamientoExitoso = true;
@@ -1596,44 +1596,37 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 }
                                                 $driver->executeScript("arguments[0].dispatchEvent(new Event('input', { bubbles: true }));", [$input]);
                                                 $driver->executeScript("arguments[0].dispatchEvent(new Event('change', { bubbles: true }));", [$input]);
+
                                             } elseif ($campo['type'] === 'select') {
-                                                $selectElement = $driver->wait(10)->until(
+                                                // Paso 1: clic en el botón de dropdown personalizado
+                                                $botonDropdown = $driver->wait(10)->until(
                                                     WebDriverExpectedCondition::elementToBeClickable(
-                                                        WebDriverBy::xpath("//select[@name='{$campo['name']}']")
+                                                        WebDriverBy::xpath("//button[@data-id='{$campo['name']}']")
                                                     )
                                                 );
-                                                $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$selectElement]);
+                                                $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$botonDropdown]);
                                                 usleep(200000);
-                                                $selectElement->click();
-                                                usleep(300000);
+                                                $botonDropdown->click(); // abrir el menú
+                                                usleep(500000); // espera que cargue
+
+                                                // Paso 2: localizar y hacer clic en la opción del menú
                                                 $valorEscapado = json_encode($valorCampo);
-                                                $xpathOptions = [
-                                                    "//select[@name='{$campo['name']}']/option[contains(text(), $valorEscapado)]",
-                                                    "//select[@name='{$campo['name']}']/option[@value=$valorEscapado]",
-                                                    "//option[contains(text(), $valorEscapado)]",
-                                                    "//li/a[contains(text(), $valorEscapado)]",
-                                                ];
-                                                $opcionEncontrada = false;
-                                                foreach ($xpathOptions as $xpath) {
-                                                    try {
-                                                        $opcion = $driver->wait(5)->until(
-                                                            WebDriverExpectedCondition::elementToBeClickable(
-                                                                WebDriverBy::xpath($xpath)
-                                                            )
-                                                        );
-                                                        if ($opcion) {
-                                                            $opcion->click();
-                                                            $opcionEncontrada = true;
-                                                            break;
-                                                        }
-                                                    } catch (Exception $e) {
-                                                        continue;
-                                                    }
-                                                }
-                                                if (!$opcionEncontrada) {
-                                                    throw new Exception("No se pudo encontrar la opción '$valorCampo' en el select '{$campo['name']}'");
-                                                }
-                                                $driver->executeScript("arguments[0].dispatchEvent(new Event('change', { bubbles: true }));", [$selectElement]);
+                                                $xpathOpcion = "//ul[contains(@class, 'dropdown-menu') and contains(@class, 'show')]//a[contains(@class, 'dropdown-item')]//span[contains(@class, 'text') and normalize-space(text()) = $valorEscapado]";
+
+                                                $opcion = $driver->wait(5)->until(
+                                                    WebDriverExpectedCondition::elementToBeClickable(
+                                                        WebDriverBy::xpath($xpathOpcion)
+                                                    )
+                                                );
+
+                                                $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$opcion]);
+                                                usleep(200000);
+                                                $opcion->click(); // seleccionar la opción
+                                                usleep(300000);
+
+                                                // Confirmación opcional
+                                                $textoNuevo = $botonDropdown->getText();
+                                                error_log("Dropdown '{$campo['name']}' seleccionado: $textoNuevo\n", 3, 'proceso_bot.log');
                                             }
 
                                             usleep(300000);
@@ -1704,13 +1697,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                     $camposFormulario = [
                                         ['name' => 'NuevoTitularNIT', 'type' => 'input', 'index' => '14'],
                                         ['name' => 'NuevoTitularActividadEconomica', 'type' => 'input', 'index' => '15'],
+                                        ['name' => 'NuevoTitularFechaContitucion', 'type' => 'date', 'index' => '16'],
                                         ['name' => 'NuevoTitularRLNombreEmpresa', 'type' => 'input', 'index' => '17'],
-                                        ['name' => 'NuevoTitularRLNombresApellidos', 'type' => 'input', 'index' => '7'],
-                                        ['name' => 'NuevoTitularRLCorreoElectronico', 'type' => 'input', 'index' => '13'],
-                                        ['name' => 'NuevoTitularFechaConstitucion', 'type' => 'date', 'index' => '16'],
+                                        ['name' => 'Error_Suma', 'type' => 'select', 'index' => '4'],
+                                        ['name' => 'NuevoTitularRLNumeroDocumento', 'type' => 'input', 'index' => '5'],
+                                        ['name' => 'NuevoTitularRLNombresApellidos', 'type' => 'input', 'index' => '6'],
+                                        ['name' => 'NuevoTitularRLCelularContacto', 'type' => 'number', 'index' => '7'],
                                         ['name' => 'NuevoTitularRLFechaNacimiento', 'type' => 'date', 'index' => '18'],
-                                        ['name' => 'NuevoTitularRLNumeroDocumento', 'type' => 'number', 'index' => '5'],
-                                        ['name' => 'NuevoTitularRLContacto', 'type' => 'number', 'index' => '8'],
+                                        ['name' => 'NuevoTitularRLCorreoElectronico', 'type' => 'input', 'index' => '13'],
                                     ];
 
                                     $procesamientoExitoso = true;
@@ -1724,50 +1718,88 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                         try {
                                             $valorCampo = trim($datos[$campo['index']]);
 
-                                            if ($campo['type'] === 'input') {
-                                                $input = $driver->wait(10)->until(
-                                                    WebDriverExpectedCondition::presenceOfElementLocated(
-                                                        WebDriverBy::xpath("//input[@name='{$campo['name']}']")
+                                            if ($campo['type'] === 'select') {
+                                                // Manejar dropdown personalizado
+                                                $botonDropdown = $driver->wait(10)->until(
+                                                    WebDriverExpectedCondition::elementToBeClickable(
+                                                        WebDriverBy::xpath("//button[@data-id='{$campo['name']}']")
                                                     )
                                                 );
-                                            } elseif ($campo['type'] === 'number') {
-                                                $input = $driver->wait(10)->until(
-                                                    WebDriverExpectedCondition::presenceOfElementLocated(
-                                                        WebDriverBy::xpath("//input[@name='{$campo['name']}' and @type='number']")
+
+                                                $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$botonDropdown]);
+                                                usleep(200000);
+                                                $botonDropdown->click(); // abrir el menú
+                                                usleep(500000);
+
+                                                $valorEscapado = json_encode($valorCampo);
+                                                $xpathOpcion = "//ul[contains(@class, 'dropdown-menu') and contains(@class, 'show')]//a[contains(@class, 'dropdown-item')]//span[contains(@class, 'text') and normalize-space(text()) = $valorEscapado]";
+
+                                                $opcion = $driver->wait(5)->until(
+                                                    WebDriverExpectedCondition::elementToBeClickable(
+                                                        WebDriverBy::xpath($xpathOpcion)
                                                     )
                                                 );
-                                                if (!is_numeric($valorCampo)) {
-                                                    throw new Exception("El valor '$valorCampo' no es numérico para el campo {$campo['name']}");
-                                                }
-                                            } elseif ($campo['type'] === 'date') {
-                                                $input = $driver->wait(10)->until(
-                                                    WebDriverExpectedCondition::presenceOfElementLocated(
-                                                        WebDriverBy::xpath("//input[@name='{$campo['name']}' and @type='date']")
-                                                    )
-                                                );
-                                                if (preg_match('/^(\d{2})\/(\d{2})\/(\d{4})$/', $valorCampo, $matches)) {
-                                                    $valorCampo = "{$matches[3]}-{$matches[2]}-{$matches[1]}";
-                                                }
-                                                if (!preg_match('/^\d{4}-\d{2}-\d{2}$/', $valorCampo)) {
-                                                    throw new Exception("Formato de fecha inválido: '$valorCampo'");
-                                                }
+
+                                                $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$opcion]);
+                                                usleep(200000);
+                                                $opcion->click(); // seleccionar opción
+                                                usleep(300000);
+
+                                                $textoNuevo = $botonDropdown->getText();
+                                                error_log("Dropdown '{$campo['name']}' seleccionado: $textoNuevo\n", 3, 'proceso_bot.log');
+
                                             } else {
-                                                continue;
-                                            }
+                                                // INPUT / NUMBER / DATE
+                                                if ($campo['type'] === 'input') {
+                                                    $input = $driver->wait(10)->until(
+                                                        WebDriverExpectedCondition::presenceOfElementLocated(
+                                                            WebDriverBy::xpath("//input[@name='{$campo['name']}']")
+                                                        )
+                                                    );
+                                                } elseif ($campo['type'] === 'number') {
+                                                    $input = $driver->wait(10)->until(
+                                                        WebDriverExpectedCondition::presenceOfElementLocated(
+                                                            WebDriverBy::xpath("//input[@name='{$campo['name']}' and @type='number']")
+                                                        )
+                                                    );
+                                                    if (!is_numeric($valorCampo)) {
+                                                        throw new Exception("El valor '$valorCampo' no es numérico para el campo {$campo['name']}");
+                                                    }
+                                                } elseif ($campo['type'] === 'date') {
+                                                    $input = $driver->wait(10)->until(
+                                                        WebDriverExpectedCondition::presenceOfElementLocated(
+                                                            WebDriverBy::xpath("//input[@name='{$campo['name']}' and @type='date']")
+                                                        )
+                                                    );
+                                                    if (preg_match('/^(\d{2})\/(\d{2})\/(\d{4})$/', $valorCampo, $matches)) {
+                                                        $valorCampo = "{$matches[3]}-{$matches[2]}-{$matches[1]}";
+                                                    }
+                                                    if (!preg_match('/^\d{4}-\d{2}-\d{2}$/', $valorCampo)) {
+                                                        throw new Exception("Formato de fecha inválido: '$valorCampo'");
+                                                    }
+                                                } else {
+                                                    continue;
+                                                }
 
-                                            $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$input]);
-                                            usleep(200000);
-                                            $input->clear();
-                                            $input->sendKeys($valorCampo);
-                                            $valorActual = $input->getAttribute('value');
-                                            if ($valorActual !== $valorCampo) {
-                                                error_log("Advertencia: El valor en {$campo['name']} no coincide. Esperado: '$valorCampo', Actual: '$valorActual'\n", 3, 'errores_bot.log');
-                                            }
-                                            $driver->executeScript("arguments[0].dispatchEvent(new Event('input', { bubbles: true }));", [$input]);
-                                            $driver->executeScript("arguments[0].dispatchEvent(new Event('change', { bubbles: true }));", [$input]);
+                                                $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$input]);
+                                                usleep(200000);
+                                                $input->clear();
+                                                $input->sendKeys($valorCampo);
+                                                $valorActual = $input->getAttribute('value');
+                                                if ($valorActual !== $valorCampo) {
+                                                    error_log("Advertencia: El valor en {$campo['name']} no coincide. Esperado: '$valorCampo', Actual: '$valorActual'\n", 3, 'errores_bot.log');
+                                                }
+                                                $driver->executeScript("
+                                                    arguments[0].focus();
+                                                    arguments[0].value = arguments[1];
+                                                    arguments[0].dispatchEvent(new Event('input', { bubbles: true }));
+                                                    arguments[0].dispatchEvent(new Event('change', { bubbles: true }));
+                                                    arguments[0].blur();
+                                                ", [$input, $valorCampo]);
 
-                                            usleep(300000);
-                                            error_log("Campo {$campo['name']} procesado exitosamente con valor: '$valorCampo'\n", 3, 'proceso_bot.log');
+                                                usleep(300000);
+                                                error_log("Campo {$campo['name']} procesado exitosamente con valor: '$valorCampo'\n", 3, 'proceso_bot.log');
+                                            }
 
                                         } catch (Exception $e) {
                                             $procesamientoExitoso = false;
@@ -1818,6 +1850,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                     }
 
                                     sleep(3);
+
                                 } else if ($valor === "CONTROL FRAUDE") {
 
                                     $valor_2 = trim($datos[14]);
@@ -2170,7 +2203,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                         ['name' => 'FechaFin', 'type' => 'date', 'index' => '17'],
                                         
                                         // Campos de input de texto
-                                        ['name' => 'PlanoPredio', 'type' => 'input', 'index' => '18'],
+                                        ['name' => 'PlanOfrecido', 'type' => 'input', 'index' => '18'],
                                         ['name' => 'SoportePQR', 'type' => 'input', 'index' => '15'],
                                         
                                         // Campo de textarea
@@ -2233,9 +2266,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 }
                                                 
                                                 // Limpiar el campo y escribir la fecha
-                                                $input->clear();
-                                                usleep(100000); // 100ms
-                                                $input->sendKeys($fechaFormateada);
+                                                $driver->executeScript("
+                                                    arguments[0].value = arguments[1];
+                                                    arguments[0].dispatchEvent(new Event('input', { bubbles: true }));
+                                                    arguments[0].dispatchEvent(new Event('change', { bubbles: true }));
+                                                ", [$input, $fechaFormateada]);
+                                                usleep(200000); // pausa opcional
+
                                                 
                                                 // Verificar que la fecha se escribió correctamente
                                                 $fechaActual = $input->getAttribute('value');
@@ -4731,49 +4768,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                     }
 
                                     try {
-                                        // PRIMERO: hacer clic en el enlace
-                                        if (!empty($valor)) {
-                                            $valorEscapado = json_encode($valor);
-                                            $xpath = "//li/a[contains(text(), $valorEscapado)]";
-
-                                            $enlace = $driver->wait(8)->until(
-                                                WebDriverExpectedCondition::elementToBeClickable(
-                                                    WebDriverBy::xpath($xpath)
-                                                )
-                                            );
-
-                                            $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$enlace]);
-                                            usleep(500000);
-                                            $enlace->click();
-
-                                            usleep(800000); // Esperar que cargue todo
-                                            error_log("Enlace '$valor' clickeado exitosamente\n", 3, 'proceso_bot.log');
-                                        } else {
-                                            error_log("Valor del enlace está vacío (índice 12)\n", 3, 'proceso_bot.log');
-                                        }
-
                                         // DESPUÉS: procesar campos de fecha
                                         if (!empty($fechaInicio)) {
                                             try {
                                                 $campo = $driver->wait(8)->until(
                                                     WebDriverExpectedCondition::elementToBeClickable(
-                                                        WebDriverBy::xpath("//input[@name='FechaConstitucion']")
+                                                        WebDriverBy::xpath("//input[@name='FechaInicio']")
                                                     )
                                                 );
 
                                                 $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$campo]);
-                                                usleep(300000);
-                                                $campo->click();
-                                                usleep(200000);
                                                 $campo->clear();
-                                                usleep(200000);
+                                                usleep(100000);
                                                 $campo->sendKeys($fechaInicio);
 
                                                 $driver->executeScript("arguments[0].dispatchEvent(new Event('input', { bubbles: true }));", [$campo]);
                                                 $driver->executeScript("arguments[0].dispatchEvent(new Event('change', { bubbles: true }));", [$campo]);
                                                 $driver->executeScript("arguments[0].blur();", [$campo]);
 
-                                                usleep(300000);
                                                 error_log("Campo FechaConstitucion completado: $fechaInicio\n", 3, 'proceso_bot.log');
 
                                             } catch (Exception $e) {
@@ -4790,18 +4802,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                                 );
 
                                                 $driver->executeScript("arguments[0].scrollIntoView({block: 'center'});", [$campo]);
-                                                usleep(300000);
-                                                $campo->click();
-                                                usleep(200000);
                                                 $campo->clear();
-                                                usleep(200000);
+                                                usleep(100000);
                                                 $campo->sendKeys($fechaFin);
 
                                                 $driver->executeScript("arguments[0].dispatchEvent(new Event('input', { bubbles: true }));", [$campo]);
                                                 $driver->executeScript("arguments[0].dispatchEvent(new Event('change', { bubbles: true }));", [$campo]);
                                                 $driver->executeScript("arguments[0].blur();", [$campo]);
 
-                                                usleep(300000);
                                                 error_log("Campo FechaFin completado: $fechaFin\n", 3, 'proceso_bot.log');
 
                                             } catch (Exception $e) {
@@ -5285,6 +5293,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     </div>
                 </div>
             </form>
+
+            <div class="version">
+                <span>1.0.0</span>
+            </div>
 
         </div>
 
