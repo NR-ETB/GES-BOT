@@ -21,10 +21,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $options = new ChromeOptions();
         $options->addArguments([
             '--disable-gpu',
+            '--disable-infobars',
+            '--disable-blink-features=AutomationControlled',
             '--no-sandbox',
             '--disable-dev-shm-usage',
             '--window-size=1200,720'
         ]);
+
+        $options->setExperimentalOption('excludeSwitches', ['enable-automation']);
+        $options->setExperimentalOption('useAutomationExtension', false);
 
         $capabilities = DesiredCapabilities::chrome();
         $capabilities->setCapability(ChromeOptions::CAPABILITY, $options);
@@ -305,7 +310,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                         }
                                     }
 
-                                    sleep(3); 
+                                    sleep(3);
+
+                                    // Ejecutar AutoIt y esperar a que termine
+                                    exec(__DIR__ . '/../../Model/Script.exe', $salida, $codigo);
                                     
                                 } else if ($valor === "ADICION DE BUNDLE AUXILIAR") {
 

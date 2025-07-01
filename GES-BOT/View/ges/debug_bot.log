@@ -157,3 +157,1556 @@ Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,200012346
 Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123465,PRUEBA_F8",3120000105,956256309,1222,ACC22008,BOGOTA,TRASLADO,CALLE 178 99 A 10,CALLE 200 49 D 99,SUPERMEGA PRO PLAN MAX 700G,Problemas con la cobertura,Recomendaarle unaa mejor zona para residir,
 Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123465,PRUEBA_F8",3120000105,956256309,1222,ACC22008,BOGOTA,TRASLADO,CALLE 178 99 A 10,CALLE 200 49 D 99,SUPERMEGA PRO PLAN MAX 700G,Problemas con la cobertura,Recomendaarle unaa mejor zona para residir,
 ✓ Archivo process.csv actualizado, eliminadas 1 líneas procesadas
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando Canal: 'ESCRITA'
+✓ Seleccionado Canal: 'ESCRITA'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro procesado exitosamente: ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando Canal: 'VENTAS'
+Error en dropdown Canal: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=137.0.7151.104)
+Procesando Sistema: 'SUMA'
+Error en dropdown Sistema: invalid session id
+Procesando UEN: 'HOGARES'
+Error en dropdown UEN: invalid session id
+Procesando Tecnologia: 'FTTH'
+Error en dropdown Tecnologia: invalid session id
+Procesando Tipo_Documento_Campo4: 'CC'
+Error en dropdown Tipo_Documento_Campo4: invalid session id
+Procesando Ciudad: 'SOACHA'
+Error en dropdown Ciudad: invalid session id
+Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 2/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 2/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 1/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 2/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+✓ Archivo process.csv actualizado, eliminadas 1 líneas procesadas
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando Canal: 'ESCRITA'
+✓ Seleccionado Canal: 'ESCRITA'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro guardado en Gestiones_Realizadas.csv
+✓ Archivo process.csv actualizado, eliminadas 1 líneas procesadas
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando Canal: 'ESCRITA'
+✓ Seleccionado Canal: 'ESCRITA'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro procesado exitosamente: ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+✓ Registro guardado en Gestiones_Realizadas.csv
+✓ Archivo process.csv actualizado, eliminadas 1 líneas procesadas
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando Canal: 'ESCRITA'
+✓ Seleccionado Canal: 'ESCRITA'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro procesado exitosamente: ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+✓ Registro guardado en Gestiones_Realizadas.csv
+✓ Archivo process.csv actualizado, eliminadas 1 líneas procesadas
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando Canal: 'ESCRITA'
+✓ Seleccionado Canal: 'ESCRITA'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro procesado exitosamente: ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+✓ Registro guardado en Gestiones_Realizadas.csv
+✓ Archivo process.csv actualizado, eliminadas 1 líneas procesadas
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando Canal: 'ESCRITA'
+✓ Seleccionado Canal: 'ESCRITA'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro guardado en Gestiones_Realizadas.csv
+✓ Archivo process.csv actualizado, eliminadas 1 líneas procesadas
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando Canal: 'ESCRITA'
+✓ Seleccionado Canal: 'ESCRITA'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro procesado exitosamente: ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+✓ Registro guardado en Gestiones_Realizadas.csv
+✓ Archivo process.csv actualizado, eliminadas 1 líneas procesadas
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando Canal: 'ESCRITA'
+✓ Seleccionado Canal: 'ESCRITA'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 2/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 2/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 1/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 2/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+✓ Archivo process.csv actualizado, eliminadas 1 líneas procesadas
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando Canal: 'ESCRITA'
+✓ Seleccionado Canal: 'ESCRITA'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 2/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 2/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 1/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 2/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+✓ Archivo process.csv actualizado, eliminadas 1 líneas procesadas
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando Canal: 'ESCRITA'
+✓ Seleccionado Canal: 'ESCRITA'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro procesado exitosamente: ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 2/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 2/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 1/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 2/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+✓ Archivo process.csv actualizado, eliminadas 1 líneas procesadas
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando Canal: 'ESCRITA'
+✓ Seleccionado Canal: 'ESCRITA'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro procesado exitosamente: ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 2/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 2/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 1/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 2/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+✓ Archivo process.csv actualizado, eliminadas 1 líneas procesadas
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando Canal: 'ESCRITA'
+✓ Seleccionado Canal: 'ESCRITA'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro procesado exitosamente: ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando Canal: 'VENTAS'
+Procesando Sistema: 'SUMA'
+Error en dropdown Sistema: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=137.0.7151.120)
+Procesando UEN: 'HOGARES'
+Error en dropdown UEN: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=137.0.7151.120)
+Procesando Tecnologia: 'FTTH'
+Error en dropdown Tecnologia: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=137.0.7151.120)
+Procesando Tipo_Documento_Campo4: 'CC'
+Error en dropdown Tipo_Documento_Campo4: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=137.0.7151.120)
+Procesando Ciudad: 'SOACHA'
+Error en dropdown Ciudad: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=137.0.7151.120)
+Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 2/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 2/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 1/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 2/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+✓ Archivo process.csv actualizado, eliminadas 1 líneas procesadas
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando Canal: 'ESCRITA'
+✓ Seleccionado Canal: 'ESCRITA'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 2/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 2/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 1/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 2/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+✓ Archivo process.csv actualizado, eliminadas 1 líneas procesadas
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando Canal: 'ESCRITA'
+✓ Seleccionado Canal: 'ESCRITA'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 2/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 2/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 1/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 2/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+✓ Archivo process.csv actualizado, eliminadas 1 líneas procesadas
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando Canal: 'ESCRITA'
+✓ Seleccionado Canal: 'ESCRITA'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro procesado exitosamente: ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando Canal: 'VENTAS'
+✓ Seleccionado Canal: 'VENTAS'
+Procesando Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+Error en dropdown UEN: invalid session id
+Procesando Tecnologia: 'FTTH'
+Error en dropdown Tecnologia: invalid session id
+Procesando Tipo_Documento_Campo4: 'CC'
+Error en dropdown Tipo_Documento_Campo4: invalid session id
+Procesando Ciudad: 'SOACHA'
+Error en dropdown Ciudad: invalid session id
+Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 2/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 2/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 1/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 2/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+✓ Archivo process.csv actualizado, eliminadas 1 líneas procesadas
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando Canal: 'ESCRITA'
+✓ Seleccionado Canal: 'ESCRITA'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 2/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 2/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 1/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 2/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+✓ Archivo process.csv actualizado, eliminadas 1 líneas procesadas
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando Canal: 'ESCRITA'
+✓ Seleccionado Canal: 'ESCRITA'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro procesado exitosamente: ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando Canal: 'VENTAS'
+✓ Seleccionado Canal: 'VENTAS'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'SOACHA'
+✓ Seleccionado Ciudad: 'SOACHA'
+✓ Registro procesado exitosamente: VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando Canal: 'LINEA ESPECIAL'
+✓ Seleccionado Canal: 'LINEA ESPECIAL'
+Procesando Sistema: 'SIEBEL SOMOS Y CONVERGENTE'
+✓ Seleccionado Sistema: 'SIEBEL SOMOS Y CONVERGENTE'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro procesado exitosamente: LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando Canal: 'ASEGURAMIENTO'
+✓ Seleccionado Canal: 'ASEGURAMIENTO'
+Procesando Sistema: 'SUMA'
+Error en dropdown Sistema: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=137.0.7151.120)
+Procesando UEN: 'HOGARES'
+Error en dropdown UEN: invalid session id
+Procesando Tecnologia: 'FTTH'
+Error en dropdown Tecnologia: invalid session id
+Procesando Tipo_Documento_Campo4: 'CC'
+Error en dropdown Tipo_Documento_Campo4: invalid session id
+Procesando Ciudad: 'SOACHA'
+Error en dropdown Ciudad: invalid session id
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 2/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 1/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 2/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+✓ Archivo process.csv actualizado, eliminadas 3 líneas procesadas
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando Canal: 'ESCRITA'
+✓ Seleccionado Canal: 'ESCRITA'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 2/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 2/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 1/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 2/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 2/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando Canal: 'ESCRITA'
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 2/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+✓ Seleccionado Canal: 'ESCRITA'
+Procesando Sistema: 'SUMA'
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+✓ Seleccionado Sistema: 'SUMA'
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando UEN: 'HOGARES'
+Procesando registro (intento 1/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+Procesando registro (intento 2/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+✓ Archivo process.csv actualizado, eliminadas 1 líneas procesadas
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 2/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 2/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 1/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 2/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 2/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 2/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 1/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 2/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando Canal: 'ESCRITA'
+✓ Seleccionado Canal: 'ESCRITA'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 2/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 2/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 1/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 2/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+✓ Archivo process.csv actualizado, eliminadas 1 líneas procesadas
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando Canal: 'ESCRITA'
+✓ Seleccionado Canal: 'ESCRITA'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 2/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 2/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 1/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 2/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+✓ Archivo process.csv actualizado, eliminadas 1 líneas procesadas
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando Canal: 'ESCRITA'
+✓ Seleccionado Canal: 'ESCRITA'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 2/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 2/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 1/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 2/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+✓ Archivo process.csv actualizado, eliminadas 1 líneas procesadas
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando Canal: 'ESCRITA'
+✓ Seleccionado Canal: 'ESCRITA'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro procesado exitosamente: ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando Canal: 'VENTAS'
+Error en dropdown Canal: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=137.0.7151.120)
+Procesando Sistema: 'SUMA'
+Error en dropdown Sistema: invalid session id
+Procesando UEN: 'HOGARES'
+Error en dropdown UEN: invalid session id
+Procesando Tecnologia: 'FTTH'
+Error en dropdown Tecnologia: invalid session id
+Procesando Tipo_Documento_Campo4: 'CC'
+Error en dropdown Tipo_Documento_Campo4: invalid session id
+Procesando Ciudad: 'SOACHA'
+Error en dropdown Ciudad: invalid session id
+Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 2/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 2/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 1/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 2/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 2/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 2/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 1/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 2/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+✓ Archivo process.csv actualizado, eliminadas 1 líneas procesadas
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando Canal: 'ESCRITA'
+✓ Seleccionado Canal: 'ESCRITA'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 2/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 2/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 1/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 2/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 2/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 2/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 1/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 2/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+✓ Archivo process.csv actualizado, eliminadas 1 líneas procesadas
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando Canal: 'ESCRITA'
+✓ Seleccionado Canal: 'ESCRITA'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 2/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 2/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 1/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 2/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+✓ Archivo process.csv actualizado, eliminadas 1 líneas procesadas
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando Canal: 'ESCRITA'
+✓ Seleccionado Canal: 'ESCRITA'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 2/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 2/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 1/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 2/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+✓ Archivo process.csv actualizado, eliminadas 1 líneas procesadas
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando Canal: 'ESCRITA'
+✓ Seleccionado Canal: 'ESCRITA'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 2/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 2/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 1/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 2/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+✓ Archivo process.csv actualizado, eliminadas 1 líneas procesadas
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando Canal: 'ESCRITA'
+✓ Seleccionado Canal: 'ESCRITA'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro procesado exitosamente: ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando Canal: 'VENTAS'
+Error en dropdown Canal: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=137.0.7151.120)
+Procesando Sistema: 'SUMA'
+Error en dropdown Sistema: invalid session id
+Procesando UEN: 'HOGARES'
+Error en dropdown UEN: invalid session id
+Procesando Tecnologia: 'FTTH'
+Error en dropdown Tecnologia: invalid session id
+Procesando Tipo_Documento_Campo4: 'CC'
+Error en dropdown Tipo_Documento_Campo4: invalid session id
+Procesando Ciudad: 'SOACHA'
+Error en dropdown Ciudad: invalid session id
+Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 2/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 2/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 1/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 2/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+✓ Archivo process.csv actualizado, eliminadas 1 líneas procesadas
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando Canal: 'ESCRITA'
+✓ Seleccionado Canal: 'ESCRITA'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 2/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 2/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 1/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 2/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+✓ Archivo process.csv actualizado, eliminadas 1 líneas procesadas
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando Canal: 'ESCRITA'
+✓ Seleccionado Canal: 'ESCRITA'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 2/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 2/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 1/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 2/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+✓ Archivo process.csv actualizado, eliminadas 1 líneas procesadas
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando Canal: 'ESCRITA'
+✓ Seleccionado Canal: 'ESCRITA'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 2/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 2/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 1/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 2/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+✓ Archivo process.csv actualizado, eliminadas 1 líneas procesadas
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando Canal: 'ESCRITA'
+✓ Seleccionado Canal: 'ESCRITA'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 2/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 2/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 1/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 2/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+✓ Archivo process.csv actualizado, eliminadas 1 líneas procesadas
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando Canal: 'ESCRITA'
+✓ Seleccionado Canal: 'ESCRITA'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 2/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 2/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 1/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 2/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+✓ Archivo process.csv actualizado, eliminadas 1 líneas procesadas
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando Canal: 'ESCRITA'
+✓ Seleccionado Canal: 'ESCRITA'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 2/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 2/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 1/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 2/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+✓ Archivo process.csv actualizado, eliminadas 1 líneas procesadas
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando Canal: 'ESCRITA'
+✓ Seleccionado Canal: 'ESCRITA'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 2/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 2/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 1/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 2/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+✓ Archivo process.csv actualizado, eliminadas 1 líneas procesadas
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando Canal: 'ESCRITA'
+✓ Seleccionado Canal: 'ESCRITA'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 2/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando Canal: 'ESCRITA'
+✓ Seleccionado Canal: 'ESCRITA'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 2/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 2/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 1/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 2/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 2/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 2/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 1/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 2/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+✓ Archivo process.csv actualizado, eliminadas 1 líneas procesadas
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando Canal: 'ESCRITA'
+✓ Seleccionado Canal: 'ESCRITA'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 2/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 2/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 1/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 2/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+✓ Archivo process.csv actualizado, eliminadas 1 líneas procesadas
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando Canal: 'ESCRITA'
+✓ Seleccionado Canal: 'ESCRITA'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 2/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 2/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 1/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 2/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+✓ Archivo process.csv actualizado, eliminadas 1 líneas procesadas
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando Canal: 'ESCRITA'
+✓ Seleccionado Canal: 'ESCRITA'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 2/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 2/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 1/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 2/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+✓ Archivo process.csv actualizado, eliminadas 1 líneas procesadas
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando Canal: 'ESCRITA'
+✓ Seleccionado Canal: 'ESCRITA'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 2/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 2/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 1/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 2/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+✓ Archivo process.csv actualizado, eliminadas 1 líneas procesadas
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando Canal: 'ESCRITA'
+✓ Seleccionado Canal: 'ESCRITA'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 2/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 2/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 1/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 2/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+✓ Archivo process.csv actualizado, eliminadas 1 líneas procesadas
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando Canal: 'ESCRITA'
+✓ Seleccionado Canal: 'ESCRITA'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 2/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 2/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 1/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 2/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+✓ Archivo process.csv actualizado, eliminadas 1 líneas procesadas
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando Canal: 'ESCRITA'
+✓ Seleccionado Canal: 'ESCRITA'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 2/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 2/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 1/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 2/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 2/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 2/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 1/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 2/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+✓ Archivo process.csv actualizado, eliminadas 1 líneas procesadas
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando Canal: 'ESCRITA'
+✓ Seleccionado Canal: 'ESCRITA'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando Canal: 'ESCRITA'
+✓ Seleccionado Canal: 'ESCRITA'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro procesado exitosamente: ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando Canal: 'VENTAS'
+✓ Seleccionado Canal: 'VENTAS'
+Procesando Sistema: 'SUMA'
+✓ Seleccionado Sistema: 'SUMA'
+Procesando UEN: 'HOGARES'
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'SOACHA'
+Error en dropdown Ciudad: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=137.0.7151.120)
+Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 2/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 2/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 1/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 2/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 2/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 2/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 1/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 2/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 2/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando Canal: 'ESCRITA'
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+✓ Seleccionado Canal: 'ESCRITA'
+Procesando Sistema: 'SUMA'
+Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+✓ Seleccionado Sistema: 'SUMA'
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando UEN: 'HOGARES'
+Procesando registro (intento 2/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+✓ Seleccionado UEN: 'HOGARES'
+Procesando Tecnologia: 'FTTH'
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+✓ Seleccionado Tecnologia: 'FTTH'
+Procesando Tipo_Documento_Campo4: 'CC'
+Procesando registro (intento 1/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 2/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+✓ Seleccionado Tipo_Documento_Campo4: 'CC'
+Procesando Ciudad: 'BOGOTA'
+✓ Archivo process.csv actualizado, eliminadas 1 líneas procesadas
+✓ Seleccionado Ciudad: 'BOGOTA'
+✓ Registro guardado en Gestiones_Realizadas.csv
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 2/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 2/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 1/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 2/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 2/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 2/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 1/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 2/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000123456,PRUEBA_B1,3120000001,956281300,1206,ACC22001,BOGOTA,ADECUACIONES,Desincronización,Reiniciar ONT,
+Procesando registro (intento 1/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 2/2): VENTAS,SUMA,HOGARES,FTTH,CC,2000123457,PRUEBA_B2,3120000002,956281301,1207,ACC22002,SOACHA,CAMBIO DE NUMERO,No navega en páginas https,Verificar puertos y firewall,
+Procesando registro (intento 1/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 2/2): LINEA ESPECIAL,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123458,PRUEBA_B3,3120000003,956281302,1208,ACC22003,BOGOTA,FALLA TECNICA,Servicio muy lento,Cambio de canal WiFi,
+Procesando registro (intento 1/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 2/2): ASEGURAMIENTO,SUMA,HOGARES,FTTH,CC,2000123459,PRUEBA_B4,3120000004,956281303,1209,ACC22004,SOACHA,MI ETB,LED rojo en ONT,Validar fibra óptica,
+Procesando registro (intento 1/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 2/2): REDES SOCIALES,SUMA,HOGARES,FTTH,CC,2000123460,PRUEBA_B5",3120000005,956281304,1210,ACC22005,BOGOTA,ORDEN DE RETOMA EQUIPOS,Problemas en videollamadas,Asignar nuevo gateway,
+Procesando registro (intento 1/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 2/2): REDES SOCIALES,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123461,PRUEBA_B6,3120000006,956281305,1204,ACC22006,SOACHA,RECONEXION POR PAGO,Sin respuesta en router,Reemplazo de router
+Procesando registro (intento 1/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 2/2): ESCRITA,SUMA,HOGARES,FTTH,CC,2000789345,PRUEBA_B7,3145678910,956281310,1207,ACC22002,BOGOTA,RECONEXION VOLUNTARIA,ONT no enciende,Verificar fuente de poder,
+Procesando registro (intento 1/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
+Procesando registro (intento 2/2): VENTAS,SIEBEL SOMOS Y CONVERGENTE,HOGARES,FTTH,CC,2000123462,PRUEBA_B6,3120000007,956281307,1205,ACC22007,SOACHA,RETIRO DE INCREMENTO,Agenda Ocupada,Retirar el incremento,
